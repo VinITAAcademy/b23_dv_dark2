@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+    --Dark_Blue: #000A24;
+    --Black: #000000;
+    --Brown: #252323;
+    --Blue: #083CC0;
+    --White: #FFFFFF;
+}
+
+/* "header start" */
+#header{}
+/* "header end" */
+
+/* "main-block start" */
+#main-block{}
+/* "main-block end" */
+
+/* "we provide start" */
+#we-provide{}
+/* "we provide end" */
+
+/* "about us start" */
+#about-us{}
+/* "about us end" */
+
+/* "attract start" */
+#attract{}
+/* "attract end" */
+
+/* "our partners start" */
+#our-partners{}
+/* "our partners end" */
+
+/* "logos start" */
+#logos{}
+/* "logos end" */
+
+/* "specialities start" */
+#specialities{}
+/* "specialities end" */
+
+/* "form window start" */
+#modal-window{}
+/* "form window end" */
+
+/* "footer start" */
+#footer{}
+/* "footer end" */
+
+@media(min-width: 786px){
+    /* "header start" */
+    #header{}
+    /* "header end" */
+
+    /* "main-block start" */
+    #main-block{}
+    /* "main-block end" */
+
+    /* "we provide start" */
+    #we-provide{}
+    /* "we provide end" */
+
+    /* "about us start" */
+    #about-us{}
+    /* "about us end" */
+
+    /* "attract start" */
+    #attract{}
+    /* "attract end" */
+
+    /* "our partners start" */
+    #our-partners{}
+    /* "our partners end" */
+
+    /* "logos start" */
+    #logos{}
+    /* "logos end" */
+
+    /* "specialities start" */
+    #specialities{}
+    /* "specialities end" */
+
+    /* "form window start" */
+    #modal-window{}
+    /* "form window end" */
+
+    /* "footer start" */
+    #footer{}
+    /* "footer end" */
+}
+
+@media(min-width: 1024px){
+    /* "header start" */
+    #header{}
+    /* "header end" */
+
+    /* "main-block start" */
+    #main-block{}
+    /* "main-block end" */
+
+    /* "we provide start" */
+    #we-provide{}
+    /* "we provide end" */
+
+    /* "about us start" */
+    #about-us{}
+    /* "about us end" */
+
+    /* "attract start" */
+    #attract{}
+    /* "attract end" */
+
+    /* "our partners start" */
+    #our-partners{}
+    /* "our partners end" */
+
+    /* "logos start" */
+    #logos{}
+    /* "logos end" */
+
+    /* "specialities start" */
+    #specialities{}
+    /* "specialities end" */
+
+    /* "form window start" */
+    #modal-window{}
+    /* "form window end" */
+
+    /* "footer start" */
+    #footer{}
+    /* "footer end" */
+}

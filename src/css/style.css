@@ -103,6 +103,7 @@
     margin: 0 auto;
     font-family: "Ubuntu Medium";
     font-size: 14px;
+    
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0.02em;
@@ -161,7 +162,8 @@
 .img-attract-desktop{
     display: none;
 
-}.img-attract-mobile{
+}
+.img-attract-mobile{
     
         width: 375px;
         height: 375px;
@@ -319,9 +321,18 @@
 
     /* "attract start" */
     #attract{}
+    .text-attract,.width.text-attract{
+        font-family: "Inria Serif Regular";
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0;
+        text-align: justify;
+    }
     .flex-rov{
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-left: 41px;
     }
     .flex-f1{
         flex-direction: row;
@@ -332,8 +343,7 @@
         height: 538px;
         margin: 42px;
         margin-right: 100px;
-        margin-top: -100px;
-
+        margin-top: -219px;
     }
     .img-attract{
         width: 460px;
@@ -346,8 +356,13 @@
     .text-attract{
         width: 380px;
         margin: 42px;
-        margin-right: 100px;
         font-size: 20px;
+        margin: 0;
+        font-family: "Inria Serif Regular";
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        margin-top: 0;
+        margin-right: 100px;
 
     }
     .flex{
@@ -357,20 +372,43 @@
     .flex-repit{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 43px;
     }
     .text2-attract{
         text-align: center;
         padding-left: 33px;
         width: 826px;
-        padding-top: 10px;
+        padding-top: 24px;
+        font-family: "Inria Serif Regular";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
         
         
     }
     .line-attract, .line2-attract{
         width: 940px;
 
+    }
+    .retreat.pb-desktop{
+        padding-bottom: 0;
+
+    }
+    .line-attract{
+        margin-top: 6px;
+    }
+    .img2-attract{
+        width: 66px;
+    }
+    .retreat2{
+        padding-top: 24px;
+    }
+    .line2-attract{
+        margin-top: -5px;
     }
     /* "attract end" */
     

@@ -83,7 +83,99 @@
 /* "main-block end" */
 
 /* "we provide start" */
-#we-provide{}
+#we-provide .conteiner{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#we-provide .blok2_title{
+    margin-top: 30px;
+    text-align: center;
+    font-size:calc(1rem + 2.133vw);
+    font-weight: 700;
+    font-family: "Ubuntu Bold";
+    line-height: 27.58px;
+} 
+
+#we-provide .b2-subtitle-blok1{
+    margin-top: 8vw;
+    width: 227px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+#we-provide .b2-subtitle-blok2{
+    margin-top: 8vw;
+    width: 227px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#we-provide .b2-subtitle-blok3{
+    margin-top: 8vw;
+    width: 227px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#we-provide .blok2-imege1{
+    width: 10.667vw;
+    height: 10.667vw;
+}
+#we-provide .blok2-imege2{
+    width: 16.533vw;
+    height: 10.133vw;
+}
+#we-provide .blok2-imege3{
+    width: 12vw;
+    height: 10.667vw;
+}
+#we-provide .blok2-line{
+    width: 226px;
+    margin-top: 5vw;
+    border-top: 2px dashed black;
+}
+#we-provide .under-img-b2-text{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22.68px;
+    margin-top: 4vw;
+    width: 226px;
+    font-family: "Ubuntu Bold";
+    letter-spacing: -0.2px;
+}
+#we-provide .vidio-block{
+    max-width: 768px;
+    height: 56vw;
+    margin-top: 8vw;
+    position: relative;
+}
+#we-provide .video-imege{
+    background-image: url('../imeges/blok_7_We_Provide/block2_video_image_mobile.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#we-provide .block2_youtube{
+    height: 100%; 
+}
+#we-provide .video-imege-button{
+    background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_mobile.png');
+    width: 10.667vw;
+    height: 10.667vw;
+    position: absolute;
+    top: 40%;
+    left: 44.6%;
+    border:none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#we-provide .vidio-block-picture{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 /* "we provide end" */
 
 /* "about us start" */
@@ -124,7 +216,84 @@
     /* "main-block end" */
 
     /* "we provide start" */
-    #we-provide{}
+    #we-provide .blok2_title{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 500;
+        font-family: "Ubuntu Bold";
+        line-height: 48.26px;
+    } 
+    #we-provide .b2-subtitle-blok1{
+        margin-top: 40px;
+        width: 412px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    #we-provide .b2-subtitle-blok2{
+        margin-top: 40px;
+        width: 412px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    #we-provide .b2-subtitle-blok3{
+        margin-top: 40px;
+        width: 412px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    #we-provide .blok2-imege1{
+        width: 90px;
+        height: 80px;
+    }
+    #we-provide .blok2-imege2{
+        width: 104px;
+        height: 67.4px;
+    }
+    #we-provide .blok2-imege3{
+        width: 90px;
+        height: 80px;
+    }
+    #we-provide .blok2-line{
+        width: 412px;
+        margin-top: 30px;
+        border-top: 2px dashed black;
+    }
+    #we-provide .under-img-b2-text{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32.4px;
+        width: 340px;
+        text-align: center;
+        font-family: "Ubuntu Bold";
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto; 
+    } 
+    #we-provide .vidio-block{
+        margin-top: 50px;
+        max-width: 1024px;
+        height: 431px;
+        position: relative;
+    }
+    #we-provide .vidio-block-picture{
+        width: 100%;
+        height: 100%;
+    }
+    #we-provide .video-imege{
+        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_tablet.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    #we-provide .video-imege-button{
+        width: 100px;
+        height: 100px;
+    }
     /* "we provide end" */
 
     /* "about us start" */
@@ -166,7 +335,88 @@
     /* "main-block end" */
 
     /* "we provide start" */
-    #we-provide{}
+    #we-provide .blok2_title{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 500;
+        font-family: "Ubuntu Bold";
+        line-height: 48.26px;
+        color: var(--Black);
+    }
+    #we-provide .b2-subtitle-bloks{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 13px;
+    }
+    #we-provide .b2-subtitle-blok1{
+        width: 305px;
+        text-align: center;
+        margin: 0;
+    }
+    #we-provide .b2-subtitle-blok2{
+        margin: 0;
+        width: 301px;
+        text-align: center;
+    }
+    #we-provide .b2-subtitle-blok3{
+        margin: 0;
+        width: 300px;
+        text-align: center;
+    }
+    #we-provide .blok2-imege1{
+        width: 70px;
+        height: 70px;
+        margin-top: 69px;
+        margin-left: 10px;
+    }
+    #we-provide .blok2-imege2{
+        width: 109px;
+        height: 65px;
+        margin-top: 75px;
+        margin-right: 20px;
+    }
+    #we-provide .blok2-imege3{
+        width: 72px;
+        height: 62px;
+        margin-top: 78px;
+    }
+    #we-provide .blok2-line{
+        width: 300px;
+        margin-top: 39px;
+        border-top: 2px dashed black;
+    }
+    #we-provide .under-img-b2-text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24.3px;
+        letter-spacing: 0.2px;
+        width: 300px;
+        text-align: center;
+        margin-top: 30px;
+        font-family: "Inria Serif Bold";
+    }
+    #we-provide .vidio-block{
+        max-width: 1440px;
+        height: 528px;
+        margin: 50px 42px 30px 42px;
+        position: relative;
+    }
+    #we-provide .video-imege{
+        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #we-provide .video-imege-button{
+        background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_desktop.png');
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 40%;
+        left: 44.6%;
+    }
     /* "we provide end" */
 
     /* "about us start" */

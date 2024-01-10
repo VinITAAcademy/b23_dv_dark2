@@ -9,7 +9,7 @@ imgclose.onclick = function(){
     youtubeOpen.style.display='block';
 }
 //"we provide video end"
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".my-swiper", {
       slidesPerView: 2,
       spaceBetween: 30,
       pagination: {

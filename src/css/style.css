@@ -234,7 +234,7 @@
     display: flex;
     justify-content: end;
 }
-#logos .swiper.mySwiper{
+#logos .swiper.my-swiper{
     margin: 0 auto;
     display: flex;
     width: 375px;
@@ -448,7 +448,7 @@
 
     /* "logos start" */
     #logos{}
-    #logos .swiper.mySwiper{
+    #logos .swiper.my-swiper{
         width: 768px;
         height: 195px;
     
@@ -462,7 +462,7 @@
         
             width: 50px;
         }
-        #logos .swiper.mySwiper{
+        #logos .swiper.my-swiper{
             width: 768px;
             
         }
@@ -682,7 +682,7 @@
 
     /* "logos start" */
     #logos{}
-    #logos .swiper.mySwiper{
+    #logos .swiper.my-swiper{
         display: none;
     }
     #logos .our-desktop-partners{
@@ -754,91 +754,6 @@
     #modal-window{}
     /* "form window end" */
 
-    /* "footer start" */
-    #footer{}
-    /* "footer end" */
-}
-@media(min-width: 1024px){
-    /* "header start" */
-    #header{}
-    /* "header end" */
-    /* "main-block start" */
-    #main-block{}
-    /* "main-block end" */
-    /* "we provide start" */
-    #we-provide{}
-    /* "we provide end" */
-    /* "about us start" */
-    #about-us{}
-    /* "about us end" */
-    /* "attract start" */
-    #attract{}
-    /* "attract end" */
-    /* "our partners start" */
-    #our-partners{}
-    /* "our partners end" */
-    /* "logos start" */
-    #logos{}
-    #logos .swiper.mySwiper{
-        display: none;
-    }
-    #logos .our-desktop-partners{
-        display: block;
-    }
-    #logos .img1-logos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 694px;
-        height: 135px;
-        margin: 0 auto;
-    }
-    #logos .logo-C1{
-        padding-top: 35px;
-    }
-    #logos .logo-C2{
-        padding-top: 45px;
-    }
-    #logos .logo-C3{
-        padding-top: 25px;
-    }
-    #logos .logo-ITA{
-        padding-top: 16px;
-    }
-    #logos .logo-bay{
-        padding-top: 38px;
-    }
-    #logos .log-mol{
-       padding: 23px 26px 0 14px;
-    }
-    #logos .img1{
-        width: 167px;
-        height: 57px;
-    }
-    #logos .img2{
-        width: 169px;
-        height: 44px;
-    }
-    #logos .img3{
-        width: 258px;
-        height: 77px;
-    }
-    #logos .img4{
-        width: 187px;
-        height: 64px;}
-    #logos .img5{
-        width: 115px;
-        height: 39px;}
-    #logos .img6{
-        width: 232px;
-        height: 54px;}
-    /* "logos end" */
-    /* "specialities start" */
-    #specialities{}
-    /* "specialities end" */
-    /* "form window start" */
-    #modal-window{}
-    /* "form window end" */
     /* "footer start" */
     #footer{}
     /* "footer end" */

@@ -85,7 +85,7 @@
     position: relative;
 }
 
-#main-block .backgroundContainer {
+#main-block .background-container {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -453,7 +453,7 @@
     /* "header end" */
 
     /* "main-block start" */
-    #main-block .backgroundContainer {
+    #main-block .background-container {
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
@@ -799,7 +799,7 @@
     /* "header end" */
 
     /* "main-block start" */
-    #main-block .backgroundContainer {
+    #main-block .background-container {
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;

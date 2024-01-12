@@ -232,7 +232,113 @@
 /* "specialities end" */
 
 /* "form window start" */
-#modal-window{}
+#modal-window .modal{
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 0;
+    --bs-modal-border-width: 0;
+}
+
+#modal-window .modal-header{
+    border-bottom: 0;
+}
+
+#modal-window .modal-up-color{
+    border-top: 5px solid var(--Blue);
+    max-width: 80%;
+}
+
+#modal-window .modal-down-color{
+    border-top: 5px solid #FFD500;
+    max-width: 80%; 
+}
+
+#modal-window .modal-window-default-text-1{
+    color: var(--Black);
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    line-height: normal;
+}
+
+#modal-window .modal-window-default-text-2{
+    color: var(--White);
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    line-height: normal;
+}
+
+#modal-window .modal-window-header-title{
+    color: var(--Black);
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#modal-window .modal-window-header-sub-title{
+    color: var(--Black);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#modal-window .modal-window-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#modal-window .modal-window-button-content{
+    display: flex;
+    padding: 25px 85px;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-window .modal-window-cancel-button{
+    border: 0;
+    background-color: var(--White);
+}
+
+#modal-window .modal-window-button{
+    border-radius: 6px;
+    text-align: center;
+    border-style: none;
+    outline-style: none;
+    background: var(--Blue);
+}
+
+
+#modal-window .modal-window-button:hover{
+    background: #02257F;
+}
+
+#modal-window .modal-window-button:active{
+    background: #FFF;
+}
+
+#modal-window .modal-window-button:active{
+    color: #083CC0;
+}
+
+#modal-window .modal-window-button:disabled{
+    background:#61677A;
+    color:#FFF;
+    cursor: not-allowed;
+}
+
+#modal-window .modal-window-image-list{
+    width: 50px;
+    height: 50px;
+}
+
+#modal-window .modal-window-row{
+    
+}
+
+#modal-window .modal-window-column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
 /* "form window end" */
 
 /* "footer start" */

@@ -43,7 +43,7 @@
                                 </p>
                             </span>
                         </p>
-                        <button class="about-us-text about-us-register-text about-us-register-button" type="button">
+                        <button class="about-us-text about-us-register-text about-us-register-button" type="button" data-bs-toggle="modal" data-bs-target="#modal-window-main">
                             Зареєструватися
                         </button>
                     </div>
@@ -119,7 +119,58 @@
         <!--"specialities end"-->
 
         <!--"form window start"-->
-        <section id="modal-window"></section>
+        <section id="modal-window">
+            <div class="modal fade" id="modal-window-main" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-window-default-text-1 modal-window-header-title">
+                                ДОБРОГО ВЕЧОРА - МИ З <span class="modal-window-default-text-1 modal-window-header-sub-title">УКРАЇНИ!</span>
+                            </h1>
+                            <button type="button" class="modal-window-cancel-button" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="" src="src/Img/modal-selection-cancel.png" alt="cancel button">
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="modal-up-color"></div>
+                            <div class="modal-down-color"></div>
+                            <h1 class="">Яка анкета вас цікавить?</h1>
+                            <button class="modal-window-default-text-2 modal-window-button-content modal-window-button">Партнера</button>
+                            <button class="modal-window-default-text-2 modal-window-button-content modal-window-button">Учасника</button>
+                            <button class="modal-window-default-text-2 modal-window-button-content modal-window-button">Викладача/ментора</button>
+                            <div class="modal-up-color"></div>
+                            <div class="modal-down-color"></div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <div class="modal-window-row">
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-telegram.png" alt="telegram icon">
+                                </div>
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-facebook.png" alt="facebook icon">
+                                </div>
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-whatsapp.png" alt="whatsapp icon">
+                                </div>
+                            </div>
+                            <div class="modal-window-row">
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-viber.png" alt="viber icon">
+                                </div>
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-twitter.png" alt="twitter icon">
+                                </div>
+                                <div class="modal-window-column">
+                                    <img class="modal-window-image-list" src="src/Img/modal-selection-instagram.png" alt="instagram icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--form window end-->
     
         <!--"footer start"-->

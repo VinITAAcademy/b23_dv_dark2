@@ -773,7 +773,6 @@ p {
         background-repeat: no-repeat;
         background-image: url('../Photo/Bgtablet.png');
         min-width: 769px;
-        /*height: 100vh;*/
         height: 1024px;
     }
 
@@ -806,7 +805,6 @@ p {
         font-size: 70px;
         font-style: normal;
         font-weight: 700;
-        /*line-height: normal;*/
         padding: 0px 0 130px 0;
     }
 

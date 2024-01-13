@@ -235,7 +235,7 @@ p{
 /* "logos start" */
 #logos{}
 #logos .swiper-button-next-logo{
-background-image: url(../Img/right.png);
+    background-image: url(../Img/right.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,7 +246,7 @@ background-image: url(../Img/right.png);
     right: 0;
 }
 #logos .swiper-button-prev-logo{
-background-image: url(../Img/left.png);
+    background-image: url(../Img/left.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -285,22 +285,18 @@ background-image: url(../Img/left.png);
 #logos .swiper-slide {
     text-align: center;
     font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #logos .swiper-slide img {
-      display: block;
-      object-fit: cover;
-    }
-    #logos .flex{
-  
-    }
-    #logos .our-desktop-partners{
-        display: none;
-    }
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logos .swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+#logos .our-desktop-partners{
+    display: none;
+}
 /* "logos end" */
 
 /* "specialities start" */
@@ -747,49 +743,46 @@ background-image: url(../Img/left.png);
     /* "our partners end" */
 
     /* "logos start" */
-    #logos{}
-    #logos .swiper.my-swiper{
-        width: 768px;
-        height: 195px;
-    
-        }
-        #logos .swiper-button{
-            width: 50px;
-            height: 50px;
-        }
-        #logos .swiper-button-next-logo, #logos .swiper-rtl .swiper-button-prev-logo
-        ,#logos .swiper-button-prev-logo, #logos .swiper-rtl .swiper-button-next-logo {
-            width: 50px;
-        }
-        #logos .swiper.my-swiper{
-            width: 768px;
-            
-        }
-        #logos .img1{
-            width: 261px ;
-            height: 89px;
-        }
-        #logos .img2{
-            width: 260px ;
-            height: 67px;
-            
-        }
-        #logos .img3{
-            width: 258px ;
-            height: 77px;
-        }
-        #logos .img4{
-            width: 260px ;
-            height: 89px;
-        }
-        #logos .img5{
-            width: 260px ;
-            height: 88px;
-        }
-        #logos .img6{
-            width: 232px ;
-            height: 54px;
-        } 
+
+#logos .swiper.my-swiper{
+    width: 768px;
+    height: 195px;
+}
+#logos .swiper-button{    
+    width: 50px;
+    height: 50px;
+}
+#logos .swiper-button-next-logo, #logos .swiper-rtl .swiper-button-prev-logo,
+#logos .swiper-button-prev-logo, #logos .swiper-rtl .swiper-button-next-logo {
+    width: 50px;
+}
+#logos .swiper.my-swiper{
+    width: 768px;    
+}
+#logos .img1{
+    width: 261px ;
+    height: 89px;
+}
+#logos .img2{
+    width: 260px ;
+    height: 67px;        
+}
+#logos .img3{
+    width: 258px ;
+    height: 77px;
+}
+#logos .img4{
+    width: 260px ;
+    height: 89px;
+}
+#logos .img5{
+    width: 260px ;
+    height: 88px;
+}
+#logos .img6{
+    width: 232px ;
+    height: 54px;
+} 
     /* "logos end" */
 
     /* "specialities start" */
@@ -1028,7 +1021,7 @@ background-image: url(../Img/left.png);
     /* "our partners end" */
 
     /* "logos start" */
-    #logos{}
+    
     #logos .swiper.my-swiper{
         display: none;
     }
@@ -1036,60 +1029,53 @@ background-image: url(../Img/left.png);
         display: block;
 
     }
-    #logos .img1-logos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 694px;
-        height: 200px;
-        margin: 0 auto;
-    }
-    
-    #logos .logo-C1{
-        padding-top: 35px;
-        
-        
-        
-    }
-    #logos .logo-C2{
-        padding-top: 45px;
-    }
-    #logos .logo-C3{
-        padding-top: 25px;
-    }
-    #logos .logo-ITA{
-        padding-top: 16px;
-    }
-    #logos .logo-bay{
-        padding-top: 38px;
-    }
-    #logos .log-mol{
-       padding: 23px 26px 0 14px;
-    }
-    #logos .img1{
-        
-        width: 167px;
-        height: 57px;
-    }
-    #logos .img2{
-        width: 169px;
-        height: 44px;
-    }
-    #logos .img3{
-        width: 258px;
-        height: 77px;
-    }
-    #logos .img4{
-        
-        
-        width: 187px;
-        height: 64px;}
-    #logos .img5{
-        width: 115px;
-        height: 39px;}
-    #logos .img6{
-        width: 232px;
-        height: 54px;}
+#logos .img1-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 694px;
+    height: 200px;
+    margin: 0 auto;
+}    
+#logos .logo-C1{
+    padding-top: 35px;        
+}
+#logos .logo-C2{
+    padding-top: 45px;
+}
+#logos .logo-C3{
+    padding-top: 25px;
+}
+#logos .logo-ITA{
+    padding-top: 16px;
+}
+#logos .logo-bay{
+    padding-top: 38px;
+}
+#logos .log-mol{
+    padding: 23px 26px 0 14px;
+}
+#logos .img1{    
+    width: 167px;
+    height: 57px;
+}
+#logos .img2{
+    width: 169px;
+    height: 44px;
+}
+#logos .img3{
+    width: 258px;
+    height: 77px;
+}
+#logos .img4{    
+    width: 187px;
+    height: 64px;}
+#logos .img5{
+    width: 115px;
+    height: 39px;}
+#logos .img6{
+    width: 232px;
+    height: 54px;}
 
     /* "logos end" */
 

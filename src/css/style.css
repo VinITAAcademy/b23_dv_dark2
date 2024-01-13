@@ -118,13 +118,14 @@ p{
     letter-spacing: -0.2px;
 }
 #we-provide .vidio-block{
-    max-width: 768px;
-    height: 56vw;
-    margin-top: 8vw;
+    width: 375px;
+    height: 210px;
     position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 #we-provide .video-imege{
-    background-image: url('../imeges/blok_7_We_Provide/block2_video_image_mobile.png');
+    background-image: url('../imeges/blok_7_We_Provide/block2_video_image_mobile.svg');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -135,8 +136,8 @@ p{
 }
 #we-provide .video-imege-button{
     background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_mobile.png');
-    width: 10.667vw;
-    height: 10.667vw;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 40%;
     left: 44.6%;
@@ -655,7 +656,7 @@ background-image: url(../Img/left.png);
     } 
     #we-provide .vidio-block{
         margin-top: 50px;
-        max-width: 1024px;
+        width: 768px;
         height: 431px;
         position: relative;
     }
@@ -664,7 +665,7 @@ background-image: url(../Img/left.png);
         height: 100%;
     }
     #we-provide .video-imege{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_tablet.png');
+        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_tablet.svg');
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
@@ -882,33 +883,31 @@ background-image: url(../Img/left.png);
         width: 305px;
         text-align: center;
         margin: 0;
+        margin-top: 70px;
     }
     #we-provide .b2-subtitle-blok2{
         margin: 0;
         width: 301px;
         text-align: center;
+        margin-top: 75px;
     }
     #we-provide .b2-subtitle-blok3{
         margin: 0;
+        margin-top: 78px;
         width: 300px;
         text-align: center;
     }
     #we-provide .blok2-imege1{
         width: 70px;
         height: 70px;
-        margin-top: 69px;
-        margin-left: 10px;
     }
     #we-provide .blok2-imege2{
         width: 109px;
         height: 65px;
-        margin-top: 75px;
-        margin-right: 20px;
     }
     #we-provide .blok2-imege3{
         width: 72px;
         height: 62px;
-        margin-top: 78px;
     }
     #we-provide .blok2-line{
         width: 300px;
@@ -926,13 +925,13 @@ background-image: url(../Img/left.png);
         font-family: "Inria Serif Bold";
     }
     #we-provide .vidio-block{
-        max-width: 1440px;
+        width: 940px;
         height: 528px;
-        margin: 50px 42px 30px 42px;
+        margin: 50px 42px 0px 42px;
         position: relative;
     }
     #we-provide .video-imege{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.png');
+        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.svg');
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;

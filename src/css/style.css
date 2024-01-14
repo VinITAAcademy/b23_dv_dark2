@@ -93,11 +93,11 @@ p {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../Photo/Bgmobile.png');
+    background-image: url('../Photo/background-hero.webp');
     height: 362px;
 }
 
-#main-block .h1 {
+#main-block .h1-container {
     width: 287px;
     margin: 101px 0 27px 0;
 }
@@ -106,6 +106,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 80px 0 0 0;
 }
 
 #main-block p {
@@ -118,7 +119,7 @@ p {
     color: #FFFFFF;
 }
 
-#main-block .title-h1 {
+#main-block .h1 {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -133,11 +134,11 @@ p {
     height: 63px;
 }
 
-#main-block .predact {
+#main-block .subtittle-contant {
     margin: 0 0 27px 0;
 }
 
-#main-block .suffered {
+#main-block .register-container {
     display: flex;
     align-items: center;
     width: 229px;
@@ -157,13 +158,13 @@ p {
     background: #000A24;
 }
 
-#main-block .we-made {
+#main-block .quote-container {
     width: 100%;
     height: 363px;
     background: #000A24;
 }
 
-#main-block .we-made-title {
+#main-block .quote-contant {
     font-family: 'Ubuntu';
     font-style: italic;
     font-weight: 400;
@@ -177,48 +178,38 @@ p {
     text-align: left;
 }
 
-#main-block .koma-left {
+#main-block .quote-container {
+    position: relative;
+    height: 326px;
+}
+
+#main-block .quote-left {
     width: 31.2px;
     height: 21.17px;
     position: absolute;
     z-index: 1;
     display: flex;
     left: 14px;
-    top: 380px;
+    top: 14px;
     justify-content: space-between;
 }
 
-#main-block .Koma {
+#main-block .quote {
     width: 11.16px;
     height: 21.17px;
 }
 
-#main-block .koma-first {
-    left: 16px;
-}
-
-#main-block .koma-second {
-    left: 36.04px;
-}
-
-#main-block .koma-right {
+#main-block .quote-right {
     width: 31.2px;
     height: 21.17px;
     position: absolute;
     z-index: 1;
     display: flex;
     right: 26.8px;
-    top: 627px;
+    top: 265px;
+    left: 316px;
     justify-content: space-between;
     margin: 5px 0 0 0;
-}
-
-#main-block .koma-third {
-    left: 317px;
-}
-
-#main-block .koma-firth {
-    left: 337.04px;
 }
 
 /* "main-block end" */
@@ -293,14 +284,16 @@ p {
     font-family: "Ubuntu Bold";
     letter-spacing: -0.2px;
 }
-#we-provide .vidio-block{
+
+#we-provide .vidio-block {
     width: 375px;
     height: 210px;
     position: relative;
     margin: 0 auto;
     margin-top: 30px;
 }
-#we-provide .video-imege{
+
+#we-provide .video-imege {
     background-image: url('../imeges/blok_7_We_Provide/block2_video_image_mobile.svg');
     width: 100%;
     height: 100%;
@@ -770,12 +763,12 @@ p {
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('../Photo/Bgtablet.png');
+        background-image: url('../Photo/herotablet.webp');
         min-width: 769px;
         height: 1024px;
     }
 
-    #main-block .h1 {
+    #main-block .h1-container {
         width: 674px;
         margin: 80px 0 -25px 0px;
     }
@@ -797,7 +790,7 @@ p {
         color: #FFFFFF;
     }
 
-    #main-block .title-h1 {
+    #main-block .h1 {
         color: #FFF;
         text-align: center;
         font-family: Ubuntu;
@@ -812,7 +805,7 @@ p {
         height: 189px;
     }
 
-    #main-block .predact {
+    #main-block .subtittle-contant {
         width: 502px;
         height: 189px;
         flex-shrink: 0;
@@ -826,7 +819,7 @@ p {
         line-height: normal;
     }
 
-    #main-block .suffered {
+    #main-block .register-container {
         display: flex;
         align-items: center;
         width: 524px;
@@ -843,14 +836,14 @@ p {
         border-radius: 6px;
     }
 
-    #main-block .we-made {
+    #main-block .quote-container {
         width: 100%;
         height: 374px;
         background: #000A24;
         position: relative;
     }
 
-    #main-block .we-made-title {
+    #main-block .quote-contant {
         height: 263px;
         flex-shrink: 0;
         margin: 0 auto;
@@ -866,7 +859,7 @@ p {
         letter-spacing: 0.48px;
     }
 
-    #main-block .koma-left {
+    #main-block .quote-left {
         width: 31.2px;
         height: 21.17px;
         position: absolute;
@@ -878,7 +871,7 @@ p {
         top: 1002px;
     }
 
-    #main-block .Koma {
+    #main-block .quote {
         width: 11.16px;
         height: 21.17px;
         top: 313px;
@@ -886,7 +879,7 @@ p {
         left: 672px;
     }
 
-    #main-block .koma-right {
+    #main-block .quote-right {
         width: 31.2px;
         height: 21.17px;
         position: absolute;
@@ -896,14 +889,6 @@ p {
         left: 724px;
         top: 1341px;
 
-    }
-
-    #main-block .koma-third {
-        left: 876px;
-    }
-
-    #main-block .koma-firth {
-        left: 895.48px;
     }
 
     /* "main-block end" */
@@ -986,7 +971,8 @@ p {
         width: 100%;
         height: 100%;
     }
-    #we-provide .video-imege{
+
+    #we-provide .video-imege {
         background-image: url('../imeges/blok_7_We_Provide/block2_video_image_tablet.svg');
         width: 100%;
         height: 100%;
@@ -1179,12 +1165,12 @@ p {
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('../Photo/background-min.png');
+        background-image: url('../Photo/background-hero.webp');
         width: 100%;
         min-height: 768px;
     }
 
-    #main-block .h1 {
+    #main-block .h1-container {
         width: 624px;
         height: 41px;
         margin: 381px 200px -30px 200px;
@@ -1206,7 +1192,7 @@ p {
         color: #FFFFFF;
     }
 
-    #main-block .title-h1 {
+    #main-block .h1 {
         font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 700;
@@ -1226,7 +1212,7 @@ p {
         margin: 30px 30px 30px 30px;
     }
 
-    #main-block .predact {
+    #main-block .subtittle-contant {
         color: #FFF;
         text-align: center;
         font-family: Ubuntu;
@@ -1238,7 +1224,7 @@ p {
         margin: 30px 30px 30px 30px;
     }
 
-    #main-block .suffered {
+    #main-block .register-container {
         width: 352px;
         height: 75px;
         max-width: 758px;
@@ -1267,12 +1253,12 @@ p {
         line-height: normal;
     }
 
-    #main-block .we-made {
+    #main-block .quote-container {
         height: 170px;
         background: #000A24;
     }
 
-    #main-block .we-made-title {
+    #main-block .quote-contant {
         width: 758px;
         font-family: 'Ubuntu';
         font-style: italic;
@@ -1286,7 +1272,7 @@ p {
         padding: 30px;
     }
 
-    #main-block .koma-left {
+    #main-block .quote-left {
         width: 30.33px;
         height: 20.58px;
         position: absolute;
@@ -1299,279 +1285,261 @@ p {
         bottom: 134.42px;
     }
 
-    #main-block .Koma {
-        width: 11.16px;
-        height: 21.17px;
-    }
-
-    #main-block .koma-first {
-        left: 101px;
-    }
-
-    #main-block .koma-second {
-        left: 120.48px;
-    }
-
-    #main-block .koma-right {
-        width: 31.2px;
-        height: 21.17px;
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        right: 26.8px;
-        justify-content: space-between;
-        top: 1145px;
-        left: 872px;
-    }
-
-    #main-block .koma-third {
-        left: 876px;
-    }
-
-    #main-block .koma-firth {
-        left: 895.48px;
-    }
-
-    /* "main-block end" */
-
-    /* "we provide start" */
-    #we-provide .blok2_title {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 42px;
-        font-weight: 500;
-        font-family: "Ubuntu Bold";
-        line-height: 48.26px;
-        color: var(--Black);
-    }
-
-    #we-provide .b2-subtitle-bloks {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 13px;
-    }
-
-    #we-provide .b2-subtitle-blok1 {
-        width: 305px;
-        text-align: center;
-        margin: 0;
-        margin-top: 70px;
-    }
-
-    #we-provide .b2-subtitle-blok2 {
-        margin: 0;
-        width: 301px;
-        text-align: center;
-        margin-top: 75px;
-    }
-
-    #we-provide .b2-subtitle-blok3 {
-        margin: 0;
-        margin-top: 78px;
-        width: 300px;
-        text-align: center;
-    }
-
-    #we-provide .blok2-imege1 {
-        width: 70px;
-        height: 70px;
-    }
-
-    #we-provide .blok2-imege2 {
-        width: 109px;
-        height: 65px;
-    }
-
-    #we-provide .blok2-imege3 {
-        width: 72px;
-        height: 62px;
-    }
-
-    #we-provide .blok2-line {
-        width: 300px;
-        margin-top: 39px;
-        border-top: 2px dashed black;
-    }
-
-    #we-provide .under-img-b2-text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 24.3px;
-        letter-spacing: 0.2px;
-        width: 300px;
-        text-align: center;
-        margin-top: 30px;
-        font-family: "Inria Serif Bold";
-    }
-    #we-provide .vidio-block{
-        width: 940px;
-        height: 528px;
-        margin: 50px 42px 0px 42px;
-        position: relative;
-    }
-    #we-provide .video-imege{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.svg');
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #we-provide .video-imege-button {
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_desktop.png');
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 40%;
-        left: 44.6%;
-    }
-
-    /* "we provide end" */
-
-    /* "about us start" */
-    #about-us {}
-
-    /* "about us end" */
-
-    /* "attract start" */
-    #attract {}
-
-    #attract .flex-container {
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    #attract .img-attract {
-        width: 460px;
-        height: 421px;
-    }
-
-    #attract .container-img-second {
-        padding-bottom: 0px;
-    }
-
-    #attract .flex-end-desktop {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        margin-left: 41px;
-    }
-
-    #attract .flex-row-desktop {
-        flex-direction: row;
-        display: flex;
-    }
-
-    #attract .text-attract,
-    #attract .width.text-attract {
-        font-size: 20px;
-        line-height: 32px;
-        text-align: justify;
-    }
-
-    #attract .text-attract.width {
-        width: 460px;
-        margin-right: 0;
-    }
-
-    #attract .container-img-pading {
-        padding: 24px 0 16px 0;
-    }
-
-    #attract .text-attract {
-        width: 380px;
-        font-family: "Inria Serif Regular";
-        margin: 0 100px 0 0;
-    }
-
-    #attract .img-attract-desktop {
-        width: 380px;
-        height: 538px;
-        margin: -219px 100px 42px 42px;
-    }
-
-    #attract .flex-repit {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-left: 43px;
-    }
-
-    #attract .text2-attract {
-        width: 826px;
-        font-size: 15px;
-        line-height: 24px;
-        padding: 34px 0 0 33px;
-    }
-
-    #attract .line-attract,
-    #attract .line2-attract {
-        width: 940px;
-    }
-
-    #attract .line-attract {
-        margin-top: 6px;
-    }
-
-    #attract .img2-attract {
-        width: 66px;
-    }
-
-    #attract .line2-attract {
-        margin-top: -5px;
-    }
-
-    /* "attract end" */
-
-    /* "our partners start" */
-    #our-partners {}
-
-    /* "our partners end" */
-
-    /* "logos start" */
-    #logos {}
-
-    /* "logos end" */
-
-    /* "specialities start" */
-
-    #specialities .block7-tabletAndDesktop {
-        width: 945px;
-        padding-bottom: 64px;
-    }
-
-    #specialities .title-text {
-        font-size: 42px;
-        font-weight: 700;
-        line-height: 48px;
-    }
-
-    #specialities .block7-content-tabletAndDesktop {
-        margin-top: 50px;
-    }
-
-    #specialities .your-chanse-blok {
-        margin-top: 69px;
-    }
-
-    #specialities .slider-block-content1 {
-        margin-bottom: 40px;
-    }
-
-    #specialities .slider-block-content3 {
-        margin-bottom: 0;
-    }
-
-    /* "specialities end" */
-
-    /* "form window start" */
-    #modal-window {}
-
-    /* "form window end" */
-
-    /* "footer start" */
-    #footer {}
-
-    /* "footer end" */
 }
+
+#main-block .quote-right {
+    width: 31.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: 26.8px;
+    justify-content: space-between;
+    top: 265px;
+    left: 316px;
+}
+
+/* "main-block end" */
+
+/* "we provide start" */
+#we-provide .blok2_title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Ubuntu Bold";
+    line-height: 48.26px;
+    color: var(--Black);
+}
+
+#we-provide .b2-subtitle-bloks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 13px;
+}
+
+#we-provide .b2-subtitle-blok1 {
+    width: 305px;
+    text-align: center;
+    margin: 0;
+    margin-top: 70px;
+}
+
+#we-provide .b2-subtitle-blok2 {
+    margin: 0;
+    width: 301px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+#we-provide .b2-subtitle-blok3 {
+    margin: 0;
+    margin-top: 78px;
+    width: 300px;
+    text-align: center;
+}
+
+#we-provide .blok2-imege1 {
+    width: 70px;
+    height: 70px;
+}
+
+#we-provide .blok2-imege2 {
+    width: 109px;
+    height: 65px;
+}
+
+#we-provide .blok2-imege3 {
+    width: 72px;
+    height: 62px;
+}
+
+#we-provide .blok2-line {
+    width: 300px;
+    margin-top: 39px;
+    border-top: 2px dashed black;
+}
+
+#we-provide .under-img-b2-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0.2px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Inria Serif Bold";
+}
+
+#we-provide .vidio-block {
+    width: 940px;
+    height: 528px;
+    margin: 50px 42px 0px 42px;
+    position: relative;
+}
+
+#we-provide .video-imege {
+    background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.svg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#we-provide .video-imege-button {
+    background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_desktop.png');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 44.6%;
+}
+
+/* "we provide end" */
+
+/* "about us start" */
+#about-us {}
+
+/* "about us end" */
+
+/* "attract start" */
+#attract {}
+
+#attract .flex-container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#attract .img-attract {
+    width: 460px;
+    height: 421px;
+}
+
+#attract .container-img-second {
+    padding-bottom: 0px;
+}
+
+#attract .flex-end-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 41px;
+}
+
+#attract .flex-row-desktop {
+    flex-direction: row;
+    display: flex;
+}
+
+#attract .text-attract,
+#attract .width.text-attract {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+#attract .text-attract.width {
+    width: 460px;
+    margin-right: 0;
+}
+
+#attract .container-img-pading {
+    padding: 24px 0 16px 0;
+}
+
+#attract .text-attract {
+    width: 380px;
+    font-family: "Inria Serif Regular";
+    margin: 0 100px 0 0;
+}
+
+#attract .img-attract-desktop {
+    width: 380px;
+    height: 538px;
+    margin: -219px 100px 42px 42px;
+}
+
+#attract .flex-repit {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 43px;
+}
+
+#attract .text2-attract {
+    width: 826px;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 34px 0 0 33px;
+}
+
+#attract .line-attract,
+#attract .line2-attract {
+    width: 940px;
+}
+
+#attract .line-attract {
+    margin-top: 6px;
+}
+
+#attract .img2-attract {
+    width: 66px;
+}
+
+#attract .line2-attract {
+    margin-top: -5px;
+}
+
+/* "attract end" */
+
+/* "our partners start" */
+#our-partners {}
+
+/* "our partners end" */
+
+/* "logos start" */
+#logos {}
+
+/* "logos end" */
+
+/* "specialities start" */
+
+#specialities .block7-tabletAndDesktop {
+    width: 945px;
+    padding-bottom: 64px;
+}
+
+#specialities .title-text {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+#specialities .block7-content-tabletAndDesktop {
+    margin-top: 50px;
+}
+
+#specialities .your-chanse-blok {
+    margin-top: 69px;
+}
+
+#specialities .slider-block-content1 {
+    margin-bottom: 40px;
+}
+
+#specialities .slider-block-content3 {
+    margin-bottom: 0;
+}
+
+/* "specialities end" */
+
+/* "form window start" */
+#modal-window {}
+
+/* "form window end" */
+
+/* "footer start" */
+#footer {}
+
+/* "footer end" */

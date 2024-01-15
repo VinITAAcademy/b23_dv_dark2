@@ -242,14 +242,29 @@
     border-bottom: 0;
 }
 
+#modal-window .modal-footer{
+    border-top: 0;
+}
+
+#modal-window .modal-body{
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+#modal-window .modal-width-lines{
+    max-width: 80%;
+    margin: 8px;
+}
+
 #modal-window .modal-up-color{
     border-top: 5px solid var(--Blue);
-    max-width: 80%;
 }
 
 #modal-window .modal-down-color{
-    border-top: 5px solid #FFD500;
-    max-width: 80%; 
+    border-top: 5px solid #FFD500; 
 }
 
 #modal-window .modal-window-default-text-1{
@@ -288,7 +303,7 @@
 
 #modal-window .modal-window-button-content{
     display: flex;
-    padding: 25px 85px;
+    padding: 16px 55px;
     justify-content: center;
     align-items: center;
 }
@@ -367,7 +382,6 @@
     #about-us .about-us-description-2{
         margin-right: 183px;
     }
-
     #about-us .about-us-description-3{
         font-size: 36px;
         margin: -57px -251px 0 0;

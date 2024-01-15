@@ -10,20 +10,31 @@ imgclose.onclick = function(){
 }
 //"we provide video end"
 
+let swiper2 = new Swiper(".logo-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination-2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-logo",
+    prevEl: ".swiper-button-prev-logo",
+  },
+});
+
 //specialities swiper initializing swiper start
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+const swiper = new Swiper('.swiper_lp', {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 //specialities swiper initializing swiper end

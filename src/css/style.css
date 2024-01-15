@@ -58,7 +58,7 @@
 
 /* "about us start" */
 #about-us .about-us-main{
-    background-color: #000A24;
+    background-color: var(--Dark_Blue);
 }
 
 #about-us .about-us-container{
@@ -74,7 +74,7 @@
 }
 
 #about-us .about-us-text{
-    color: #FFF;
+    color: var(--White);
     font-family: "Ubuntu Regular";
     font-style: normal;
     line-height: normal;
@@ -85,8 +85,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 30px;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding: 0 57px;
     letter-spacing: 0.015em;
     line-height: 114%;
 }
@@ -107,13 +106,12 @@
 
 #about-us .about-us-register-button{
     border-radius: 6px;
-    background: #083CC0;
+    background: var(--Blue);
     text-align: center;
     border-style: none;
     outline-style: none;
     padding: 16px 58px;
-    margin-top: 7px;
-    margin-bottom: 30.5px;
+    margin: 7px 0 30.5px 0;
 }
 
 #about-us .about-us-register-button:hover{
@@ -121,16 +119,16 @@
 }
 
 #about-us .about-us-register-button:active{
-    background: #FFF;
+    background: var(--White);
 }
 
 #about-us .about-us-register-text:active{
-    color: #083CC0;
+    color: var(--Blue);
 }
 
 #about-us .about-us-register-text:disabled{
     background:#61677A;
-    color:#FFF;
+    color: var(--White);
     cursor: not-allowed;
 }
 
@@ -379,9 +377,7 @@
         padding: 25px 85px;
         justify-content: center;
         align-items: center;
-        margin-left: -8px;
-        margin-top: 41px;
-        margin-bottom: 51px;
+        margin: 41px 0 51px -8px;
     }
 
     #about-us .about-us-register-text{
@@ -499,16 +495,14 @@
     #about-us .about-us-description-1{
         font-size: 28px;
         margin: -8px 11px -168px 14px;
-        padding-left: 28px;
-        padding-right: 0px;
+        padding: 0 0 0 28px;
         text-align: left;
     }
 
     #about-us .about-us-description-2{
         font-size: 28px;
         margin-left: -29px;
-        padding-left: 28px;
-        padding-right: 0px;
+        padding: 0 0 0 28px;
         text-align: left;
     }
 

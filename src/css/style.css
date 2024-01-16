@@ -80,7 +80,7 @@
     line-height: normal;
 }
 
-#about-us .about-us-description-1{
+#about-us .about-us-description{
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -88,14 +88,6 @@
     padding: 0 57px;
     letter-spacing: 0.015em;
     line-height: 114%;
-}
-
-#about-us .about-us-description-2{
-    line-height: 114%;
-}
-
-#about-us .about-us-description-3{
-    margin: -17px 4px 0 0;
 }
 
 #about-us .about-us-register-text{
@@ -357,19 +349,13 @@
     /* "we provide end" */
 
     /* "about us start" */
-    #about-us .about-us-description-1{
+    #about-us .about-us-description{
         font-size: 36px;
         margin-top: 50px;
     }
 
-    #about-us .about-us-description-2{
-        margin-right: 183px;
-    }
-
-    #about-us .about-us-description-3{
-        font-size: 36px;
-        margin: -57px -251px 0 0;
-        letter-spacing: 0.015em;
+    #about-us .about-us-disable-br{
+        display: none;
     }
 
     #about-us .about-us-register-button{
@@ -484,6 +470,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    #about-us .about-us-disable-br{
+        display: inline;
+    }
+
     #about-us .about-us-main{
         margin-bottom: 50px;
     }
@@ -492,22 +483,10 @@
         display: block;
     }
 
-    #about-us .about-us-description-1{
+    #about-us .about-us-description{
         font-size: 28px;
-        margin: -8px 11px -168px 14px;
+        margin: -8px 0px -176px 14px;
         padding: 0 0 0 28px;
-        text-align: left;
-    }
-
-    #about-us .about-us-description-2{
-        font-size: 28px;
-        margin-left: -29px;
-        padding: 0 0 0 28px;
-        text-align: left;
-    }
-
-    #about-us .about-us-description-3{
-        font-size: 28px;
         text-align: left;
     }
 

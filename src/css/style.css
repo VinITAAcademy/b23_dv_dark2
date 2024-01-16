@@ -125,7 +125,7 @@ p{
     margin-top: 30px;
 }
 #we-provide .video-imege{
-    background-image: url('../imeges/blok_7_We_Provide/block2_video_image_mobile.svg');
+    background-image: url('../Img/block2_video_image_mobile.svg');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -135,7 +135,7 @@ p{
     height: 100%; 
 }
 #we-provide .video-imege-button{
-    background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_mobile.png');
+    background-image: url('../Img/block2_video_img_button_mobile.png');
     width: 40px;
     height: 40px;
     position: absolute;
@@ -555,7 +555,7 @@ p{
     color: var(--White);
 }
 #specialities .swiper-button-prev{
-    background-image: url('../imeges/block_7_specialities/blok7-slider-button-prev.png');
+    background-image: url('../Img/block_7_specialities/blok7-slider-button-prev.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -569,7 +569,7 @@ p{
     display: none;
 }
 #specialities .swiper-button-next{
-    background-image:url('../imeges/block_7_specialities/blok7-slider-button-next.png');
+    background-image:url('../Img/block_7_specialities/blok7-slider-button-next.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -589,113 +589,7 @@ p{
 /* "specialities end" */
 
 /* "form window start" */
-#modal-window .modal{
-    --bs-modal-margin: 0;
-    --bs-modal-border-radius: 0;
-    --bs-modal-border-width: 0;
-}
-
-#modal-window .modal-header{
-    border-bottom: 0;
-}
-
-#modal-window .modal-up-color{
-    border-top: 5px solid var(--Blue);
-    max-width: 80%;
-}
-
-#modal-window .modal-down-color{
-    border-top: 5px solid #FFD500;
-    max-width: 80%; 
-}
-
-#modal-window .modal-window-default-text-1{
-    color: var(--Black);
-    font-family: "Ubuntu Regular";
-    font-style: normal;
-    line-height: normal;
-}
-
-#modal-window .modal-window-default-text-2{
-    color: var(--White);
-    font-family: "Ubuntu Regular";
-    font-style: normal;
-    line-height: normal;
-}
-
-#modal-window .modal-window-header-title{
-    color: var(--Black);
-    text-align: center;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
-
-#modal-window .modal-window-header-sub-title{
-    color: var(--Black);
-    font-size: 36px;
-    font-weight: 700;
-}
-
-#modal-window .modal-window-text{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-#modal-window .modal-window-button-content{
-    display: flex;
-    padding: 25px 85px;
-    justify-content: center;
-    align-items: center;
-}
-
-#modal-window .modal-window-cancel-button{
-    border: 0;
-    background-color: var(--White);
-}
-
-#modal-window .modal-window-button{
-    border-radius: 6px;
-    text-align: center;
-    border-style: none;
-    outline-style: none;
-    background: var(--Blue);
-}
-
-
-#modal-window .modal-window-button:hover{
-    background: #02257F;
-}
-
-#modal-window .modal-window-button:active{
-    background: #FFF;
-}
-
-#modal-window .modal-window-button:active{
-    color: #083CC0;
-}
-
-#modal-window .modal-window-button:disabled{
-    background:#61677A;
-    color:#FFF;
-    cursor: not-allowed;
-}
-
-#modal-window .modal-window-image-list{
-    width: 50px;
-    height: 50px;
-}
-
-#modal-window .modal-window-row{
-    
-}
-
-#modal-window .modal-window-column{
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
+#modal-window{}
 /* "form window end" */
 
 /* "footer start" */
@@ -780,7 +674,7 @@ p{
         height: 100%;
     }
     #we-provide .video-imege{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_tablet.svg');
+        background-image: url('../Img/block2_video_image_tablet.svg');
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
@@ -1020,14 +914,14 @@ p{
         position: relative;
     }
     #we-provide .video-imege{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_image_desktop.svg');
+        background-image: url('../Img/block2_video_image_desktop.svg');
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
     #we-provide .video-imege-button{
-        background-image: url('../imeges/blok_7_We_Provide/block2_video_img_button_desktop.png');
+        background-image: url('../Img/block2_video_img_button_desktop.png');
         width: 100px;
         height: 100px;
         position: absolute;

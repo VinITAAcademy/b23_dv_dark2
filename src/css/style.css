@@ -737,12 +737,12 @@ p{
 
     /* "logos start" */
     #logos .swiper.logo-swiper{
-    width: 768px;
-    height: 195px;
+        width: 768px;
+        height: 195px;
     }
     #logos .swiper-button{    
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
     #logos .swiper-button-next-logo, #logos .swiper-rtl .swiper-button-prev-logo,
     #logos .swiper-button-prev-logo, #logos .swiper-rtl .swiper-button-next-logo {

@@ -10,7 +10,7 @@ imgclose.onclick = function(){
 }
 //"we provide video end"
 
-let swiper2 = new Swiper(".logo-swiper", {
+let swiper2 = new Swiper("#logo-swiper", {
   slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
@@ -24,7 +24,7 @@ let swiper2 = new Swiper(".logo-swiper", {
 });
 
 //specialities swiper initializing swiper start
-const swiper = new Swiper('.swiper_lp', {
+const swiper = new Swiper('#swiper-specialities', {
   // Optional parameters
   loop: true,
   // If we need pagination

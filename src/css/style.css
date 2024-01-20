@@ -52,7 +52,156 @@ p{
 /* "header end" */
 
 /* "main-block start" */
-#main-block{}
+#main-block .background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../Img/heromobile.webp');
+    min-height: 362px;
+}
+
+#main-block .h1-container {
+    width: 287px;
+    margin: 101px 0 27px 0;
+}
+
+#main-block .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+#main-block .default-text-value{
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    text-align: center;
+}
+
+#main-block .text-size-color{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--White);
+}
+
+#main-block .bootstrap-p-override{
+    margin-bottom: 0;
+}
+
+#main-block .page-main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--White);
+    margin: -45px -2px 0 0;
+    letter-spacing: 0.03em;
+}
+
+#main-block .sub-title {
+    width: 257px;
+    height: 63px;
+}
+
+#main-block .sub-title-content {
+    margin-top: 27px;
+}
+
+#main-block .register-container {
+    display: flex;
+    align-items: center;
+    width: 229px;
+    height: 48px;
+    margin: 54px 0 -25px 0;
+}
+
+#main-block .block-relative {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#main-block .wraper-main {
+    background: var(--Dark_Blue);
+}
+
+#main-block .quote-container {
+    width: 100%;
+    height: 325px;
+    background: var(--Dark_Blue);
+    display: flex;
+}
+
+#main-block .quote-content {
+    font-style: italic;
+    text-align: left;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.02em;
+    margin-right: -2px;
+    width: 291px;
+    padding: 46px 0 0 0;
+}
+
+#main-block .quote-left {
+    width: 31.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: -26px;
+    top: 24px;
+    justify-content: space-between;
+}
+
+#main-block .quote-right {
+    width: 26.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: -11px;
+    top: 267px;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+}
+
+#main-block .change-display-tablet{
+    display: none;
+}
+
+#main-block .signup {
+    width: 100%;
+    height: 100%;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 6px;
+    outline-style: none;
+    border-style: none;
+}
+
+#main-block .signup:hover{
+    background: #02257F;
+}
+
+#main-block .signup:active{
+    background: var(--White);
+}
+
+#main-block .text-size-color:active{
+    color: var(--Blue);
+}
+
+#main-block .text-size-color:disabled{
+    color: var(--White);
+}
+
+#main-block .signup:disabled{
+    background:#61677A;
+    cursor: not-allowed;
+}
 /* "main-block end" */
 
 /* "we provide start" */
@@ -708,7 +857,193 @@ p{
 /* "specialities end" */
 
 /* "form window start" */
-#modal-window{}
+#modal-window .modal{
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 0;
+    --bs-modal-border-width: 0;
+    --bs-modal-padding: 0;
+    --bs-modal-header-padding: 0;
+    --bs-modal-width: 100%;
+}
+
+#modal-window a{
+    text-decoration: none;
+}
+
+#modal-window .modal-header{
+    border-bottom: 0;
+    padding: 3px 0;
+    margin-bottom: 18px;
+}
+
+#modal-window .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal-window .modal-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    margin-left: -2px;
+    padding-bottom: 7.4px;
+    border-top: 0;
+}
+
+#modal-window .modal-window-line-position{
+    width: 300px;
+    margin-right: 5px;
+}
+
+#modal-window .modal-window-line-up-color{
+    border-top: 5px solid var(--Blue);
+}
+
+#modal-window .modal-window-line-down-color{
+    border-top: 5px solid #FFD500;
+}
+
+#modal-window .modal-window-default-text{
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    line-height: normal;
+}
+
+#modal-window .modal-window-text-color-1{
+    color: var(--Black);
+}
+
+#modal-window .modal-window-text-color-2{
+    color: var(--White);
+}
+
+#modal-window .modal-window-header-title{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+#modal-window .modal-window-header-sub-title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: -3px;
+    letter-spacing: 0.04em;
+}
+
+#modal-window .modal-window-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#modal-window .modal-window-body-title-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 5px;
+}
+
+#modal-window .modal-window-button-content{
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    padding: 14px 0;
+    font-size: 16px;
+}
+
+#modal-window .modal-window-line-height-adjust{
+    line-height: 144%;
+}
+
+#modal-window .modal-window-margin-adjust-1{
+    margin: 19px 0;
+}
+
+#modal-window .modal-window-margin-adjust-2{
+    margin-bottom: 7px;
+}
+
+#modal-window .modal-window-margin-adjust-3{
+    margin: 14px 0px -6px -9px;
+}
+
+#modal-window .modal-window-margin-image-position{
+    margin: 2px -37px 40px 5px;
+}
+
+#modal-window .modal-window-cancel-button{
+    border: 0;
+    background-color: var(--White);
+    margin: -37px 5px 2px -5px;
+}
+
+#modal-window .modal-window-button{
+    border-radius: 6px;
+    text-align: center;
+    border-style: none;
+    outline-style: none;
+    background: var(--Blue);
+}
+
+#modal-window .modal-window-button:hover{
+    background: #02257F;
+}
+
+#modal-window .modal-window-button:active{
+    background: var(--White);
+}
+
+#modal-window .modal-window-button:active{
+    color: var(--Blue);
+}
+
+#modal-window .modal-window-button:disabled{
+    background:#61677A;
+    color:var(--White);
+    cursor: not-allowed;
+}
+
+#modal-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    font-size: 50px;
+}
+
+#modal-window .icon-cancel{
+    font-size: 30px;
+}
+
+#modal-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    color: var(--Black); 
+}
+
+#modal-window .icon-telegram:hover, .icon-facebook:hover, .icon-whatsapp:hover, .icon-viber:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-cancel:hover{
+    color: #7FA2FB;
+}
+
+#modal-window .icon-telegram:active, .icon-facebook:active, .icon-whatsapp:active, .icon-viber:active, .icon-twitter:active, .icon-instagram:active, .icon-cancel:active{
+    color: var(--White);
+}
+
+#modal-window .icon-telegram:disabled, .icon-facebook:disabled, .icon-whatsapp:disabled, .icon-viber:disabled, .icon-twitter:disabled, .icon-instagram:disabled, .icon-cancel:disabled{
+    color: #61677A;
+    cursor: not-allowed;
+}
+
+#modal-window .modal-window-row{
+    padding-bottom: 8px;
+}
+
+#modal-window .modal-window-column{
+    float: left;
+    width: 33.33%;
+    padding: 5px 25px;
+    margin: 0px 2px 0 -2px;
+}
 /* "form window end" */
 
 /* "footer start" */
@@ -721,7 +1056,82 @@ p{
     /* "header end" */
 
     /* "main-block start" */
-    #main-block{}
+    #main-block .change-display-mobile{
+        display: none;
+    }
+
+    #main-block .change-display-tablet{
+        display: inline;
+    }
+
+    #main-block .background-container {
+        background-image: url('../Img/herotablet.webp');
+        min-height: 1024px;
+    }
+
+    #main-block .page-main-title {
+        font-size: 70px;
+        line-height: 225%;
+        margin: -115px -7px 0 0;
+        letter-spacing: 0.035em;
+    }
+
+    #main-block .block-relative{
+        max-width: 768px;
+    }
+
+    #main-block .text-size-color{
+        font-size: 36px;
+    }
+
+    #main-block .text-size{
+        font-size: 24px;
+    }
+
+    #main-block .sub-title-content{
+        margin-top: 43px;
+    }
+
+    #main-block .register-container {
+        width: 524px;
+        height: 107px;
+    }
+
+    #main-block .sub-title {
+        width: 502px;
+        height: auto;
+    }
+
+    #main-block .quote-content{
+        width: 592px;
+        padding-top: 51px;
+    }
+
+    #main-block .quote-container{
+        height: 362px;
+    }
+
+    #main-block .sub-title-content {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;   
+    }
+
+    #main-block .quote-left {
+        left: -37px;
+        top: 31px;
+    }
+
+    #main-block .quote-right {
+        top: 308px;
+        right: -19px;
+    }
+    #main-block .signup{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 94px;
+    }
     /* "main-block end" */
 
     /* "we provide start" */
@@ -1029,7 +1439,57 @@ p{
     /* "specialities end" */
 
     /* "form window start" */
-    #modal-window{}
+    #modal-window .modal-footer{
+        margin-top: 20px;
+        margin-left: 4px;
+        padding-bottom: 21px;
+    }
+    
+    #modal-window .modal-window-header-title{
+        font-size: 24px;
+    }
+
+    #modal-window .modal-window-header-sub-title{
+        font-size: 48px;
+    }
+
+    #modal-window .modal-window-body-title-text{
+        font-size: 40px;
+        margin-top: 16px;
+        margin-bottom: 35px;
+    }
+
+    #modal-window .modal-window-line-position{
+        width: 697px;
+        margin-right: 3px;
+    }
+
+    #modal-window .modal-window-button-content{
+        width: 413px;
+        padding: 28px 0;
+        font-size: 22px;
+        margin-right: -1px;
+    }
+
+    #modal-window .modal-window-cancel-button{
+        margin-top: -72px;
+    }
+
+    #modal-window .modal-window-margin-image-position{
+        margin-top: -34px;
+    }
+
+    #modal-window .modal-window-margin-adjust-1{
+        margin: 48.5px -1px 48.5px 0;
+    }
+
+    #modal-window .modal-window-margin-adjust-2{
+        margin-bottom: 31px;
+    }
+
+    #modal-window .modal-window-margin-adjust-3{
+        margin: 33px 0px -13px -8px;
+    }
     /* "form window end" */
 
     /* "footer start" */
@@ -1043,7 +1503,72 @@ p{
     /* "header end" */
 
     /* "main-block start" */
-    #main-block{}
+    #main-block .background-container {
+        background-image: url('../Img/background-hero.webp');
+        min-height: 768px;
+    }
+
+    #main-block .h1-container {
+        width: 624px;
+        height: 41px;
+        margin: 381px 200px -30px 200px;
+    }
+
+    #main-block .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-block .page-main-title{
+        font-size: 36px;
+        margin: -47px 0 0 4px;
+        letter-spacing: 0.03em;
+        line-height: 120%;
+    }
+
+    #main-block .text-size-color{
+        font-size: 22px;
+    }
+
+    #main-block .sub-title-content{
+        font-size: 20px;
+        margin-top: 29px;
+    }
+
+    #main-block .quote-container {
+        height: 170px;
+        background: var(--Dark_Blue);
+    }
+
+    #main-block .signup{
+        width: 352px;
+        height: 75px;
+        margin: -78px 0 0 86px;
+    }
+
+    #main-block .text-size{
+        font-size: 16px;
+    }
+
+    #main-block .block-relative{
+        max-width: 1024px;
+        margin-top: -17px;
+    }
+
+    #main-block .quote-content{
+        width: 748px;
+        letter-spacing: 0.03em;
+    }
+
+    #main-block .change-display-tablet{
+        display: none;
+    }
+
+    #main-block .quote-right{
+        top: 142px;
+        right: -17px;
+    }
     /* "main-block end" */
 
     /* "we provide start" */
@@ -1383,7 +1908,13 @@ p{
     /* "specialities end" */
 
     /* "form window start" */
-    #modal-window{}
+    #modal-window .modal{
+        width: 768px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     /* "form window end" */
 
     /* "footer start" */

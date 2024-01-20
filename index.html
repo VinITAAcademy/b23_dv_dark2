@@ -505,10 +505,10 @@
                         </div>
 
                         <div class="modal-body">
-                            <div class="modal-window-line-up-color modal-window-line-position"></div>
+                            <div class="modal-window-line-up-color modal-window-line-position" ></div>
                             <div class="modal-window-line-down-color modal-window-line-position"></div>
                             <h4 class="modal-window-default-text modal-window-body-title-text modal-window-text-color-1">Яка анкета вас цікавить?</h4>
-                            <button class="modal-window-default-text modal-window-button-content modal-window-button modal-window-text-color-2">Партнера</button>
+                            <button class="modal-window-default-text modal-window-button-content modal-window-button modal-window-text-color-2" data-bs-toggle="modal" data-bs-target="#partnersPopUp">Партнера</button>
                             <button class="modal-window-default-text modal-window-button-content modal-window-margin-adjust-1 modal-window-button modal-window-text-color-2">Учасника</button>
                             <button class="modal-window-default-text modal-window-button-content modal-window-margin-adjust-2 modal-window-button modal-window-text-color-2">Викладача/ментора</button>
                             <div class="modal-window-line-up-color modal-window-line-position"></div>
@@ -550,6 +550,70 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </section>
+
+        <section id="partnersModalWindow">
+            <div class="modal" id="partnersPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <div class="modal-title-text">Анкета для <span class="underlined"> партнерів </span> програми</div>
+                            <button class="btn-close close-btn-partnersPopUp" data-bs-dismiss="modal" aria-bs-label="close"></button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <form action="" id="partnersPopUp-form">
+                                <div class="mandatory-fields">
+                                    <div class="userNameBlock">
+                                        <input class="input-name" type="text" name="userName" placeholder="Ім’я" required>
+                                        <p class="input-name-text"></p>
+                                    </div>
+        
+                                    <div class="userEmailBlock">
+                                        <input class="input-email" type="email" name="userEmail" placeholder="Email" required >
+                                        <p class="input-email-text"></p>
+                                    </div>
+        
+                                    <div class="userSurnameBlock">
+                                        <input class="input-surname" type="text" name="userSurname" placeholder="Прізвище" required >
+                                        <p class="input-surname-text"></p>
+                                    </div>
+                                    
+                                    <div class="userMobilePhoneBlock">
+                                        <input class="input-MobilePhone" type="text" name="mobilePhone" placeholder="Мобільний телефон"required >
+                                        <p class="input-MobilePhone-text"></p>
+                                    </div>
+                                    
+                                </div>
+        
+                                <div class="under-mandatory-fields">
+                                    <div class="which-contry-fields">
+                                        <p class="which-contry-fields-text">   В якому місті чи країні бажаєте <br>представляти інтереси проєкту?</p>
+                                        <input type="text" name="UserCountry" class="input-country">
+                                    </div>
+        
+                                    <div class="user-found-out">
+                                        <p class="user-found-out-text">Звідки отримали інформацію про нас?</p>
+                                        <input type="text" name="UserFoundOut" class="input-user-found-out">
+                                    </div>
+        
+                                    <div class="user-cooperation">
+                                        <p class="user-cooperation-text">Яка співпраця цікавить Вас?</p>
+                                        <input type="text" name="userCooperation" class="input-user-cooperation">
+                                    </div>
+                                </div>
+                                
+                                <div class="under-fields-string">
+                                    <p class="red-star">*</p>
+                                    <p class="under-fields-text">Обов’язкові поля</p>
+                                </div>
+        
+                                <button class="btn partnersPopUp-button">Надіслати</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -987,7 +987,254 @@ p{
     padding: 5px 25px;
     margin: 0px 2px 0 -2px;
 }
+
 /* "form window end" */
+
+/* "partners window start" */
+#partnersModalWindow .modal-content{
+    width: 375px;
+    height: 731px;
+    margin: 0 auto;
+}
+#partnersModalWindow .modal-dialog{
+    max-width: 375;
+    margin: 100px auto;
+}
+#partnersModalWindow .modal-title{
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+}
+#partnersModalWindow .modal-title-text{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.38px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+#partnersModalWindow .underlined{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    margin: 0 5px;
+}
+#partnersModalWindow .close-btn-partnersPopUp{
+    position: absolute;
+    background-image: url(../Img/modal-selection-cancel.png);
+    left:343px;
+    top: 8px;
+    width: 13px;
+    height: 15px;
+    background-size: cover;
+}
+#partnersModalWindow .modal-body{
+    padding: 0;
+}
+#partnersModalWindow .mandatory-fields{
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 222px;
+}
+#partnersModalWindow .partnersPopUp-fields{
+    width: 287px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#partnersModalWindow .userNameBlock{
+    margin-bottom: 20px;
+    width: 222px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0 auto;
+    position: relative;
+}
+#partnersModalWindow .input-name{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+}
+#partnersModalWindow .input-name-text{
+    color: red;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 39px;
+}
+#partnersModalWindow .userEmailBlock{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+}
+#partnersModalWindow .input-email{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+}
+#partnersModalWindow .input-email-text{
+    color: red;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 39px;
+}
+#partnersModalWindow .userSurnameBlock{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+}
+#partnersModalWindow .input-surname{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+}
+#partnersModalWindow .input-surname-text{
+    color: red;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 39px;
+}
+#partnersModalWindow .userMobilePhoneBlock{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+}
+#partnersModalWindow .input-MobilePhone{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+}
+#partnersModalWindow .input-MobilePhone-text{
+    color: red;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 39px;
+}
+#partnersModalWindow .which-contry-fields{
+    width: 223px;
+    margin: 0 auto;
+}
+#partnersModalWindow .which-contry-fields-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    width: 251px;
+    word-spacing: -1px;
+    margin-top: 12px;
+}
+#partnersModalWindow .input-country{
+    width: 226px;
+    height: 57px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+    margin-top: 7px;
+}
+#partnersModalWindow .user-found-out{
+    width: 223px;
+    margin: 0 auto;
+}
+#partnersModalWindow .input-user-found-out{
+    width: 226px;
+    height: 57px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+#partnersModalWindow .user-found-out-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    width: 251px;
+    word-spacing: -1px;
+    margin-top: 13px;
+}
+#partnersModalWindow .user-cooperation{
+    width: 223px;
+    margin: 0 auto;
+}
+#partnersModalWindow .input-user-cooperation{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+    width: 226px;
+    margin-top: 3px;
+}
+#partnersModalWindow .user-cooperation-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    word-spacing: -1px;
+    margin-top: 13px;
+}
+#partnersModalWindow .under-fields-string{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 75px;
+}
+#partnersModalWindow .red-star{
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 39px;
+    position: relative;
+    top: -3px;
+    color: red;
+}
+#partnersModalWindow .under-fields-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    word-spacing: -1px;
+    position: relative;
+    top: 4px;
+    margin-left: 7px;
+}
+#partnersModalWindow .partnersPopUp-button{
+    width: 271px;
+    height: 53px;
+    border-radius: 6px;
+    background-color: blue;
+    margin-top: 11px;
+    margin-left: 51px;
+    font-size: 23px;
+    
+}
+#partnersModalWindow input::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#partnersModalWindow .eror{
+    border:2px solid red;
+}
+#partnersModalWindow .successful-validation{
+    border:2px solid #00FF00;
+}
+#partnersModalWindow .eror-text::placeholder{
+    color: red;
+}
+
+/* "partners window end" */
 
 /* "footer start" */
 #footer{}
@@ -1392,6 +1639,133 @@ p{
         margin: 33px 0px -13px -8px;
     }
     /* "form window end" */
+
+    /* "partners window start" */
+    #partnersModalWindow .close-btn-partnersPopUp{
+        left:646px;
+    }
+    #partnersModalWindow .which-contry-fields-text{
+        display:none;
+    }
+    #partnersModalWindow .user-found-out-text{
+        display:none;
+    }
+    #partnersModalWindow .user-cooperation-text{
+        display: none;
+    }
+    #partnersModalWindow .modal-dialog{
+        max-width: 768px;
+        margin: 100px auto;
+    }
+    #partnersModalWindow .modal-content{
+        width: 677px;
+        height: 539px;
+        margin: 0 auto;
+    }
+    #partnersModalWindow .modal-title{
+        width: 561px;
+    }
+    #partnersModalWindow .modal-title-text{
+        font-size: 36px;
+        line-height: 41px;
+        margin-top: 35px;
+    }
+    #partnersModalWindow .underlined{
+        font-size: 36px;
+        line-height: 41px;
+    }
+    #partnersModalWindow .mandatory-fields{
+        width: 511px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        margin-top: 37px;
+    }
+    #partnersModalWindow .partnersPopUp-fields{
+        width: 217px;
+        margin-bottom: 20px;
+    }
+    #partnersModalWindow .userNameBlock{
+        margin: 0;
+    }
+    #partnersModalWindow .userEmailBlock{
+        margin: 0;
+    }
+    #partnersModalWindow .userSurnameBlock{
+        margin: 0;
+        margin-top: 20px;
+    }   
+    #partnersModalWindow .userMobilePhoneBlock{
+        margin: 0;
+        margin-top: 20px;
+    }
+    #partnersModalWindow .input-name{
+        width: 217px;
+    }
+    #partnersModalWindow .input-email{
+        width: 217px;
+    }
+    #partnersModalWindow .input-surname{
+        width: 217px;
+    }
+    #partnersModalWindow .input-MobilePhone{
+        width: 217px;
+    }
+    #partnersModalWindow .under-mandatory-fields{
+        width: 511px;
+        margin: 0 auto;
+    }
+    #partnersModalWindow .input-country{
+        width: 511px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    #partnersModalWindow .user-found-out{
+        width: 511px;
+    }
+    #partnersModalWindow .input-user-found-out{
+        width: 511px;
+        height: 40px;
+        margin-top: 20px;
+        margin-top: 18px;
+    }
+    #partnersModalWindow .which-contry-fields{
+        width: 511px;
+    }
+    #partnersModalWindow .user-cooperation{
+        width: 511px;
+    }
+    #partnersModalWindow .input-user-cooperation{
+        width: 511px;
+        height: 40px;
+        margin-top: 19px;
+    }
+    #partnersModalWindow input::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.5px;  
+    }
+    #partnersModalWindow .red-star{
+        font-size: 27px;
+        line-height: 39px;
+        top: 3px;
+        left: 8px;
+        color: red;
+    }
+    #partnersModalWindow .under-fields-text{
+        font-size: 13px;
+        line-height: 14px;
+        word-spacing: 1px;
+        top: 10px;
+        margin-left: 16px;
+        letter-spacing: -0.4px;
+    }
+    #partnersModalWindow .partnersPopUp-button{
+        margin-left: 203px;
+        margin-top: 8px;
+    }
+    /* "partners window start" */
 
     /* "footer start" */
     #footer{}

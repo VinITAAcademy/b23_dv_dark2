@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?3is8v3');
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?3is8v3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-fonts/icomoon.ttf?3is8v3') format('truetype'),
+    url('../fonts/icomoon-fonts/icomoon.woff?3is8v3') format('woff'),
+    url('../fonts/icomoon-fonts/icomoon.svg?3is8v3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-viber:before {
+  content: "\e903";
+}
+.icon-cancel:before {
+  content: "\e902";
+}
+.icon-whatsapp:before {
+  content: "\e901";
+}
+.icon-telegram:before {
+  content: "\e900";
+}
+.icon-people:before {
+  content: "\e90f";
+}
+.icon-screen:before {
+  content: "\e90d";
+  color: #2d5bd0;
+}
+.icon-man:before {
+  content: "\e90c";
+  color: #2d5bd0;
+}
+.icon-laptop:before {
+  content: "\e904";
+  color: #2d5bd0;
+}
+.icon-glass:before {
+  content: "\e905";
+  color: #2d5bd0;
+}
+.icon-spy:before {
+  content: "\e906";
+  color: #2d5bd0;
+}
+.icon-education:before {
+  content: "\e907";
+  color: #2d5bd0;
+}
+.icon-hands:before {
+  content: "\e908";
+  color: #2d5bd0;
+}
+.icon-plant:before {
+  content: "\e909";
+  color: #2d5bd0;
+}
+.icon-arrow-r:before {
+  content: "\e90a";
+  color: #2d5bd0;
+}
+.icon-arrow-l:before {
+  content: "\e90b";
+  color: #2d5bd0;
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-arrow-b:before {
+  content: "\e914";
+}
+.icon-dots-w:before {
+  content: "\e915";
+}

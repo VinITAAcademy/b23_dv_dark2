@@ -52,7 +52,156 @@ p{
 /* "header end" */
 
 /* "main-block start" */
-#main-block{}
+#main-block .background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../Img/heromobile.webp');
+    min-height: 362px;
+}
+
+#main-block .h1-container {
+    width: 287px;
+    margin: 101px 0 27px 0;
+}
+
+#main-block .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+#main-block .default-text-value{
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    text-align: center;
+}
+
+#main-block .text-size-color{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--White);
+}
+
+#main-block .bootstrap-p-override{
+    margin-bottom: 0;
+}
+
+#main-block .page-main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--White);
+    margin: -45px -2px 0 0;
+    letter-spacing: 0.03em;
+}
+
+#main-block .sub-title {
+    width: 257px;
+    height: 63px;
+}
+
+#main-block .sub-title-content {
+    margin-top: 27px;
+}
+
+#main-block .register-container {
+    display: flex;
+    align-items: center;
+    width: 229px;
+    height: 48px;
+    margin: 54px 0 -25px 0;
+}
+
+#main-block .block-relative {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#main-block .wraper-main {
+    background: var(--Dark_Blue);
+}
+
+#main-block .quote-container {
+    width: 100%;
+    height: 325px;
+    background: var(--Dark_Blue);
+    display: flex;
+}
+
+#main-block .quote-content {
+    font-style: italic;
+    text-align: left;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.02em;
+    margin-right: -2px;
+    width: 291px;
+    padding: 46px 0 0 0;
+}
+
+#main-block .quote-left {
+    width: 31.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: -26px;
+    top: 24px;
+    justify-content: space-between;
+}
+
+#main-block .quote-right {
+    width: 26.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: -11px;
+    top: 267px;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+}
+
+#main-block .change-display-tablet{
+    display: none;
+}
+
+#main-block .signup {
+    width: 100%;
+    height: 100%;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 6px;
+    outline-style: none;
+    border-style: none;
+}
+
+#main-block .signup:hover{
+    background: #02257F;
+}
+
+#main-block .signup:active{
+    background: var(--White);
+}
+
+#main-block .text-size-color:active{
+    color: var(--Blue);
+}
+
+#main-block .text-size-color:disabled{
+    color: var(--White);
+}
+
+#main-block .signup:disabled{
+    background:#61677A;
+    cursor: not-allowed;
+}
 /* "main-block end" */
 
 /* "we provide start" */
@@ -850,7 +999,82 @@ p{
     /* "header end" */
 
     /* "main-block start" */
-    #main-block{}
+    #main-block .change-display-mobile{
+        display: none;
+    }
+
+    #main-block .change-display-tablet{
+        display: inline;
+    }
+
+    #main-block .background-container {
+        background-image: url('../Img/herotablet.webp');
+        min-height: 1024px;
+    }
+
+    #main-block .page-main-title {
+        font-size: 70px;
+        line-height: 225%;
+        margin: -115px -7px 0 0;
+        letter-spacing: 0.035em;
+    }
+
+    #main-block .block-relative{
+        max-width: 768px;
+    }
+
+    #main-block .text-size-color{
+        font-size: 36px;
+    }
+
+    #main-block .text-size{
+        font-size: 24px;
+    }
+
+    #main-block .sub-title-content{
+        margin-top: 43px;
+    }
+
+    #main-block .register-container {
+        width: 524px;
+        height: 107px;
+    }
+
+    #main-block .sub-title {
+        width: 502px;
+        height: auto;
+    }
+
+    #main-block .quote-content{
+        width: 592px;
+        padding-top: 51px;
+    }
+
+    #main-block .quote-container{
+        height: 362px;
+    }
+
+    #main-block .sub-title-content {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;   
+    }
+
+    #main-block .quote-left {
+        left: -37px;
+        top: 31px;
+    }
+
+    #main-block .quote-right {
+        top: 308px;
+        right: -19px;
+    }
+    #main-block .signup{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 94px;
+    }
     /* "main-block end" */
 
     /* "we provide start" */
@@ -1180,7 +1404,72 @@ p{
     /* "header end" */
 
     /* "main-block start" */
-    #main-block{}
+    #main-block .background-container {
+        background-image: url('../Img/background-hero.webp');
+        min-height: 768px;
+    }
+
+    #main-block .h1-container {
+        width: 624px;
+        height: 41px;
+        margin: 381px 200px -30px 200px;
+    }
+
+    #main-block .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-block .page-main-title{
+        font-size: 36px;
+        margin: -47px 0 0 4px;
+        letter-spacing: 0.03em;
+        line-height: 120%;
+    }
+
+    #main-block .text-size-color{
+        font-size: 22px;
+    }
+
+    #main-block .sub-title-content{
+        font-size: 20px;
+        margin-top: 29px;
+    }
+
+    #main-block .quote-container {
+        height: 170px;
+        background: var(--Dark_Blue);
+    }
+
+    #main-block .signup{
+        width: 352px;
+        height: 75px;
+        margin: -78px 0 0 86px;
+    }
+
+    #main-block .text-size{
+        font-size: 16px;
+    }
+
+    #main-block .block-relative{
+        max-width: 1024px;
+        margin-top: -17px;
+    }
+
+    #main-block .quote-content{
+        width: 748px;
+        letter-spacing: 0.03em;
+    }
+
+    #main-block .change-display-tablet{
+        display: none;
+    }
+
+    #main-block .quote-right{
+        top: 142px;
+        right: -17px;
+    }
     /* "main-block end" */
 
     /* "we provide start" */

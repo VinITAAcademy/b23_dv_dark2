@@ -307,7 +307,64 @@ p{
 /* "attract end" */
 
 /* "our partners start" */
-#our-partners{}
+#our-partners .main-our-partners{
+    display: block;
+    margin: 0 auto;
+}
+#our-partners .img-our-partners{
+    width: 375px;
+    height: 272px;
+    display: block;
+    margin: 0 auto;
+}
+#our-partners .fonts-our-text{
+    font-family: "Ubuntu Medium";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+}
+#our-partners .background-our-partners{
+    background-color:  #000A24;
+    color: #FFFFFF;
+    width: auto;
+    height: 588px;
+}
+#our-partners .text-1{
+    font-size: 24px;
+    text-align: center;
+}
+#our-partners .text-2{
+    width: 288px;
+    height: 116px;
+    margin: 0 auto;
+}
+#our-partners .text-3{
+    width: 288px;
+    height: 74px;
+    margin: 0 auto;
+}
+#our-partners .text-4{
+    width: 288px;
+    height: 116px;
+    margin: 0 auto;
+}
+#our-partners .dashed-line {
+    border-top: 1px dashed #ffffff; 
+    width: 277px;
+    margin: 20px auto;
+}
+#our-partners .blue-button {
+    background-color:#083CC0;
+    color: #fff;
+    height: 48px;
+    width: 229px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
 /* "our partners end" */
 
 /* "logos start" */
@@ -830,7 +887,49 @@ p{
     /* "attract end" */
 
     /* "our partners start" */
-    #our-partners{}
+    #our-partners .main-our-partners{
+        text-align: center;
+    }
+    #our-partners .img-our-partners{
+        width: 768px;
+        height: 628px;
+    }
+    #our-partners .background-our-partners{
+        background-color:  #000A24;
+        color: #FFFFFF;
+        width: auto;
+        height: 770px;
+    }
+    #our-partners .text-1{
+        font-size: 40px;
+        text-align: center;
+    }
+    #our-partners .text-2{
+        width: 672px;
+        height: 156px;
+    }
+    #our-partners .text-3{
+        width: 672px;
+        height: 78px;
+    }
+    #our-partners .text-4{
+        width: 672px;
+        height: 117px;
+    }
+    #our-partners .dashed-line {
+        margin: 20px auto;
+        width: 672px;
+    }
+    #our-partners .blue-button {
+        margin: 50px auto;
+        height: 48px;
+        width: 229px;
+    }
+    #our-partners .fonts-our-text{
+        font-size: 24px;
+        font-style: italic;
+        line-height: 39px;
+        letter-spacing: 0.02em;
     /* "our partners end" */
 
     /* "logos start" */
@@ -1140,7 +1239,68 @@ p{
     /* "attract end" */
     
     /* "our partners start" */
-    #our-partners{}
+    #our-partners .color-text{
+       
+    }
+    #our-partners .main-our-partners{
+        display: flex;
+        text-align: left;
+        width: 982px;
+        margin: 0 auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #our-partners .background-our-partners{
+        height: 419px;
+        width: 511px;
+        padding:27px 0 30px 20px;
+    }
+    #our-partners .fonts-our-text{
+        font-family: "Ubuntu Bold";
+        font-size: 14px;
+        font-style: italic;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+    }
+    #our-partners .img-our-partners{
+        height: 419px;
+        width: 513px;
+        margin: 0 auto;
+    }
+    
+    #our-partners .text-1{
+        font-size: 26px;
+        text-align: left;
+    }
+    #our-partners .text-2{
+        margin: 0;
+        font-size: 12px;
+        width: 302px;
+        height: 120px;
+    }
+    #our-partners .text-3{
+        margin: 0;
+        font-size: 12px;
+        width: 302px;
+        height: 40px;
+    }
+    #our-partners .text-4{
+        margin: 0;
+        font-size: 12px;
+        width: 302px;
+        height: 90px;
+    }
+    #our-partners .dashed-line {
+        margin: 7px 0 7px 0;
+        border-top: 1px dashed #ffffff; 
+        width: 302px;
+        
+    }
+    #our-partners .blue-button {
+        height: 48px;
+        width: 229px;
+        margin: 0;
+    }
     /* "our partners end" */
 
     /* "logos start" */

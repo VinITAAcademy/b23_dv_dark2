@@ -1493,48 +1493,6 @@ p{
     /* "header end" */
 
     /* "sidebar-block start" */
-    #sidebar img{
-        vertical-align: top;
-        width: 30px;
-        height: 22px;
-    }
-
-    #sidebar a{
-        text-decoration: none;
-    }
-
-    #sidebar .btn{
-        --bs-btn-border-width: 2px;
-        --bs-btn-border-radius: 6px;
-        --bs-btn-padding-y: 0.5rem;
-        position: relative;
-        right: -30px;
-        top: 47px;
-    }
-
-    #sidebar .btn:hover{
-        background-color: #515558;
-        border-color: var(--White);
-    }
-
-    #sidebar .btn.show{
-        border-color: var(--White);
-        background-color: #515558;
-    }
-
-    #sidebar .btn-secondary{
-        --bs-btn-bg: 0;
-        --bs-btn-border-color: var(--White);
-    }
-
-    #sidebar .dropdown-menu{
-        --bs-dropdown-min-width: 4.7rem;
-        --bs-dropdown-bg: 0;
-        --bs-dropdown-border-color: var(--White);
-        --bs-dropdown-border-width: 2px;
-        --bs-dropdown-border-radius: 6px;
-    }
-
     #sidebar .sidebar-container{
         position: absolute;
         background-color: #515558;
@@ -1544,21 +1502,17 @@ p{
         display: block;
     }
 
-    #sidebar .image-position{
-        position: relative;
-        right: 6px;
-    }
-
-    #sidebar .image-position-2{
-        position: relative;
-        left: 20px;
+    #sidebar .resize-image{
+        width: 71px;
+        height: 31px;
+        margin: 57px 0px 0px 33px;
     }
 
     #sidebar .social-networks{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 107px;
+        margin-top: 60px;
     }
 
     #sidebar .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{

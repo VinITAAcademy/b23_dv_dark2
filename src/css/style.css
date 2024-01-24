@@ -1502,12 +1502,6 @@ p{
         display: block;
     }
 
-    #sidebar .resize-image{
-        width: 71px;
-        height: 31px;
-        margin: 57px 0px 0px 33px;
-    }
-
     #sidebar .social-networks{
         display: flex;
         flex-direction: column;

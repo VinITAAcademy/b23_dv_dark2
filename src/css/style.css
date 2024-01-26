@@ -1243,6 +1243,10 @@ body{
 .footer-main-rm-logo-svg{
     width: 83px;
 }
+.footer-main-icon-box a{
+    text-decoration: none;
+}
+
 /* "footer end" */
 @media(min-width: 768px){
     /* "header start" */

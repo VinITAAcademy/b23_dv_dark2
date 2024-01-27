@@ -13,6 +13,9 @@ p{
 body{
     scroll-behavior: smooth;
 }
+.grecaptcha-badge{
+    display: none;
+}
 
 @font-face {
     font-family: "Ubuntu Bold";
@@ -1098,6 +1101,253 @@ body{
 }
 /* "form window end" */
 
+/* "all forms and SuccessfulRequest modal window start" */
+#AllPopUpForms .modal-content{
+    width: 375px;
+    height: 713px;
+    margin: 0 auto;
+}
+#AllPopUpForms .modal-dialog{
+    max-width: 375;
+    margin: 100px auto;
+}
+#AllPopUpForms .modal-title{
+    width: 250px;
+    margin: 0 auto;
+}
+#AllPopUpForms .modal-title-mentor{
+    width: 268px;
+    margin: 0 auto;
+    text-align: center;
+}
+#AllPopUpForms .modal-title-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.38px;
+    margin-top: 12px;
+}
+#AllPopUpForms .modal-title-text-mentor{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px; 
+    width: 268px;
+    margin-top: 12px;
+}
+#AllPopUpForms .underlined{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+}
+#AllPopUpForms .underlined-mentor{
+    font-weight: 700;
+}
+#AllPopUpForms .close-btn-partnersPopUp{
+    position: absolute;
+    background-image: url(../Img/modal-selection-cancel.png);
+    left:343px;
+    top: 8px;
+    width: 13px;
+    height: 15px;
+    background-size: cover;
+}
+#AllPopUpForms .modal-body{
+    padding: 0;
+}
+#AllPopUpForms .mandatory-fields{
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 287px;
+}
+#AllPopUpForms .partnersPopUp-fields{
+    width: 287px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#AllPopUpForms .input-block{
+    width: 287px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+#AllPopUpForms .input-placeholder{
+    width: 287px;
+    height: 40px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+    text-indent: 11px;
+    position: relative;
+}
+#AllPopUpForms .star {
+    position: absolute;
+    color: red;
+    pointer-events: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+}
+#AllPopUpForms .input-placeholder:not(:placeholder-shown) + .star {
+    display: none;
+}
+#AllPopUpForms .error-text{
+    color: red;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 39px;
+}
+#AllPopUpForms .input-block2{
+    width: 287px;
+    margin: 0 auto;
+}
+#AllPopUpForms .input-placeholder2{
+    width: 287px;
+    height: 57px;
+    border: 1.5px solid  #05003E;
+    border-radius: 2px;
+    margin-top: 7px;
+    text-indent: 11px;
+}
+#AllPopUpForms .input-user-cooperation{
+    height: 40px;
+}
+#AllPopUpForms .input-country{
+    margin-top: 7px;
+}
+#AllPopUpForms .input-user-found-out{
+    margin-top: 5px;
+}
+#AllPopUpForms .input-user-cooperation{
+    margin-top: 3px;
+}
+#AllPopUpForms .under-mandatory-fields-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    width: 251px;
+    word-spacing: -1px;
+    margin-top: 13px;
+}
+#AllPopUpForms .under-fields-string{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 43px;
+}
+#AllPopUpForms .red-star{
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 39px;
+    position: relative;
+    top: -3px;
+    color: red;
+}
+#AllPopUpForms .under-fields-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    word-spacing: -1px;
+    position: relative;
+    top: 4px;
+    margin-left: 7px;
+}
+#AllPopUpForms .partnersPopUp-button{
+    width: 271px;
+    height: 53px;
+    border-radius: 6px;
+    background-color: blue;
+    margin-top: 11px;
+    margin-left: 51px;
+    font-size: 23px;
+}
+#AllPopUpForms input::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#AllPopUpForms .eror{
+    border:2px solid red;
+}
+#AllPopUpForms .successful-validation{
+    border:2px solid #00FF00;
+}
+#AllPopUpForms .eror-text::placeholder{
+    color: red;
+}
+#participantsModalWindow .modal-content{
+    height: 995px;
+}
+#participantsModalWindow .Checkbox-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #05003E;
+    padding-bottom: 9px;
+}
+#participantsModalWindow .checkbox-label-content{
+    display: flex;
+    position: relative;
+    margin-top: 11px;
+}
+#participantsModalWindow .checkbox{
+    width: 16px;
+    height: 16px;
+}
+#participantsModalWindow .checkbox-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#participantsModalWindow .partnersPopUp-button{
+    margin-top: 27px;
+}
+#participantsModalWindow .Checkbox-block{
+    margin-left: 42px;
+}
+#SuccessfulRequestModalWindow .modal-content{
+    width: 375px;
+    height: 375px;
+}
+#SuccessfulRequestModalWindow .close-btn-SuccessfulRequest{
+    position: absolute;
+    background-image: url(../Img/modal-selection-cancel.png);
+    left:343px;
+    top: 8px;
+    width: 13px;
+    height: 15px;
+    background-size: cover;
+}
+#SuccessfulRequestModalWindow .title-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 113px;
+}
+#SuccessfulRequestModalWindow .subtitle-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 26px;
+}
+#SuccessfulRequestModalWindow .subtitle-button{
+    font-weight: 400;
+    width: 271px;
+    height: 53px;
+    border-radius: 6px;
+    background-color: blue;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 82px;
+}
+/* "all forms and SuccessfulRequest modal window end" */
+
 /* "footer start" */
 #footer {
     min-height: 674px;
@@ -1697,6 +1947,145 @@ body{
     }
     /* "form window end" */
 
+    /* "all forms and SuccessfulRequest modal window start" */
+    #AllPopUpForms  .close-btn-partnersPopUp{
+        left:646px;
+    }
+    #AllPopUpForms .under-mandatory-fields-text{
+        display:none;
+    }
+    #AllPopUpForms .modal-dialog{
+        max-width: 768px;
+        margin: 100px auto;
+    }
+    #AllPopUpForms .modal-content{
+        width: 677px;
+        height: 539px;
+        margin: 0 auto;
+    }
+    #SuccessfulRequestModalWindow .modal-content{
+        width: 375px;
+        height: 375px;
+    }
+    #participantsModalWindow .modal-content{
+        height: 777px;
+    }
+    #AllPopUpForms .under-fields-string{
+        margin-left: 75px;
+    }
+    #mentorModalWindow .modal-content{
+        height: 579px;
+    }
+    #participantsModalWindow .Checkbox-title{
+        padding-bottom: 0px;
+    }
+    #participantsModalWindow .partnersPopUp-button{
+        margin-top: 20px;
+    }
+    #participantsModalWindow .Checkbox-block{
+        margin-left: 83px;
+    }
+    #AllPopUpForms .modal-title{
+        width: 561px;
+    }
+    #AllPopUpForms .modal-title-mentor{
+        width: 589px;
+    }
+    #AllPopUpForms .modal-title-text{
+        font-size: 36px;
+        line-height: 41px;
+        margin-top: 35px;
+        width: 561px;
+    }
+    #AllPopUpForms .modal-title-text-mentor{
+        font-size: 36px;
+        line-height: 41px; 
+        margin-top: 35px;
+        width: 589px;
+    }
+    #AllPopUpForms .underlined{
+        font-size: 36px;
+        line-height: 41px;
+    }
+    #AllPopUpForms .mandatory-fields{
+        width: 511px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        margin-top: 37px;
+    }
+    #AllPopUpForms .partnersPopUp-fields{
+        width: 217px;
+        margin-bottom: 20px;
+    }
+    #AllPopUpForms .input-block{
+        margin: 0;
+        width: 217px;
+    }
+    #AllPopUpForms .userNameBlock{
+        margin: 0;
+    }
+    #AllPopUpForms .userEmailBlock{
+        margin: 0;
+    }
+    #AllPopUpForms .userSurnameBlock{
+        margin: 0;
+        margin-top: 20px;
+    }   
+    #AllPopUpForms .userMobilePhoneBlock{
+        margin: 0;
+        margin-top: 20px;
+    }
+    #AllPopUpForms .input-placeholder{
+        width: 217px;
+    }
+    #AllPopUpForms .under-mandatory-fields{
+        width: 511px;
+        margin: 0 auto;
+    }
+    #AllPopUpForms .input-placeholder2{
+        width: 511px;
+        height: 40px;
+    }
+    #AllPopUpForms .input-block2{
+        width: 511px;
+    }
+    #AllPopUpForms .input-user-found-out{
+        margin-top: 18px;
+    }
+    #AllPopUpForms .input-user-cooperation{
+        margin-top: 19px;
+    }
+    #AllPopUpForms .input-country{
+        margin-top: 20px;
+    }
+    #AllPopUpForms input::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.5px;  
+    }
+    #AllPopUpForms .red-star{
+        font-size: 27px;
+        line-height: 39px;
+        top: 3px;
+        left: 8px;
+        color: red;
+    }
+    #AllPopUpForms .under-fields-text{
+        font-size: 13px;
+        line-height: 14px;
+        word-spacing: 1px;
+        top: 10px;
+        margin-left: 16px;
+        letter-spacing: -0.4px;
+    }
+    #AllPopUpForms .partnersPopUp-button{
+        margin-left: 203px;
+        margin-top: 8px;
+    }
+    /* "all forms and SuccessfulRequest modal window end" */
+
     /* "footer start" */
     #footer {
         min-height: 396px;
@@ -2251,6 +2640,13 @@ body{
         transform: translate(-50%, -50%);
     }
     /* "form window end" */
+
+    /* "all forms and SuccessfulRequest modal window start" */
+    #SuccessfulRequestModalWindow .modal-content{
+        width: 375px;
+        height: 375px;
+    }
+    /* "all forms and SuccessfulRequest modal window end" */
 
     /* "footer start" */
     #footer {

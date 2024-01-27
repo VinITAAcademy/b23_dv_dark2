@@ -38,3 +38,26 @@ const swiper = new Swiper('#swiper-specialities', {
   },
 });
 //specialities swiper initializing swiper end
+const scrollUp = $(".scroll-up");
+const offset = 100;
+const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollUp.length) {
+
+    scrollUp.removeClass("scroll-up-active");
+
+    window.addEventListener("scroll", () => {
+        if (getTop() > offset) {
+            scrollUp.addClass("scroll-up-active");
+        } else {
+            scrollUp.removeClass("scroll-up-active");
+        }
+    });
+
+    scrollUp.on("click", (event) => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

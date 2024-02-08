@@ -1058,6 +1058,190 @@ h1,h2,h3,h4,h5,h6{
 }
 /* "form window end" */
 
+/* "burger menu start" */
+#burger-window .modal{
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 0;
+    --bs-modal-border-width: 0;
+    --bs-modal-padding: 0;
+    --bs-modal-header-padding: 0;
+    --bs-modal-width: 100%;
+}
+
+#burger-window a{
+    text-decoration: none;
+}
+
+#burger-window .modal-header{
+    border-bottom: 0;
+    padding: 3px 0;
+    margin-bottom: 17px;
+}
+
+#burger-window .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#burger-window .modal-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-left: -2px;
+    padding-bottom: 4.4px;
+    border-top: 0;
+}
+
+#burger-window .line-position{
+    width: 300px;
+    margin-right: 5px;
+}
+
+#burger-window .line-up-color{
+    border-top: 5px solid var(--Blue);
+}
+
+#burger-window .line-down-color{
+    border-top: 5px solid #FFD500;
+}
+
+#burger-window .default-text{
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    line-height: normal;
+}
+
+#burger-window .text-color{
+    color: var(--Black);
+}
+
+#burger-window .text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 14px 0;
+}
+
+#burger-window .header-title{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+#burger-window .header-sub-title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: -3px;
+    letter-spacing: 0.04em;
+}
+
+#burger-window .body-title-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 5px;
+}
+
+#burger-window .button-content{
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    padding: 14px 0;
+    font-size: 16px;
+}
+
+#burger-window .line-height-adjust{
+    line-height: 144%;
+}
+
+#burger-window .margin-adjust{
+    margin: 14px 0px -6px -9px;
+}
+
+#burger-window .image{
+    width: 71px;
+    height: 31px;
+    margin: 2px -37px 40px 5px;
+}
+
+#burger-window .cancel-button{
+    border: 0;
+    background-color: var(--White);
+    margin: -37px 5px 2px -5px;
+}
+
+#burger-window .button{
+    border-radius: 6px;
+    text-align: center;
+    border-style: none;
+    outline-style: none;
+    background: var(--Blue);
+}
+
+#burger-window .button:hover{
+    background: #02257F;
+}
+
+#burger-window .button:active{
+    background: var(--White);
+}
+
+#burger-window .button:active{
+    color: var(--Blue);
+}
+
+#burger-window .button:disabled{
+    background:#61677A;
+    color:var(--White);
+    cursor: not-allowed;
+}
+
+#burger-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    font-size: 50px;
+}
+
+#burger-window .icon-cancel{
+    font-size: 30px;
+}
+
+#burger-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    color: var(--Black); 
+}
+
+#burger-window .icon-telegram:hover, .icon-facebook:hover, .icon-whatsapp:hover, .icon-viber:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-cancel:hover{
+    color: #7FA2FB;
+}
+
+#burger-window .icon-telegram:active, .icon-facebook:active, .icon-whatsapp:active, .icon-viber:active, .icon-twitter:active, .icon-instagram:active, .icon-cancel:active{
+    color: var(--White);
+}
+
+#burger-window .icon-telegram:disabled, .icon-facebook:disabled, .icon-whatsapp:disabled, .icon-viber:disabled, .icon-twitter:disabled, .icon-instagram:disabled, .icon-cancel:disabled{
+    color: #61677A;
+    cursor: not-allowed;
+}
+
+#burger-window .row{
+    padding-bottom: 8px;
+}
+
+#burger-window .column{
+    float: left;
+    width: 33.33%;
+    padding: 5px 25px;
+    margin: 0px 2px 0 -2px;
+}
+/* "burger menu end" */
+
+/* "footer start" */
+#footer{}
+/* "footer end" */
 /*AllPopUpForms start */
 #AllPopUpForms .modal-dialog{
     max-width: 700px;
@@ -1886,6 +2070,70 @@ h1,h2,h3,h4,h5,h6{
         margin-top: 20px;
     }
     /*AllPopUpForms end */
+
+    /* "burger window start" */
+    #burger-window .modal-footer{
+        margin-top: 20px;
+        margin-left: 4px;
+        padding-bottom: 21px;
+    }
+    
+    #burger-window .header-title{
+        font-size: 24px;
+    }
+
+    #burger-window .header-sub-title{
+        font-size: 48px;
+    }
+
+    #burger-window .body-title-text{
+        font-size: 40px;
+        margin-top: 16px;
+        margin-bottom: 35px;
+    }
+
+    #burger-window .line-position{
+        width: 697px;
+        margin-right: 3px;
+    }
+
+    #burger-window .text{
+        font-size: 64px;
+        padding: 21px 0;
+        letter-spacing: 0.01em;
+    }
+
+    #burger-window .button-content{
+        width: 413px;
+        padding: 28px 0;
+        font-size: 22px;
+        margin-right: -1px;
+    }
+
+    #burger-window .cancel-button{
+        margin: -71px 5px 0 0;
+    }
+
+    #burger-window .image{
+        margin-top: -34px;
+    }
+
+    #burger-window .margin-adjust{
+        margin: 34px 0px -13px -8px;
+    }
+
+    #burger-window .margin-adjust-1{
+        margin-top: 17px;
+    }
+
+    #burger-window .margin-adjust-2{
+        margin: -7px 0;
+    }
+
+    #burger-window .margin-adjust-3{
+        margin: -5px 0 9px 0;
+    }
+    /* "burger window start" */
 
     /* "footer start" */
     #footer {

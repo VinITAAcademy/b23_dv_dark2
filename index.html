@@ -21,7 +21,7 @@
     
     <div id="wrapper">
         <!--"header start"-->
-        <header id="header">
+        <header id="header"> <!--move language to sidebar-->
             <div class="header-container">
                 <div class="main-logo">
                     <img class="image-logo" src="./src/Img/Logo.webp">
@@ -559,7 +559,7 @@
         </section>
         <!--"specialities end"-->
 
-        <!--"form window start"-->
+        <!--"form window start"--> <!--absolute for cancel and language, fix image, fix hovers everywhere, add br tag to h3, less margin, відступ між "постраждали" і "наслідок війни", робота молоді неправильний путь -->
         <section id="modal-window">
             <div class="modal fade" id="main" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -627,6 +627,75 @@
         </section>
         <!--form window end-->
 
+        <!--"form burger window start"-->
+        <section id="burger-window">
+            <div class="modal" id="burger-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="#">
+                                <img class="image" src="./src/Img/modal-selection-language.webp">
+                            </a>
+                            <h3 class="default-text header-title text-color margin-adjust line-height-adjust">
+                                ДОБРОГО ВЕЧОРА - МИ З <span class="default-text header-sub-title text-color">УКРАЇНИ!</span>
+                            </h3>
+                            <button type="button" class="cancel-button" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="icon-cancel"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="line-up-color line-position"></div>
+                            <div class="line-down-color line-position"></div>
+                            <div class="modal-body" data-bs-dismiss="modal" aria-label="Close" type="button">
+                                <a class="default-text text-color text margin-adjust-1" href="#about-us">Про програму</a>
+                                <a class="default-text text-color text margin-adjust-2" href="#specialities">Спеціальності</a>
+                                <a class="default-text text-color text" href="#our-partners">Партнери</a>
+                                <a class="default-text text-color text margin-adjust-3" href="#footer">Контакти</a>
+                            </div>    
+                            <div class="line-up-color line-position"></div>
+                            <div class="line-down-color line-position"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-telegram"></i>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-viber"></i>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--form burger window end-->
         <section id="AllPopUpForms">
             <section id="partnersModalWindow">
                 <div class="modal" id="partnersPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">

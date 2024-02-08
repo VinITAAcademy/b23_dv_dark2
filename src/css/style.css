@@ -13,6 +13,10 @@ p{
 body{
     scroll-behavior: smooth;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: "Ubuntu Bold";
@@ -1282,7 +1286,331 @@ body{
 /* "footer start" */
 #footer{}
 /* "footer end" */
+/*AllPopUpForms start */
+#AllPopUpForms .modal-dialog{
+    max-width: 700px;
+}
+#AllPopUpForms .modal-content{
+    width: 375px;
+    margin: 0 auto;
+}
 
+#AllPopUpForms .modal-title{
+    text-align: center;
+    margin-top: 12px;
+}
+#AllPopUpForms .modal-title-text{
+    font-size: 16px;
+    line-height: 18px;    
+    font-weight: 500;
+    font-family: "Ubuntu Medium";
+}
+#AllPopUpForms .underlined{
+    font-weight: 700;
+}
+#AllPopUpForms .close-modal-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#AllPopUpForms .input-block{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    width: 287px;
+}
+#AllPopUpForms .input-placeholder{
+    width: 287px;
+    height: 40px;
+    border-radius: 2px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+#AllPopUpForms .not-mandatory-input{
+    width: 287px;
+    margin: 0 auto;
+}
+#AllPopUpForms .not-mandatory-input-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 12px;
+}
+#AllPopUpForms .input-placeholder2{
+    width: 287px;
+    height: 57px;
+    border-radius: 2px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 10px;
+    
+}
+#AllPopUpForms .input-user-cooperation{
+    height: 40px;
+}
+
+#AllPopUpForms .mandatory-reminder{
+    display: flex;
+    height: 25px;
+    align-items: flex-end;
+    margin-top: 14px;
+}
+#AllPopUpForms .red-star{
+    font-size: 24px;
+    font-weight: 400;
+    color: red;
+    height: 25px;
+}
+#AllPopUpForms .mandatory-reminder-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#AllPopUpForms .modal-button{
+    width: 271px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#participantsModalWindow .modal-button{
+    margin-top: 27px;
+}
+#mentorModalWindow .modal-button{
+    margin-top: 20px;
+}
+#partnersModalWindow .modal-button{
+    margin-top: 28px; 
+}
+#AllPopUpForms .modal-send-button{
+    text-align: center;
+    width: 100%;
+    height: 53px;
+    background-color: var(--Blue);
+    color: var(--White);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    border-radius: 6px;
+}
+#participantsModalWindow .Checkbox-block{
+    margin-left: 43px;
+}
+#participantsModalWindow .checkbox-label-content{
+    display: flex;
+    position: relative;
+    margin-top: 11px;
+}
+#participantsModalWindow .Checkbox-title{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    padding-bottom: 9px;
+    color: #05003E;
+}
+#AllPopUpForms .checkbox{
+    width: 16px;
+    height: 16px;
+}
+#AllPopUpForms .checkbox-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-left: 5px;
+    color: #000;
+}
+#AllPopUpForms .placeholder-text{
+    position:absolute;
+    left: 11px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#AllPopUpForms .placeholder-text::after{
+    content: "*";
+    color: red;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-left: 3px;
+}
+#AllPopUpForms .eror{
+    border:2px solid red;
+}
+#AllPopUpForms .error-text{
+    color: red;
+    position: absolute;
+    font-size: 10px;
+    top: 38px;
+}
+#AllPopUpForms .successful-validation{
+    border:2px solid #00FF00;
+}
+/*AllPopUpForms end */
+
+/* "footer start" */
+#footer {
+    min-height: 674px;
+}
+.footer-main-cont {
+    background:#252323;
+    display: flex;
+    justify-content: center;
+}
+#footer .footer-main-cont .footer-main {
+    position: relative;
+    min-height: 637px;
+    width: 375px;
+    padding-top: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#FFFFFF;
+}
+#footer .footer-main-cont .footer-main .footer-main-icon {
+    font-size: 30px;
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-logo {
+    position: absolute;
+    top: 47px;
+    left: 16px;
+    width: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .footer-main-cont .footer-main .footer-logo .footer-logo-svg {
+    height: 24px;
+    margin-bottom: 5px;
+}
+#footer .footer-main .footer-students-logo {
+    position: absolute;
+    top: 50px;
+    right: 16px;
+    width: 211px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .footer-main-cont .footer-main .footer-students-logo-svg {
+    width: 50px;
+}
+#footer .footer-main-cont .footer-main .footer-students-logo .footer-main-logo-text {
+    color: white;
+    font-family: "Ubuntu Regular";
+    font-size: 12px;
+    margin: 0;
+    text-decoration: underline;
+}
+#footer .footer-main-cont .footer-main .footer-main-nav {
+    width: 111px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+#footer .footer-main-cont .footer-main .footer-main-nav .nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-main-cont .footer-main .anchor-menu-link {
+    color: white;
+    font-family: "Ubuntu Medium";
+    font-size: 16px;
+}
+#footer .footer-main-cont .footer-main .footer-main-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .footer-main-cont .footer-main .footer-main-line {
+    width: 291px;
+    margin: 0;
+    border: none;
+    border-top: 3px solid #083CC0;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+#footer .footer-main-cont .footer-main .footer-main-text {
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    text-align: center;
+    width: 291px;
+    margin: 0 0 14px 0;
+}
+#footer .footer-main-cont .footer-main .footer-main-text2 {
+    width: 232px;
+    margin-bottom: 19px;
+}
+#footer .footer-main-text-link {
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-icon-box {
+    width: 340px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts {
+    width: 147px;
+    height: 93px;
+    text-align: center;
+    font-family: "Ubuntu Regular";
+    font-size: 16px;
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+    font-family: "Ubuntu Bold";
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-link {
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-qr-code {
+    display: none;
+}
+#footer .footer-second-section {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    min-height: 37px;
+    background-color: white;
+}
+#footer .footer-second-section .footer-second-section-text {
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    margin: 0;
+}
+.footer-main-rm-logo-svg{
+    width: 83px;
+}
+.footer-main-icon-box a{
+    text-decoration: none;
+}
+#footer .footer-top-button{
+    position: absolute;
+    bottom: auto;
+    right: 18px;
+    transition: 0.2s;
+    z-index: 100;
+    margin: 5px;
+}
+#footer .default-img{
+    width: 30px;
+    height: 30px;
+}
+
+/* "footer end" */
 @media(min-width: 768px){
     /* "header start" */
     #header .main-logo{
@@ -1679,6 +2007,8 @@ body{
     /* "specialities end" */
 
     /* "form window start" */
+
+    /*AllPopUpForms start */
     #modal-window .modal-footer{
         margin-top: 20px;
         margin-left: 4px;
@@ -1731,6 +2061,59 @@ body{
         margin: 33px 0px -13px -8px;
     }
     /* "form window end" */
+    #AllPopUpForms .modal-content{
+        width: 677px;
+    }
+    #AllPopUpForms .modal-title{
+        margin-top: 35px;
+        margin-bottom: 16px;
+    }
+    #AllPopUpForms .modal-title-text{
+        font-size: 36px;
+        line-height: 41px;    
+        font-weight: 500;
+        font-family: "Ubuntu Medium";
+    }
+    #AllPopUpForms .mandatory-input{
+        width: 511px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    #AllPopUpForms .input-block{
+        width: 217px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #AllPopUpForms .input-placeholder{
+        width: 217px;
+    }
+    #AllPopUpForms .not-mandatory-input{
+        width: 511px;
+    }
+    #AllPopUpForms .input-placeholder2{
+        margin-top: 20px;
+        width: 511px;
+        height: 40px;
+    }
+    #AllPopUpForms .not-mandatory-input-text{
+        display: none;
+    }
+    #participantsModalWindow .Checkbox-block{
+        margin-left: 83px;
+    }
+    #participantsModalWindow .Checkbox-title{
+        padding-bottom: 0px;
+    }
+    #AllPopUpForms .modal-button{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    #participantsModalWindow .modal-button{
+        margin-top: 20px;
+    }
+    /*AllPopUpForms end */
 
     /* "burger window start" */
     #burger-window .modal-footer{
@@ -1797,7 +2180,93 @@ body{
     /* "burger window start" */
 
     /* "footer start" */
-    #footer{}
+    #footer {
+        min-height: 396px;
+    }
+    #footer .footer-main-cont .footer-main {
+        min-height: 341px;
+        padding-top: 161px;
+        width: 768px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 12px;
+        right: 40px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo {
+        top: 30px;
+        left: 40px;
+        width: 139px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo .footer-logo-svg {
+        height: 39px;
+        margin-bottom: 8px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo .footer-main-rm-logo-svg {
+        width: 131px;
+        margin: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-students-logo {
+        top: 266px;
+        right: 278px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text-box {
+        width: 686px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #footer .footer-main-line {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text {
+        width: 289px;
+        text-align: left;
+        margin-bottom: 0;
+        letter-spacing: 162%;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text2 {
+        width: 237px;
+        line-height: 156%;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 32px;
+        right: 185px;
+        height: 86px;
+        text-align: left;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-family: "Ubuntu Bold";
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-phone {
+        margin-bottom: 5.18px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 70px;
+        bottom: 25px;
+    }
+    #footer .footer-top-button{
+        position: absolute;
+        bottom: auto;
+        right: 48px;
+        margin: 5px;
+    }
+    #footer .default-img{
+        width: 50px;
+        height: 50px;
+    }
     /* "footer end" */
 }
 
@@ -2276,6 +2745,111 @@ body{
     /* "form window end" */
 
     /* "footer start" */
-    #footer{}
+    #footer {
+        min-height: 431px;
+    }
+    #footer .footer-main-cont .footer-main {
+        min-height: 376px;
+        padding: 156px 0px 0px 42px;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 1024px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 14px;
+        right: 43px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo {
+        top: 34px;
+        left: 46px;
+        width: 139px;
+    }
+    #footer .footer-main-cont .footer-main .footer-students-logo {
+        top: 307px;
+        right: 406px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav {
+        position: absolute;
+        top: 73px;
+        left: 315px;
+        width: 348px;
+        height: 18px;
+        display: flex;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav .nav-menu-list {
+        width: 348px;
+        height: 18px;
+        flex-direction: row;
+    }
+    #footer .footer-main-cont .footer-main .nav-menu-link {
+        font-family: "Ubuntu Regular";
+        font-size: 15px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text-box {
+        width: 564px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-right: 66px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-line {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text {
+        font-size: 15px;
+        text-align: left;
+        line-height: 160%;
+        letter-spacing: 0.3px;
+        width: 288px;
+        height: 119px;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text2 {
+        width: 237px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box {
+        position: relative;
+        width: 312px;
+        height: 108px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box .icon-icon-box {
+        padding: 7px;
+        border: 1px solid #6d6d6d;
+        border-radius: 6px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 64px;
+        right: 40px;
+        width: 184.196px;
+        height: 106px;
+        text-align: right;
+        font-size: 20px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 41px;
+        bottom: 19px;
+    }
+    #footer .footer-second-section .footer-second-section-text {
+        font-family: "Ubuntu Bold";
+        font-size: 18px;
+        margin: 0;
+    }
+    #footer .footer-top-button{
+        right: 242px;
+    }
     /* "footer end" */
 }

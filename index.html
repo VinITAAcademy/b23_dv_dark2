@@ -22,7 +22,7 @@
     
     <div id="wrapper">
         <!--"header start"-->
-        <header id="header">
+        <header id="header"> <!--move language to sidebar-->
             <div class="header-container">
                 <div class="main-logo">
                     <img class="image-logo" src="./src/Img/Logo.webp">
@@ -560,7 +560,7 @@
         </section>
         <!--"specialities end"-->
 
-        <!--"form window start"-->
+        <!--"form window start"--> <!--absolute for cancel and language, fix image, fix hovers everywhere, add br tag to h3, less margin, відступ між "постраждали" і "наслідок війни", робота молоді неправильний путь -->
         <section id="modal-window">
             <div class="modal fade" id="main" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -630,7 +630,7 @@
 
         <!--"form burger window start"-->
         <section id="burger-window">
-            <div class="modal fade" id="burger-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="burger-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -647,10 +647,12 @@
                         <div class="modal-body">
                             <div class="line-up-color line-position"></div>
                             <div class="line-down-color line-position"></div>
-                            <a class="default-text text-color text margin-adjust-1" href="#about-us">Про програму</a>
-                            <a class="default-text text-color text margin-adjust-2" href="#specialities">Спеціальності</a>
-                            <a class="default-text text-color text" href="#our-partners">Партнери</a>
-                            <a class="default-text text-color text margin-adjust-3" href="#footer">Контакти</a>
+                            <div class="modal-body" data-bs-dismiss="modal" aria-label="Close" type="button">
+                                <a class="default-text text-color text margin-adjust-1" href="#about-us">Про програму</a>
+                                <a class="default-text text-color text margin-adjust-2" href="#specialities">Спеціальності</a>
+                                <a class="default-text text-color text" href="#our-partners">Партнери</a>
+                                <a class="default-text text-color text margin-adjust-3" href="#footer">Контакти</a>
+                            </div>    
                             <div class="line-up-color line-position"></div>
                             <div class="line-down-color line-position"></div>
                         </div>

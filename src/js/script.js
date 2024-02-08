@@ -37,4 +37,3 @@ const swiper = new Swiper('#swiper-specialities', {
     prevEl: '.swiper-button-prev',
   },
 });
-//specialities swiper initializing swiper end

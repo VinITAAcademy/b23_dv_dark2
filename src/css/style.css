@@ -705,15 +705,17 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 6px;
     margin-top: 32px;
 }
-#specialities .slider-block-content1{
-    background-color: var(--White);
-    padding-top: 35px;
+#specialities .slider-block-content{
     width: 301px;
     height: 462px;
+    background-color: var(--White);
     text-align: center;
     border-radius: 6px;
 }
-#specialities .slider-title1{
+#specialities .slider-block-content1{
+    padding-top: 35px;
+}
+#specialities .slider-title{
     font-family: "Ubuntu Bold";
     font-size: 32px;
     font-weight: 700;
@@ -732,22 +734,10 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
     font-weight: 700;
     line-height: 18.9px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
 }
 #specialities .slider-block-content2{
     padding-top: 35px;
-    width: 301px;
-    height: 462px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 6px;
-}
-#specialities .slider-title2{
-    font-family: "Ubuntu Bold";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 37px;
-    color: var(--Dark_Blue);
 }
 #specialities .slider-img2{
     margin-top: 25px;
@@ -763,22 +753,10 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
     font-weight: 700;
     line-height: 19.29px;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
 }
 #specialities .slider-block-content3{
     padding-top: 24px;
-    width: 301px;
-    height: 462px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 6px;
-}
-#specialities .slider-title3{
-    font-family: "Ubuntu Bold";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 37px;
-    color: var(--Dark_Blue);
 }
 #specialities .slider-img3{
     margin-top: 18px;
@@ -807,18 +785,6 @@ h1,h2,h3,h4,h5,h6{
 }
 #specialities .slider-block-content4{
     padding-top: 35px;
-    width: 301px;
-    height: 462px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 6px;
-}
-#specialities .slider-title4{
-    font-family: "Ubuntu Bold";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 37px;
-    color: var(--Dark_Blue);
 }
 #specialities .slider-img4{
     margin-top: 35px;
@@ -828,7 +794,7 @@ h1,h2,h3,h4,h5,h6{
     width: 220px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     font-size: 13px;
     font-weight: 700;
     line-height: 17.5px;
@@ -836,18 +802,6 @@ h1,h2,h3,h4,h5,h6{
 }
 #specialities .slider-block-content5{
     padding-top: 24px;
-    width: 301px;
-    height: 462px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 6px;
-}
-#specialities .slider-title5{
-    font-family: "Ubuntu Bold";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 37px;
-    color: var(--Dark_Blue);
 }
 #specialities .slider-img5{
     margin-top: 8px;
@@ -857,7 +811,7 @@ h1,h2,h3,h4,h5,h6{
     width: 220px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     font-size: 14px;
     font-weight: 700;
     line-height: 18.9pxx;
@@ -865,6 +819,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #specialities .slider-content-button{
     background-color: var(--Blue);
+    color: var(--White);
     width: 221px;
     height: 44px;
     margin-left: auto;
@@ -873,19 +828,19 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     vertical-align: center;
     line-height: 38px;
+    font-size: 17px;
 }
 #specialities .slider-button-text{
     text-decoration: none;
     color: var(--White);
 }
 #specialities .swiper-button-prev{
-    background-image: url('../Img/block_7_specialities/blok7-slider-button-prev.png');
+    background-image: url('../Img/left.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 25px;
 	left: 4px;
     top: 575px;
 }
@@ -893,12 +848,11 @@ h1,h2,h3,h4,h5,h6{
     display: none;
 }
 #specialities .swiper-button-next{
-    background-image:url('../Img/block_7_specialities/blok7-slider-button-next.png');
+    background-image:url('../Img/right.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30px;
-    height: 30px;
+    width: 25px;
     position: absolute;
 	right: 4px;
     top: 574px;          
@@ -908,7 +862,9 @@ h1,h2,h3,h4,h5,h6{
 }
 #specialities .swiper-pagination{
     position: absolute;
-    bottom: 33px;
+    bottom: 25px;
+    --swiper-pagination-bullet-width: 24px;
+    --swiper-pagination-bullet-height: 24px;
 }
 /* "specialities end" */
 
@@ -1678,7 +1634,7 @@ h1,h2,h3,h4,h5,h6{
     #attract .text2-attract{
         text-align: center;
         width: 672px;
-        font-family:"Inria Serif Regular";
+        font-family: "Ubuntu Medium";
         font-size: 24px;
         line-height: 39px;
     }
@@ -2246,6 +2202,9 @@ h1,h2,h3,h4,h5,h6{
         top: 40%;
         left: 44.6%;
     }
+    #we-provide .conteiner{
+        margin: 0 auto 40px auto;
+    }
     /* "we provide end" */
 
     /* "about us start" */
@@ -2322,7 +2281,7 @@ h1,h2,h3,h4,h5,h6{
     }
     #attract .text-attract{
         width: 380px;
-        font-family: "Inria Serif Regular";
+        font-family: "Ubuntu Regular";
         margin: 0 100px 0 0;
     }
     #attract .img-attract-desktop{

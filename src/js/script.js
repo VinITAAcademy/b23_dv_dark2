@@ -36,9 +36,6 @@ const swiper = new Swiper('#swiper-specialities', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-<<<<<<< HEAD
-});
-=======
 });
 //specialities swiper initializing swiper end
 const scrollUp = $(".scroll-up");
@@ -240,4 +237,3 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
     }
 }
 //AllForm valid check end
->>>>>>> develop

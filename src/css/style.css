@@ -17,6 +17,9 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
+.grecaptcha-badge{
+    display: none;
+}
 
 @font-face {
     font-family: "Ubuntu Bold";
@@ -1261,6 +1264,18 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-family: "Ubuntu Medium";
 }
+#successfulRegistrationModalWindow .modal-title-text{
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 113px;
+}
+#successfulRegistrationModalWindow .under-modal-title-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: "Ubuntu Medium";
+    margin-top: 26px;
+}
 #AllPopUpForms .underlined{
     font-weight: 700;
 }
@@ -1348,6 +1363,11 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 400;
     line-height: 25px;
     border-radius: 6px;
+}
+#successfulPopUp .modal-send-button{
+    width: 270px;
+    height: 53px;
+    margin: 82px auto 55px auto;
 }
 #participantsModalWindow .Checkbox-block{
     margin-left: 43px;

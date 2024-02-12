@@ -684,9 +684,9 @@
                             <div class="modal-title">
                                 <h2 class="modal-title-text">Анкета для <span class="underlined"> партнерів </span> програми</h2>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
+                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
-                            <form action="">
+                            <form action="#" class="forms">
                                 <div class="mandatory-input">
                                     <div class="userNameBlock input-block">
                                         <label class="placeholder-text" for="first_name">Ім’я</label>
@@ -727,7 +727,7 @@
                                 </div>
     
                                 <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
+                                    <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
                                 </div>
                             </form>
                         </div>
@@ -741,9 +741,9 @@
                             <div class="modal-title">
                                 <h2 class="modal-title-text">Анкета для <span class="underlined"> учасників </span> програми</h2>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
+                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
-                            <form action="">
+                            <form action="#" class="forms">
                                 <div class="mandatory-input">
                                     <div class="userNameBlock input-block">
                                         <label class="placeholder-text" for="first_name">Ім’я</label>
@@ -832,7 +832,7 @@
                                 </div>
     
                                 <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
+                                    <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
                                 </div>
                             </form>
 
@@ -848,9 +848,9 @@
                             <div class="modal-title">
                                 <h2 class="modal-title-text">Анкета для <span class="underlined">викладачів/менторів</span> <br>програми</h2>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
+                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
-                            <form action="">
+                            <form action="#" class="forms">
                                 <div class="mandatory-input">
                                     <div class="userNameBlock input-block">
                                         <label class="placeholder-text" for="first_name">Ім’я</label>
@@ -890,9 +890,24 @@
                                     </div>
                                 </div>
                                 <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
+                                    <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="successfulRegistrationModalWindow">
+                <div class="modal" id="successfulPopUp" tabindex="-1" aria-bs-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background: rgba(0, 0, 0, 0.5);">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h2 class="modal-title-text" id="successfulTitle">Дякуємо за Вашу заявку!</h2>
+                                <h3 class="under-modal-title-text">Очікуйте зворотнього зв’язку.</h3>
+                            </div>
+                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick='closeModalsAfterSendingForm()'></button>
+
+                            <button class="modal-send-button" onclick='closeModalsAfterSendingForm()'>На головну</button>
                         </div>
                     </div>
                 </div>
@@ -1010,6 +1025,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         
     <!-- recaptcha -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
     
     <script src="src/js/script.js"></script>
 </body>

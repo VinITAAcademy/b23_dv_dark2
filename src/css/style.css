@@ -1264,12 +1264,12 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-family: "Ubuntu Medium";
 }
-#successfulRegistrationModalWindow .modal-title-text{
+#successfulPopUp .modal-title-text{
     font-size: 24px;
     line-height: 28px;
     margin-top: 113px;
 }
-#successfulRegistrationModalWindow .under-modal-title-text{
+#successfulPopUp .under-modal-title-text{
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
@@ -1344,13 +1344,13 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-#participantsModalWindow .modal-button{
+#participantsPopUp .modal-button{
     margin-top: 27px;
 }
-#mentorModalWindow .modal-button{
+#mentorPopUp .modal-button{
     margin-top: 20px;
 }
-#partnersModalWindow .modal-button{
+#partnersPopUp .modal-button{
     margin-top: 28px; 
 }
 #AllPopUpForms .modal-send-button{
@@ -1369,15 +1369,15 @@ h1,h2,h3,h4,h5,h6{
     height: 53px;
     margin: 82px auto 55px auto;
 }
-#participantsModalWindow .Checkbox-block{
+#participantsPopUp .Checkbox-block{
     margin-left: 43px;
 }
-#participantsModalWindow .checkbox-label-content{
+#participantsPopUp .checkbox-label-content{
     display: flex;
     position: relative;
     margin-top: 11px;
 }
-#participantsModalWindow .Checkbox-title{
+#participantsPopUp .Checkbox-title{
     margin-top: 16px;
     font-size: 20px;
     font-weight: 700;
@@ -2076,17 +2076,17 @@ h1,h2,h3,h4,h5,h6{
     #AllPopUpForms .not-mandatory-input-text{
         display: none;
     }
-    #participantsModalWindow .Checkbox-block{
+    #participantsPopUp .Checkbox-block{
         margin-left: 83px;
     }
-    #participantsModalWindow .Checkbox-title{
+    #participantsPopUp .Checkbox-title{
         padding-bottom: 0px;
     }
     #AllPopUpForms .modal-button{
         margin-bottom: 30px;
         margin-top: 20px;
     }
-    #participantsModalWindow .modal-button{
+    #participantsPopUp .modal-button{
         margin-top: 20px;
     }
     /*AllPopUpForms end */

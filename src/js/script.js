@@ -124,10 +124,13 @@ function updatePlaceholderText(){
 };
 
 //placeholder resize end
+let userModal;
 let formValid =false;
 
+
 function checkMentorForm(Button){
-    const form = Button.parentNode;
+    const form = Button.parentNode.parentNode;
+    userModal = form.parentNode.parentNode.parentNode;
     const userNameForm = form.querySelector('.input-name');
     const userEmailForm =form.querySelector('.input-email');
     const userSurnameForm =form.querySelector('.input-surname');
@@ -231,9 +234,143 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
     UserMobilePhone();
     if( UserName(),UserEmail(),UserSurname(),UserMobilePhone()){
         formValid=true;
+            userModal.querySelector('.close-modal-btn').click();
+        
     }
     else{
         formValid=false;
     }
 }
 //AllForm valid check end
+
+const forms = document.querySelector(".forms");
+const lang = document.documentElement.lang;
+listenSubmit();
+function listenSubmit() {
+    document.querySelectorAll(".check-form").forEach((elem) =>
+        elem.addEventListener("click", (event) => {
+            event.preventDefault();
+            // submit to the server if the form is valid
+            if (formValid) {
+                grecaptcha.ready(function () {
+                grecaptcha.execute(
+                    "6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP",
+                    { action: "submit" }
+                    ).then(function (token) {
+                        if (formValid) {
+                            const actionUrl =
+                                "https://intita.com/api/v1/entrant";
+                            const entrantFormData = new FormData(
+                                forms
+                            );
+                            entrantFormData.append(
+                                "g-recaptcha-response",
+                                token
+                            );
+                            const http = new XMLHttpRequest();
+                            http.open("POST", actionUrl, true);
+                            http.send(entrantFormData);
+                            http.onreadystatechange = function () {
+                                if (
+                                    +http.readyState === 4 &&
+                                    +http.status === 201
+                                ) {
+                                    entrantSubmitResponse();
+                                } else if (+http.status === 400) {
+                                    switch (lang) {
+                                        case "uk":
+                                            entrantSubmitResponse(
+                                                "Сервер тимчасово перевантажений. Будь ласка, cпробуйте пізніше"
+                                            );
+                                            break;
+                                        case "en":
+                                            entrantSubmitResponse(
+                                                "The server is temporary busy. Please try again later"
+                                            );
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                }
+                            };
+                            http.onload = function () {
+                                if (+http.status !== 201) {
+                                    switch (lang) {
+                                        case "uk":
+                                            entrantSubmitResponse(
+                                                "Сервер тимчасово перевантажений. Будь ласка, cпробуйте пізніше"
+                                            );
+                                            break;
+                                        case "en":
+                                            entrantSubmitResponse(
+                                                "The server is temporary busy. Please try again later"
+                                            );
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                    return;
+                                }
+                                entrantSubmitResponse();
+                            };
+                        }
+                    });
+                });
+            }
+        })
+    );
+}
+
+function entrantSubmitResponse(errorStr) {
+    const secondWindow = document.getElementById("successfulPopUp");
+    if (getComputedStyle(secondWindow, null).display === "none") {
+        const elementAnketeText =
+            document.querySelector("#successfulTitle");
+        if (errorStr) {
+            elementAnketeText.innerText = errorStr;
+            elementAnketeText.nextElementSibling.style.display="none";
+            // document.getElementById("registerModalToggle").style.display ="block";
+            document.getElementById("successfulPopUp").style.display =
+                "block";
+        } else {
+            switch (lang) {
+                case "uk":
+                    elementAnketeText.innerHTML =
+                        "Дякую!<br> Я зателефоную Вам найближчим часом!";
+                    break;
+                case "en":
+                    elementAnketeText.innerHTML =
+                      "Thank you!<br> I will call you soon!";
+                    break;
+                default:
+                    break;
+            }
+            document.getElementById("successfulPopUp").style.display = "flex";
+        }
+        secondWindow.style.display = "block";
+    }
+}
+//close and clean form After Sending Form start
+function closeModalsAfterSendingForm(){
+    document.getElementById('successfulPopUp').style.display = 'none';
+    userModal.querySelectorAll('.input-placeholder').forEach(el =>{
+        el.value="";
+        el.classList.remove("successful-validation");
+        el.previousElementSibling.style.display='block';
+    })
+}
+//close and clean form After Sending Form end
+
+
+//form cleaning After click on close button start
+function cleanForm(button){
+    let parent=button.parentNode;
+    parent.querySelectorAll('.input-placeholder').forEach(el =>{
+        el.value='';
+        el.classList.remove("successful-validation");
+        el.classList.remove("eror");
+        el.previousElementSibling.style.display='block';
+        el.nextElementSibling.innerHTML='';
+    })
+}
+//form cleaning After click on close button end

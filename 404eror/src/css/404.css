@@ -1,0 +1,1040 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Ubuntu Bold";
+    src: url("../fonts/Ubuntu-Bold.eot");
+    src: url("../fonts/Ubuntu-Bold.eot") format("embedded-opentype"),
+        url("../fonts/Ubuntu-Bold.woff") format("woff"),
+        url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu Medium";
+    src: url("../fonts/Ubuntu-Medium.eot");
+    src: url("../fonts/Ubuntu-Medium.eot") format("embedded-opentype"),
+        url("../fonts/Ubuntu-Medium.woff") format("woff"),
+        url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu Regular";
+    src: url("../fonts/Ubuntu-Regular.eot");
+    src: url("../fonts/Ubuntu-Regular.eot") format("embedded-opentype"),
+        url("../fonts/Ubuntu-Regular.woff") format("woff"),
+        url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --Dark_Blue: #000A24;
+    --Black: #000000;
+    --Brown: #252323;
+    --Blue: #083CC0;
+    --White: #FFFFFF;
+}
+
+
+
+/* "header start" */
+#header  .page-links, .language-change{
+    display: none;
+}
+
+#header .main-logo, .page-links, .language-change, .burger-menu{
+    padding: 25px;
+}
+
+#header a{
+    text-decoration: none;
+}
+
+#header .burger-menu{
+    display: block;
+    position: relative;
+    left: 56px;
+    bottom: 7px;
+}
+
+#header .burger-button{
+    border-radius: 6px;
+    outline-style: none;
+    border-style: none;
+}
+
+#header .burger-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#header .header-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#header .main-logo{
+    position: relative;
+    right: 56px;
+    bottom: 1px;
+}
+
+#header .image-logo{
+    width: 78px;
+    height: 43px;
+}
+/* "header end" */
+
+/* "sidebar-block start" */
+#sidebar .sidebar-container{
+    display: none;
+}
+/* "sidebar-block end" */
+
+/* "main-block start" */
+#main-block .background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../Img/heromobile.webp');
+    min-height: 362px;
+}
+
+#main-block .h1-container {
+    width: 287px;
+    margin: 101px 0 27px 0;
+}
+
+#main-block .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+#main-block .page-main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--White);
+    margin: -45px -2px 0 0;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+#main-block .register-container {
+    display: flex;
+    align-items: center;
+    width: 229px;
+    height: 48px;
+    margin: 20px 0 -25px 0;
+}
+
+#main-block .block-relative {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#main-block .wraper-main {
+    background: var(--Dark_Blue);
+}
+
+#main-block .quote-container {
+    width: 100%;
+    height: 325px;
+    background: var(--Dark_Blue);
+    display: flex;
+}
+
+#main-block .quote-content {
+    font-style: italic;
+    text-align: left;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.02em;
+    margin-right: -2px;
+    width: 291px;
+    padding: 46px 0 0 0;
+}
+
+#main-block .quote-left {
+    width: 31.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: -26px;
+    top: 24px;
+    justify-content: space-between;
+}
+
+#main-block .quote-right {
+    width: 26.2px;
+    height: 21.17px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: -11px;
+    top: 267px;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+}
+
+#main-block .change-display-tablet{
+    display: none;
+}
+
+#main-block .signup {
+    width: 100%;
+    height: 100%;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 6px;
+    outline-style: none;
+    border-style: none;
+    font-family: "Ubuntu Regular";
+}
+
+#main-block .signup:hover{
+    background: #02257F;
+}
+
+#main-block .signup:active{
+    background: var(--White);
+}
+
+#main-block .signup:disabled{
+    background:#61677A;
+    cursor: not-allowed;
+}
+/* "main-block end" */
+
+/* "burger menu start" */
+#burger-window .modal{
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 0;
+    --bs-modal-border-width: 0;
+    --bs-modal-padding: 0;
+    --bs-modal-header-padding: 0;
+    --bs-modal-width: 100%;
+}
+
+#burger-window a{
+    text-decoration: none;
+}
+
+#burger-window .modal-header{
+    border-bottom: 0;
+    padding: 3px 0;
+    margin-bottom: 17px;
+}
+
+#burger-window .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#burger-window .modal-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-left: -2px;
+    padding-bottom: 4.4px;
+    border-top: 0;
+}
+
+#burger-window .line-position{
+    width: 300px;
+    margin-right: 5px;
+}
+
+#burger-window .line-up-color{
+    border-top: 5px solid var(--Blue);
+}
+
+#burger-window .line-down-color{
+    border-top: 5px solid #FFD500;
+}
+
+#burger-window .default-text{
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    line-height: normal;
+}
+
+#burger-window .text-color{
+    color: var(--Black);
+}
+
+#burger-window .text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 14px 0;
+}
+
+#burger-window .header-title{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+#burger-window .body-title-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 5px;
+}
+
+#burger-window .button-content{
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    padding: 14px 0;
+    font-size: 16px;
+}
+
+#burger-window .line-height-adjust{
+    line-height: 144%;
+}
+
+#burger-window .margin-adjust{
+    margin: 14px 0px -6px -9px;
+}
+
+#burger-window .image{
+    width: 71px;
+    height: 31px;
+    margin: 2px -37px 40px 5px;
+}
+
+#burger-window .cancel-button{
+    border: 0;
+    background-color: var(--White);
+    margin: -37px 5px 2px -5px;
+}
+
+#burger-window .button{
+    border-radius: 6px;
+    text-align: center;
+    border-style: none;
+    outline-style: none;
+    background: var(--Blue);
+}
+
+#burger-window .button:hover{
+    background: #02257F;
+}
+
+#burger-window .button:active{
+    background: var(--White);
+}
+
+#burger-window .button:active{
+    color: var(--Blue);
+}
+
+#burger-window .button:disabled{
+    background:#61677A;
+    color:var(--White);
+    cursor: not-allowed;
+}
+
+#burger-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    font-size: 50px;
+}
+
+#burger-window .icon-cancel{
+    font-size: 30px;
+}
+
+#burger-window .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+    color: var(--Black); 
+}
+
+#burger-window .icon-telegram:hover, .icon-facebook:hover, .icon-whatsapp:hover, .icon-viber:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-cancel:hover{
+    color: #7FA2FB;
+}
+
+#burger-window .icon-telegram:active, .icon-facebook:active, .icon-whatsapp:active, .icon-viber:active, .icon-twitter:active, .icon-instagram:active, .icon-cancel:active{
+    color: var(--White);
+}
+
+#burger-window .icon-telegram:disabled, .icon-facebook:disabled, .icon-whatsapp:disabled, .icon-viber:disabled, .icon-twitter:disabled, .icon-instagram:disabled, .icon-cancel:disabled{
+    color: #61677A;
+    cursor: not-allowed;
+}
+
+#burger-window .row{
+    padding-bottom: 8px;
+}
+
+#burger-window .column{
+    float: left;
+    width: 33.33%;
+    padding: 5px 25px;
+    margin: 0px 2px 0 -2px;
+}
+/* "burger menu end" */
+
+/* "footer start" */
+#footer {
+    min-height: 674px;
+}
+.footer-main-cont {
+    background:#252323;
+    display: flex;
+    justify-content: center;
+}
+#footer .footer-main-cont .footer-main {
+    position: relative;
+    min-height: 637px;
+    width: 375px;
+    padding-top: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#FFFFFF;
+}
+#footer .footer-main-cont .footer-main .footer-main-icon {
+    font-size: 30px;
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-logo {
+    position: absolute;
+    top: 47px;
+    left: 16px;
+    width: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .footer-main-cont .footer-main .footer-logo .footer-logo-svg {
+    height: 24px;
+    margin-bottom: 5px;
+}
+#footer .footer-main .footer-students-logo {
+    position: absolute;
+    top: 50px;
+    right: 16px;
+    width: 211px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .footer-main-cont .footer-main .footer-students-logo-svg {
+    width: 50px;
+}
+#footer .footer-main-cont .footer-main .footer-students-logo .footer-main-logo-text {
+    color: white;
+    font-family: "Ubuntu Regular";
+    font-size: 12px;
+    margin: 0;
+    text-decoration: underline;
+}
+#footer .footer-main-cont .footer-main .footer-main-nav {
+    width: 111px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+#footer .footer-main-cont .footer-main .footer-main-nav .nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-main-cont .footer-main .anchor-menu-link {
+    color: white;
+    font-family: "Ubuntu Medium";
+    font-size: 16px;
+}
+#footer .footer-main-cont .footer-main .footer-main-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .footer-main-cont .footer-main .footer-main-line {
+    width: 291px;
+    margin: 0;
+    border: none;
+    border-top: 3px solid #083CC0;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+#footer .footer-main-cont .footer-main .footer-main-text {
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    text-align: center;
+    width: 291px;
+    margin: 0 0 14px 0;
+}
+#footer .footer-main-cont .footer-main .footer-main-text2 {
+    width: 232px;
+    margin-bottom: 19px;
+}
+#footer .footer-main-text-link {
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-icon-box {
+    width: 340px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts {
+    width: 147px;
+    height: 93px;
+    text-align: center;
+    font-family: "Ubuntu Regular";
+    font-size: 16px;
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+    font-family: "Ubuntu Bold";
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-link {
+    color: white;
+}
+#footer .footer-main-cont .footer-main .footer-main-qr-code {
+    display: none;
+}
+#footer .footer-second-section {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    min-height: 37px;
+    background-color: white;
+}
+#footer .footer-second-section .footer-second-section-text {
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    margin: 0;
+}
+.footer-main-rm-logo-svg{
+    width: 83px;
+}
+.footer-main-icon-box a{
+    text-decoration: none;
+}
+.footer-logo-line{
+    border: 1px dashed #ffffff;
+    width: 83px;
+}
+.default-text-value{
+    margin: 0;
+}
+/* "footer end" */
+@media(min-width:768px){
+    /* "header start" */
+    #header .main-logo{
+        right: 160px;
+    }
+
+    #header .image-logo{
+        width: 139px;
+        height: 85.999px;
+    }
+
+    #header .burger-menu{
+        left: 160px;
+        bottom: 18px;
+    }
+
+    #header .burger-icon{
+        width: 50px;
+        height: 50px;
+    }
+    /* "header end" */
+
+    /* "main-block start" */
+    #main-block .change-display-mobile{
+        display: none;
+    }
+
+    #main-block .change-display-tablet{
+        display: inline;
+    }
+
+    #main-block .background-container {
+        background-image: url('../Img/herotablet.webp');
+        min-height: 1024px;
+    }
+
+    #main-block .page-main-title {
+        font-size: 70px;
+        line-height: 125%;
+        margin: -115px -7px 0 0;
+        letter-spacing: 0.035em;
+        width: 550px;
+    }
+
+    #main-block .block-relative{
+        max-width: 768px;
+    }
+
+    #main-block .text-size{
+        font-size: 24px;
+    }
+
+
+    #main-block .register-container {
+        width: 524px;
+        height: 107px;
+        margin-top: 55px;
+    }
+
+    #main-block .quote-content{
+        width: 592px;
+        padding-top: 51px;
+    }
+
+    #main-block .quote-container{
+        height: 362px;
+    }
+
+    #main-block .quote-left {
+        left: -37px;
+        top: 31px;
+    }
+
+    #main-block .quote-right {
+        top: 308px;
+        right: -19px;
+    }
+    #main-block .signup{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    /* "main-block end" */
+
+    /* "burger window start" */
+    #burger-window .modal-footer{
+        margin-top: 20px;
+        margin-left: 4px;
+        padding-bottom: 21px;
+    }
+    
+    #burger-window .header-title{
+        font-size: 24px;
+    }
+
+    #burger-window .body-title-text{
+        font-size: 40px;
+        margin-top: 16px;
+        margin-bottom: 35px;
+    }
+
+    #burger-window .line-position{
+        width: 697px;
+        margin-right: 3px;
+    }
+
+    #burger-window .text{
+        font-size: 64px;
+        padding: 21px 0;
+        letter-spacing: 0.01em;
+    }
+
+    #burger-window .button-content{
+        width: 413px;
+        padding: 28px 0;
+        font-size: 22px;
+        margin-right: -1px;
+    }
+
+    #burger-window .cancel-button{
+        margin: -71px 5px 0 0;
+    }
+
+    #burger-window .image{
+        margin-top: -34px;
+    }
+
+    #burger-window .margin-adjust{
+        margin: 34px 0px -13px -8px;
+    }
+
+    #burger-window .margin-adjust-1{
+        margin-top: 17px;
+    }
+
+    #burger-window .margin-adjust-2{
+        margin: -7px 0;
+    }
+
+    #burger-window .margin-adjust-3{
+        margin: -5px 0 9px 0;
+    }
+    /* "burger window start" */
+
+    /* "footer start" */
+    #footer {
+        min-height: 396px;
+    }
+    #footer .footer-main-cont .footer-main {
+        min-height: 341px;
+        padding-top: 161px;
+        width: 768px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 12px;
+        right: 40px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo {
+        top: 30px;
+        left: 40px;
+        width: 139px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo .footer-logo-svg {
+        height: 39px;
+        margin-bottom: 8px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo .footer-main-rm-logo-svg {
+        width: 131px;
+        margin: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-students-logo {
+        top: 266px;
+        right: 278px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text-box {
+        width: 686px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #footer .footer-main-line {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text {
+        width: 289px;
+        text-align: left;
+        margin-bottom: 0;
+        letter-spacing: 162%;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text2 {
+        width: 237px;
+        line-height: 156%;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 32px;
+        right: 185px;
+        height: 86px;
+        text-align: left;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-family: "Ubuntu Bold";
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-phone {
+        margin-bottom: 5.18px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 70px;
+        bottom: 25px;
+    }
+    .footer-logo-line{
+        width: 129px;
+    }
+    /* "footer end" */
+}
+
+@media(min-width: 1024px){
+    /* "header start" */
+    #header  .page-links, .language-change{
+        display: block;
+    }
+
+    #header .language-change{
+        z-index: 1;
+    }
+    
+    #header .burger-menu{
+        display: none;
+    }
+    
+    #header .main-logo{
+        right: 8px;
+    }
+
+    #header .language-change{
+        margin: 0 0 -8px 26px;
+    }
+    
+    #header .page-links{
+        display: flex;
+        justify-content: space-evenly;
+        min-width: 640px;
+        margin-left: 16px;
+    }    
+
+    #header .image-language{
+        width: 71px;
+        height: 28px;
+    }
+
+    #header .default-text{
+        color: var(--White);
+        text-align: center;
+        font-family: "Ubuntu Regular";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.01em;
+    }
+    /* "header end" */
+
+    /* "sidebar-block start" */
+    #sidebar .sidebar-container{
+        position: absolute;
+        background-color: #515558;
+        width: 137px;
+        height: 768px;
+        right: 0;
+        display: block;
+    }
+
+    #sidebar .social-networks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 149px;
+    }
+
+    #sidebar .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
+        font-size: 35px;
+        color: var(--White);
+        padding: 28.5px 0;
+    }
+
+    #sidebar .icon-viber{
+        width: 35px;
+    }
+    /* "sidebar-block end" */
+
+    /* "main-block start" */
+    #main-block .background-container {
+        background-image: url('../Img/background-hero.webp');
+        min-height: 768px;
+    }
+
+    #main-block .h1-container {
+        width: 624px;
+        height: 41px;
+        margin: 381px 200px -30px 200px;
+    }
+
+    #main-block .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-block .page-main-title{
+        font-size: 36px;
+        margin: -47px 0 0 4px;
+        letter-spacing: 0.03em;
+        line-height: 120%;
+    }
+
+    #main-block .quote-container {
+        height: 170px;
+        background: var(--Dark_Blue);
+    }
+
+    #main-block .signup{
+        width: 352px;
+        height: 75px;
+        margin: -78px 0 0 86px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    #main-block .text-size{
+        font-size: 16px;
+    }
+
+    #main-block .block-relative{
+        max-width: 1024px;
+        margin-top: -17px;
+    }
+
+    #main-block .quote-content{
+        width: 748px;
+        letter-spacing: 0.03em;
+    }
+
+    #main-block .change-display-tablet{
+        display: none;
+    }
+
+    #main-block .quote-right{
+        top: 142px;
+        right: -17px;
+    }
+    /* "main-block end" */
+
+    /* "footer start" */
+    #footer {
+        min-height: 431px;
+    }
+    #footer .footer-main-cont .footer-main {
+        min-height: 376px;
+        padding: 156px 0px 0px 42px;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 1024px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 14px;
+        right: 43px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+    #footer .footer-main-cont .footer-main .footer-logo {
+        top: 34px;
+        left: 46px;
+        width: 139px;
+    }
+    #footer .footer-main-cont .footer-main .footer-students-logo {
+        top: 307px;
+        right: 406px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav {
+        position: absolute;
+        top: 73px;
+        left: 315px;
+        width: 348px;
+        height: 18px;
+        display: flex;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-nav .nav-menu-list {
+        width: 348px;
+        height: 18px;
+        flex-direction: row;
+    }
+    #footer .footer-main-cont .footer-main .nav-menu-link {
+        font-family: "Ubuntu Regular";
+        font-size: 15px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text-box {
+        width: 564px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-right: 66px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-line {
+        display: none;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text {
+        font-size: 15px;
+        text-align: left;
+        line-height: 160%;
+        letter-spacing: 0.3px;
+        width: 288px;
+        height: 119px;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-text2 {
+        width: 237px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box {
+        position: relative;
+        width: 312px;
+        height: 108px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 0;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-icon-box .icon-icon-box {
+        padding: 7px;
+        border: 1px solid #6d6d6d;
+        border-radius: 6px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 64px;
+        right: 40px;
+        width: 184.196px;
+        height: 106px;
+        text-align: right;
+        font-size: 20px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #footer .footer-main-cont .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 41px;
+        bottom: 19px;
+    }
+    #footer .footer-second-section .footer-second-section-text {
+        font-family: "Ubuntu Bold";
+        font-size: 18px;
+        margin: 0;
+    }
+    /* "footer end" */
+
+}

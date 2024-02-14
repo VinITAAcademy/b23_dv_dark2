@@ -17,6 +17,9 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
+.grecaptcha-badge{
+    display: none;
+}
 
 @font-face {
     font-family: "Ubuntu Bold";
@@ -1261,6 +1264,18 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-family: "Ubuntu Medium";
 }
+#successfulPopUp .modal-title-text{
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 113px;
+}
+#successfulPopUp .under-modal-title-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: "Ubuntu Medium";
+    margin-top: 26px;
+}
 #AllPopUpForms .underlined{
     font-weight: 700;
 }
@@ -1329,13 +1344,13 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-#participantsModalWindow .modal-button{
+#participantsPopUp .modal-button{
     margin-top: 27px;
 }
-#mentorModalWindow .modal-button{
+#mentorPopUp .modal-button{
     margin-top: 20px;
 }
-#partnersModalWindow .modal-button{
+#partnersPopUp .modal-button{
     margin-top: 28px; 
 }
 #AllPopUpForms .modal-send-button{
@@ -1349,15 +1364,20 @@ h1,h2,h3,h4,h5,h6{
     line-height: 25px;
     border-radius: 6px;
 }
-#participantsModalWindow .Checkbox-block{
+#successfulPopUp .modal-send-button{
+    width: 270px;
+    height: 53px;
+    margin: 82px auto 55px auto;
+}
+#participantsPopUp .Checkbox-block{
     margin-left: 43px;
 }
-#participantsModalWindow .checkbox-label-content{
+#participantsPopUp .checkbox-label-content{
     display: flex;
     position: relative;
     margin-top: 11px;
 }
-#participantsModalWindow .Checkbox-title{
+#participantsPopUp .Checkbox-title{
     margin-top: 16px;
     font-size: 20px;
     font-weight: 700;
@@ -2056,17 +2076,17 @@ h1,h2,h3,h4,h5,h6{
     #AllPopUpForms .not-mandatory-input-text{
         display: none;
     }
-    #participantsModalWindow .Checkbox-block{
+    #participantsPopUp .Checkbox-block{
         margin-left: 83px;
     }
-    #participantsModalWindow .Checkbox-title{
+    #participantsPopUp .Checkbox-title{
         padding-bottom: 0px;
     }
     #AllPopUpForms .modal-button{
         margin-bottom: 30px;
         margin-top: 20px;
     }
-    #participantsModalWindow .modal-button{
+    #participantsPopUp .modal-button{
         margin-top: 20px;
     }
     /*AllPopUpForms end */

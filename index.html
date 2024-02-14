@@ -693,226 +693,233 @@
         </section>
         <!--form burger window end-->
         <section id="AllPopUpForms">
-            <section id="partnersModalWindow">
-                <div class="modal" id="partnersPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-title">
-                                <h2 class="modal-title-text">Анкета для <span class="underlined"> партнерів </span> програми</h2>
+            <div class="modal" id="partnersPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <h2 class="modal-title-text">Анкета для <span class="underlined"> партнерів </span> програми</h2>
+                        </div>
+                        <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
+
+                        <form action="#" class="forms">
+                            <div class="mandatory-input">
+                                <div class="userNameBlock input-block">
+                                    <label class="placeholder-text" for="first_name">Ім’я</label>
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
+                                    <p class="input-name-text error-text"></p>
+                                </div>
+                                <div class="userEmailBlock input-block">
+                                    <label class="placeholder-text" for="email">Email</label>
+                                    <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
+                                    <p class="input-email-text error-text"></p>
+                                </div>
+                                <div class="userSurnameBlock input-block">
+                                    <label class="placeholder-text" for="last_name">Прізвище</label>
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
+                                    <p class="input-surname-text error-text"></p>
+                                </div>
+                                <div class="userMobilePhoneBlock input-block">
+                                    <label class="placeholder-text" for="phone">Мобільний телефон</label>
+                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
+                                    <p class="input-MobilePhone-text error-text"></p>
+                                </div>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
 
-                            <form action="">
-                                <div class="mandatory-input">
-                                    <div class="userNameBlock input-block">
-                                        <label class="placeholder-text" for="first_name">Ім’я</label>
-                                        <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
-                                        <p class="input-name-text error-text"></p>
-                                    </div>
-                                    <div class="userEmailBlock input-block">
-                                        <label class="placeholder-text" for="email">Email</label>
-                                        <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
-                                        <p class="input-email-text error-text"></p>
-                                    </div>
-                                    <div class="userSurnameBlock input-block">
-                                        <label class="placeholder-text" for="last_name">Прізвище</label>
-                                        <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
-                                        <p class="input-surname-text error-text"></p>
-                                    </div>
-                                    <div class="userMobilePhoneBlock input-block">
-                                        <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                        <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
-                                        <p class="input-MobilePhone-text error-text"></p>
-                                    </div>
-                                </div>
+                            <div class="not-mandatory-input">
+                                <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
+                                <input type="text" name="UserCountry" class="input-country input-placeholder2">
 
-                                <div class="not-mandatory-input">
-                                    <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
-                                    <input type="text" name="UserCountry" class="input-country input-placeholder2">
-
-                                    <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
-                                    <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
+                                <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
+                                <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
                                     
-                                    <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
-                                    <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
+                                <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
+                                <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
 
-                                    <div class="mandatory-reminder">
-                                        <p class="red-star">*</p>
-                                        <p class="mandatory-reminder-text">Обов’язкові поля</p>
-                                    </div>
+                                <div class="mandatory-reminder">
+                                    <p class="red-star">*</p>
+                                    <p class="mandatory-reminder-text">Обов’язкові поля</p>
                                 </div>
+                            </div>
     
-                                <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
-                                </div>
-                            </form>
-                        </div>
+                            <div class="modal-button">
+                                <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <section id="participantsModalWindow">
-                <div class="modal" id="participantsPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-title">
-                                <h2 class="modal-title-text">Анкета для <span class="underlined"> учасників </span> програми</h2>
+            </div>
+
+            <div class="modal" id="participantsPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <h2 class="modal-title-text">Анкета для <span class="underlined"> учасників </span> програми</h2>
+                        </div>
+                        <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
+
+                        <form action="#" class="forms">
+                            <div class="mandatory-input">
+                                <div class="userNameBlock input-block">
+                                    <label class="placeholder-text" for="first_name">Ім’я</label>
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
+                                    <p class="input-name-text error-text"></p>
+                                </div>
+                                <div class="userEmailBlock input-block">
+                                    <label class="placeholder-text" for="email">Email</label>
+                                    <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
+                                    <p class="input-email-text error-text"></p>
+                                </div>
+                                <div class="userSurnameBlock input-block">
+                                    <label class="placeholder-text" for="last_name">Прізвище</label>
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
+                                    <p class="input-surname-text error-text"></p>
+                                </div>
+                                <div class="userMobilePhoneBlock input-block">
+                                    <label class="placeholder-text" for="phone">Мобільний телефон</label>
+                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
+                                    <p class="input-MobilePhone-text error-text"></p>
+                                </div>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
 
-                            <form action="">
-                                <div class="mandatory-input">
-                                    <div class="userNameBlock input-block">
-                                        <label class="placeholder-text" for="first_name">Ім’я</label>
-                                        <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
-                                        <p class="input-name-text error-text"></p>
-                                    </div>
-                                    <div class="userEmailBlock input-block">
-                                        <label class="placeholder-text" for="email">Email</label>
-                                        <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
-                                        <p class="input-email-text error-text"></p>
-                                    </div>
-                                    <div class="userSurnameBlock input-block">
-                                        <label class="placeholder-text" for="last_name">Прізвище</label>
-                                        <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
-                                        <p class="input-surname-text error-text"></p>
-                                    </div>
-                                    <div class="userMobilePhoneBlock input-block">
-                                        <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                        <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
-                                        <p class="input-MobilePhone-text error-text"></p>
-                                    </div>
-                                </div>
+                            <div class="not-mandatory-input">
+                                <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
+                                <input type="text" name="UserCountry" class="input-country input-placeholder2">
 
-                                <div class="not-mandatory-input">
-                                    <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
-                                    <input type="text" name="UserCountry" class="input-country input-placeholder2">
-
-                                    <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
-                                    <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
+                                <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
+                                <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
                                     
-                                    <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
-                                    <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
+                                <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
+                                <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
 
-                                    <div class="mandatory-reminder">
-                                        <p class="red-star">*</p>
-                                        <p class="mandatory-reminder-text">Обов’язкові поля</p>
-                                    </div>
+                                <div class="mandatory-reminder">
+                                    <p class="red-star">*</p>
+                                    <p class="mandatory-reminder-text">Обов’язкові поля</p>
+                                </div>
+                            </div>
+
+                            <div class="Checkbox-block">
+                                <div class="Checkbox-title">
+                                    Бажаний напрям підготовки?
                                 </div>
 
-                                <div class="Checkbox-block">
-                                    <div class="Checkbox-title">
-                                        Бажаний напрям підготовки?
-                                    </div>
+                                <div class="checkbox-content">
+                                    <label for="" class="checkbox-label-content cchl">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <span class="checkbox-text">Автоматизоване тестування</span>
+                                    </label>
 
-                                    <div class="checkbox-content">
-                                        <label for="" class="checkbox-label-content cchl">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <span class="checkbox-text">Автоматизоване тестування</span>
-                                        </label>
+                                    <label for="" class="checkbox-label-content cchl">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">Проєктний менеджмент (PM)</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content cchl">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">Проєктний менеджмент (PM)</p>
-                                        </label>
+                                    <label for="" class="checkbox-label-content cchl">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">HR & TA (людські ресурси і залучення талантів)</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content cchl">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">HR & TA (людські ресурси і залучення талантів)</p>
-                                        </label>
+                                    <label for="" class="checkbox-label-content">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">Школа хакерів для дітей 6 - 16р</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">Школа хакерів для дітей 6 - 16р</p>
-                                        </label>
+                                    <label for="" class="checkbox-label-content">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">Англійська для IT</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">Англійська для IT</p>
-                                        </label>
+                                    <label for="" class="checkbox-label-content">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">Ручне тестування</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">Ручне тестування</p>
-                                        </label>
+                                    <label for="" class="checkbox-label-content">
+                                        <input type="checkbox" class="checkbox cchl" >
+                                        <p class="checkbox-text">Веб-дизайн (UI/UX)</p>
+                                    </label>
 
-                                        <label for="" class="checkbox-label-content">
-                                            <input type="checkbox" class="checkbox cchl" >
-                                            <p class="checkbox-text">Веб-дизайн (UI/UX)</p>
-                                        </label>
-
-                                        <label for="" class="checkbox-label-content">
-                                            <input type="checkbox" class="checkbox cchl" >                                               
-                                            <p class="checkbox-text">Програмування</p>
-                                        </label>
-                                    </div>
+                                    <label for="" class="checkbox-label-content">
+                                        <input type="checkbox" class="checkbox cchl" >                                               
+                                        <p class="checkbox-text">Програмування</p>
+                                    </label>
                                 </div>
+                            </div>
     
-                                <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
-                                </div>
-                            </form>
-
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="mentorModalWindow">
-                <div class="modal" id="mentorPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-title">
-                                <h2 class="modal-title-text">Анкета для <span class="underlined">викладачів/менторів</span> <br>програми</h2>
+                            <div class="modal-button">
+                                <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
                             </div>
-                            <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close"></button>
-
-                            <form action="">
-                                <div class="mandatory-input">
-                                    <div class="userNameBlock input-block">
-                                        <label class="placeholder-text" for="first_name">Ім’я</label>
-                                        <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
-                                        <p class="input-name-text error-text"></p>
-                                    </div>
-                                    <div class="userEmailBlock input-block">
-                                        <label class="placeholder-text" for="email">Email</label>
-                                        <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
-                                        <p class="input-email-text error-text"></p>
-                                    </div>
-                                    <div class="userSurnameBlock input-block">
-                                        <label class="placeholder-text" for="last_name">Прізвище</label>
-                                        <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
-                                        <p class="input-surname-text error-text"></p>
-                                    </div>
-                                    <div class="userMobilePhoneBlock input-block">
-                                        <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                        <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
-                                        <p class="input-MobilePhone-text error-text"></p>
-                                    </div>
-                                </div>
-
-                                <div class="not-mandatory-input">
-                                    <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
-                                    <input type="text" name="UserCountry" class="input-country input-placeholder2">
-
-                                    <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
-                                    <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
-                                    
-                                    <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
-                                    <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
-
-                                    <div class="mandatory-reminder">
-                                        <p class="red-star">*</p>
-                                        <p class="mandatory-reminder-text">Обов’язкові поля</p>
-                                    </div>
-                                </div>
-                                <div class="modal-button">
-                                    <button class="modal-send-button" onclick="checkMentorForm(this)" >Надіслати</button>
-                                </div>
-                            </form>
-                        </div>
+                        </form>            
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="modal" id="mentorPopUp" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <h2 class="modal-title-text">Анкета для <span class="underlined">викладачів/менторів</span> <br>програми</h2>
+                        </div>
+                        <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
+
+                        <form action="#" class="forms">
+                            <div class="mandatory-input">
+                                <div class="userNameBlock input-block">
+                                    <label class="placeholder-text" for="first_name">Ім’я</label>
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" required oninput="checkInput(this)">
+                                    <p class="input-name-text error-text"></p>
+                                </div>
+                                <div class="userEmailBlock input-block">
+                                    <label class="placeholder-text" for="email">Email</label>
+                                    <input class="input-placeholder input-email" type="texst" name="email" id="email" required oninput="checkInput(this)">
+                                <p class="input-email-text error-text"></p>
+                                </div>
+                                <div class="userSurnameBlock input-block">
+                                    <label class="placeholder-text" for="last_name">Прізвище</label>
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" required oninput="checkInput(this)">
+                                    <p class="input-surname-text error-text"></p>
+                                </div>
+                                <div class="userMobilePhoneBlock input-block">
+                                    <label class="placeholder-text" for="phone">Мобільний телефон</label>
+                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" required oninput="checkInput(this)">
+                                    <p class="input-MobilePhone-text error-text"></p>
+                                </div>
+                            </div>
+
+                            <div class="not-mandatory-input">
+                                <p class="not-mandatory-input-text">В якому місті чи країні бажаєте представляти інтереси проєкту?</p>
+                                <input type="text" name="UserCountry" class="input-country input-placeholder2">
+
+                                <p class="not-mandatory-input-text">Звідки отримали інформацію про нас?</p>
+                                <input type="text" name="UserFoundOut" class="input-user-found-out input-placeholder2">
+                                    
+                                <p class="not-mandatory-input-text">Яка співпраця цікавить Вас?</p>
+                                <input type="text" name="userCooperation" class="input-user-cooperation input-placeholder2">
+
+                                <div class="mandatory-reminder">
+                                    <p class="red-star">*</p>
+                                    <p class="mandatory-reminder-text">Обов’язкові поля</p>
+                                </div>
+                            </div>
+                            <div class="modal-button">
+                                <button class="modal-send-button check-form" onclick="checkMentorForm(this)" >Надіслати</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="successfulPopUp" tabindex="-1" aria-bs-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background: rgba(0, 0, 0, 0.5);">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <h2 class="modal-title-text" id="successfulTitle">Дякуємо за Вашу заявку!</h2>
+                            <h3 class="under-modal-title-text">Очікуйте зворотнього зв’язку.</h3>
+                        </div>
+                        <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick='closeModalsAfterSendingForm()'></button>
+
+                        <button class="modal-send-button" onclick='closeModalsAfterSendingForm()'>На головну</button>
+                    </div>
+                </div>
+            </div>
         </section>
     
         <!--"footer start"-->
@@ -1025,6 +1032,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         
     <!-- recaptcha -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
     
     <script src="src/js/script.js"></script>
 </body>

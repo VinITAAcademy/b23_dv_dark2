@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./src/css/icomoon.css">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="./src/js/script.js">
+    
+</head>
+<body>
+     <!--"header start"-->
+     <header id="header">
+        <div class="header-container">
+            <div class="main-logo">
+                <img class="image-logo" src="./src/Img/Logo.webp">
+            </div>
+            <div class="page-links">
+                <a class="default-text" href="index-en.html#about-us">About the program</a>
+                <a class="default-text" href="index-en.html#specialities">Specialties</a>
+                <a class="default-text" href="index-en.html#our-partners">Partners</a>
+                <a class="default-text" href="index-en.html#footer">Contacts</a>
+            </div>
+            <div class="burger-menu">
+                <button class="burger-button" data-bs-toggle="modal" data-bs-target="#burger-menu">
+                    <img class="burger-icon" src="./src/Img/burger-menu.webp">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--"header end"-->
+    
+    <!--"sidebar-block start"-->
+    <section id="sidebar">
+        <div class="sidebar-container">
+            <div class="language-change">
+                <a href="./404.html">
+                    <img class="image-language" src="./src/Img/modal-selection-language_eng.webp">
+                </a>
+            </div>
+            <div class="social-networks">
+                <a href="https://t.me/IT_Academy_Vinnytsia">
+                    <i class="icon-telegram"></i>
+                </a>
+                <a href="https://www.facebook.com/intita.it/">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a href="https://wa.me/+380674317424">
+                    <i class="icon-whatsapp"></i>
+                </a>
+                <a href="viber://chat?number=+380631892256">
+                    <i class="icon-viber"></i>
+                </a>
+                <a href="https://twitter.com/INTITA_EDU">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/intitaedu">
+                    <i class="icon-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- "sidebar-block end" -->
+
+    <!--"main-block start"-->
+    <section id="main-block">
+        <div class="background-container">
+            <div class="main">
+                <h1 class="default-text-value page-main-title title-404-text">Page not <br class="change-display-mobile"> found - 404</h1>
+                <div class="default-text-value register-container">
+                    <button type="button" class="signup" onclick="openIndex()">
+                        <p class="default-text-value text-size-color bootstrap-p-override">On main</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--"main-block end"-->
+
+    <!--"form burger window start"-->
+    <section id="burger-window">
+        <div class="modal" id="burger-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#">
+                            <img class="image" src="./src/Img/modal-selection-language.webp">
+                        </a>
+                        <h3 class="default-text header-title text-color margin-adjust line-height-adjust">
+                            ДОБРОГО ВЕЧОРА - МИ З <span class="default-text header-sub-title text-color">УКРАЇНИ!</span>
+                        </h3>
+                        <button type="button" class="cancel-button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="icon-cancel"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="line-up-color line-position"></div>
+                        <div class="line-down-color line-position"></div>
+                        <div class="modal-body" data-bs-dismiss="modal" aria-label="Close" type="button">
+                            <a class="default-text text-color text margin-adjust-1" href="#about-us">Про програму</a>
+                            <a class="default-text text-color text margin-adjust-2" href="#specialities">Спеціальності</a>
+                            <a class="default-text text-color text" href="#our-partners">Партнери</a>
+                            <a class="default-text text-color text margin-adjust-3" href="#footer">Контакти</a>
+                        </div>    
+                        <div class="line-up-color line-position"></div>
+                        <div class="line-down-color line-position"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="column">
+                                <a href="https://t.me/IT_Academy_Vinnytsia">
+                                    <i class="icon-telegram"></i>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://www.facebook.com/intita.it/">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://wa.me/+380674317424">
+                                    <i class="icon-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <a href="viber://chat?number=+380631892256">
+                                    <i class="icon-viber"></i>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://twitter.com/INTITA_EDU">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://www.instagram.com/intitaedu">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--form burger window end-->
+
+    <!--"footer start"-->
+    <section id="footer">
+        <div class="footer-main-cont">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <a href="https://intita.com/" target="_blank">
+                        <img class="footer-logo-svg" src="./src/Img/intita.webp" alt="INTITA logo">
+                    </a>
+                    <a href="https://www.robotamolodi.org/" target="_blank">
+                        <img class="footer-main-rm-logo-svg" src="./src/Img/work_young.webp" alt="Robota molodi logo">
+                    </a>
+                </div>
+                <div class="footer-students-logo">
+                    <img class="footer-students-logo-svg" src="./src/Img/academy-footer.png" alt="INTITA students' logo">
+                    <a class="footer-main-logo-link" target="_blank" href="./developer/developers-en.html">
+                        <p class="footer-main-logo-text">
+                            Developed by students of<br>Vinnytsia IT Academy 2024
+                        </p>
+                    </a>
+                </div>
+                <nav class="footer-main-nav">
+                    <ul class="nav-menu-list">
+                        <a class="anchor-menu-link" href="index-en.html#we-provide">
+                            About the program
+                        </a>
+                        <a class="anchor-menu-link" href="index-en.html#our-partners">
+                            Partners
+                        </a>
+                        <a class="anchor-menu-link" href="index-en.html#specialities">
+                            Specialties
+                        </a>
+                    </ul>
+                </nav>
+                <div class="footer-main-text-box">
+                    <hr class="footer-main-line">
+                    <p class="footer-main-text">
+                        If you have any questions about our program or organization, or how you can help us, please contact us!
+                    </p>
+                    <hr class="footer-main-line">
+                    <p class="footer-main-text footer-main-text2">
+                        If you want to financially support the program to help Ukraine, please visit the page:
+                        <a class="footer-main-text-link" href="https://www.robotamolodi.org" target="_blank">
+                            https://www.robotamolodi.org/
+                        </a>
+                    </p>
+                    <hr class="footer-main-line">
+                </div>
+                <div class="footer-main-icon-box">
+                    <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank">
+                        <i class="icon-telegram icon-icon-box footer-main-icon"></i>
+                    </a>
+                    <a href="https://www.facebook.com/intita.it/" target="_blank">
+                        <i class="icon-facebook icon-icon-box footer-main-icon"></i>
+                    </a>
+                    <a href="https://wa.me/+380674317424" target="_blank">
+                        <i class="icon-whatsapp icon-icon-box footer-main-icon"></i>
+                    </a>
+                    <a href="viber://chat?number=+380631892256" target="_blank">
+                        <i class="icon-viber icon-icon-box footer-main-icon"></i>
+                    </a>
+                    <a href="https://twitter.com/INTITA_EDU" target="_blank">
+                        <i class="icon-twitter icon-icon-box footer-main-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/intitaedu" target="_blank">
+                        <i class="icon-instagram icon-icon-box footer-main-icon"></i>
+                    </a>
+                </div>
+                <div class="footer-main-contacts">
+                    <h2 class="footer-main-contacts-title">
+                        Contacts:
+                    </h2>
+                    <a class="footer-main-contacts-link" href="tel:+380674311921">
+                        <p class="footer-main-phone">
+                            +38 067 431 19 21
+                        </p>
+                    </a>
+                    <a class="footer-main-contacts-link" href="mailto:ita.in.ua@gmail.com">
+
+                        <p class="footer-main-email">
+                            ita.in.ua@gmail.com
+                        </p>
+                    </a>
+                </div>
+                <div class="footer-main-qr-code">
+                    <img class="footer-main-qr-code-svg" src="./src/Img/qr-code.png" alt="QR-code">
+                </div>
+            </div>
+        </div>
+        <div class="footer-second-section">
+            <p class="footer-second-section-text">
+                ©2024 Good evening - we are from Ukraine
+            </p>
+        </div>
+    </section>
+    <!--"footer end"-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -23,7 +23,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
-    font-size: 50px;
+    font-size: 35px;
+    color: var(--White);
 }
 
 .icon-cancel{
@@ -586,11 +587,30 @@ h1,h2,h3,h4,h5,h6{
     display: inline-block;
     margin: 20px auto;
 }
+
+#our-partners .blue-button:hover{
+    background: #02257F;
+}
+
+#our-partners .blue-button:active{
+    background: var(--White);
+}
+
+#our-partners .register-text:active{
+    color: var(--Blue);
+}
+
+#our-partners .register-text:disabled{
+    background:#61677A;
+    color: var(--White);
+    cursor: not-allowed;
+}
+
 /* "our partners end" */
 
 /* "logos start" */
 #logos .swiper-button-next-logo{
-    background-image: url(../Img/right.png);
+    background-image: url(../Img/right.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -601,7 +621,7 @@ h1,h2,h3,h4,h5,h6{
     right: 0;
 }
 #logos .swiper-button-prev-logo{
-    background-image: url(../Img/left.png);
+    background-image: url(../Img/left.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -646,6 +666,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
 }
 #logos .swiper-slide img {
+    width: 80%;
     display: block;
     object-fit: cover;
 }
@@ -841,17 +862,38 @@ h1,h2,h3,h4,h5,h6{
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
+    border-style: none;
     text-align: center;
     vertical-align: center;
     line-height: 38px;
     font-size: 17px;
 }
+
+#specialities .slider-content-button:hover{
+    background: #02257F;
+}
+
+#specialities .slider-content-button:active{
+    background: var(--White);
+}
+
+#specialities .register-text:active{
+    color: var(--Blue);
+}
+
+#specialities .register-text:disabled{
+    background:#61677A;
+    color: var(--White);
+    cursor: not-allowed;
+}
+
 #specialities .slider-button-text{
     text-decoration: none;
     color: var(--White);
 }
+
 #specialities .swiper-button-prev{
-    background-image: url('../Img/left.png');
+    background-image: url('../Img/left.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -864,7 +906,7 @@ h1,h2,h3,h4,h5,h6{
     display: none;
 }
 #specialities .swiper-button-next{
-    background-image:url('../Img/right.png');
+    background-image:url('../Img/right.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1195,6 +1237,23 @@ h1,h2,h3,h4,h5,h6{
     border-style: none;
     outline-style: none;
     background: var(--Blue);
+}
+
+#burger-window .icon-telegram, #burger-window .icon-facebook, #burger-window .icon-whatsapp, #burger-window .icon-viber, #burger-window .icon-twitter, #burger-window .icon-instagram{
+    color: var(--Black);
+}
+
+#burger-window .icon-telegram:hover, #burger-window .icon-facebook:hover, #burger-window .icon-whatsapp:hover, #burger-window .icon-viber:hover, #burger-window .icon-twitter:hover, #burger-window .icon-instagram:hover{
+    color: #7FA2FB;
+}
+
+#burger-window .icon-telegram:active, #burger-window .icon-facebook:active, #burger-window .icon-whatsapp:active, #burger-window .icon-viber:active, #burger-window .icon-twitter:active, #burger-window .icon-instagram:active{
+    color: var(--White);
+}
+
+#burger-window .icon-telegram:disabled, #burger-window .icon-facebook:disabled, #burger-window .icon-whatsapp:disabled, #burger-window .icon-viber:disabled, #burger-window .icon-twitter:disabled, #burger-window .icon-instagram:disabled{
+    color: #61677A;
+    cursor: not-allowed;
 }
 
 #burger-window .button:hover{
@@ -2317,11 +2376,6 @@ h1,h2,h3,h4,h5,h6{
         align-items: center;
     }
 
-    .icon-telegram, .icon-facebook, .icon-whatsapp, .icon-viber, .icon-twitter, .icon-instagram{
-        font-size: 35px;
-        color: var(--White);
-    }
-
     #sidebar .icon-viber{
         width: 35px;
     }
@@ -2454,7 +2508,7 @@ h1,h2,h3,h4,h5,h6{
         width: 300px;
         text-align: center;
         margin-top: 30px;
-        font-family: "Inria Serif Bold";
+        font-family: "Ubuntu Bold";
     }
     #we-provide .vidio-block{
         width: 940px;
@@ -2835,7 +2889,7 @@ h1,h2,h3,h4,h5,h6{
         margin: 0;
     }
     #footer .footer-top-button{
-        right: 242px;
+        right: 36px;
     }
     /* "footer end" */
 }

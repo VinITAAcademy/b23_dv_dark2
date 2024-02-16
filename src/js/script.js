@@ -93,6 +93,38 @@ function checkInput(input){
     }
 };
 
+//placeholder english resize start
+updatePlaceholderTextEnglish();
+window.addEventListener('resize',updatePlaceholderTextEnglish);
+function updatePlaceholderTextEnglish(){
+    const placeholderContry = document.querySelectorAll('.input-country-en');
+    const placeholderFound = document.querySelectorAll('.input-user-found-out-en');
+    const placeholderFooperation = document.querySelectorAll('.input-user-cooperation-en');
+    if(innerWidth>768){
+        placeholderContry.forEach(el=>{
+            el.placeholder="Which city or country do you want to represent the interests of the project?";
+        });
+        placeholderFound.forEach(el=>{
+            el.placeholder="Where did you get information about us?";
+        });
+        placeholderFooperation.forEach(el=>{
+            el.placeholder="What cooperation interests you?";
+        });
+    }else{
+        placeholderContry.forEach(el=>{
+            el.placeholder="";
+        });
+        placeholderFound.forEach(el=>{
+            el.placeholder="";
+        });
+        placeholderFooperation.forEach(el=>{
+            el.placeholder="";
+        });
+    }
+};
+
+//placeholder english resize end
+
 //placeholder resize start
 updatePlaceholderText();
 window.addEventListener('resize',updatePlaceholderText);

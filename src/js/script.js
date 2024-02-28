@@ -7,6 +7,8 @@ imgclose.onclick = function(){
 
     const youtubeOpen = document.querySelector('.block2_youtube');
     youtubeOpen.style.display='block';
+    let iframe = document.querySelector('.iframe-video');
+    iframe.src = iframe.src;
 }
 //"we provide video end"
 

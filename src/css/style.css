@@ -97,9 +97,6 @@ h1,h2,h3,h4,h5,h6{
 
 #header .burger-menu{
     display: block;
-    position: relative;
-    left: 167px;
-    bottom: 7px;
 }
 
 #header .burger-button{
@@ -118,6 +115,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
 }
 
 #header .main-logo{
@@ -958,13 +956,14 @@ h1,h2,h3,h4,h5,h6{
 
 #modal-window .modal-header{
     border-bottom: 0;
+    position: relative;
+    display: block;
 }
 
 #modal-window .modal-body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 97px;
 }
 
 #modal-window .modal-footer{
@@ -1019,15 +1018,28 @@ h1,h2,h3,h4,h5,h6{
     color: var(--White);
 }
 
-#modal-window .header-title{
+#modal-window .language-chang-header{
     position: absolute;
+    width: 71px;
+    height: 31px;
+}
+.language-chang-header-img{
+    width: 100%;
+    height: 100%;
+}
+
+#modal-window .header-title{
     text-align: center;
     font-size: 16px;
-    font-style: italic;
+    line-height: 18.38px;
     font-weight: 400;
-    letter-spacing: -0.02em;
-    top: -2px;
-    right: 94px;
+    font-family: "Ubuntu Regular";
+    margin: 18px 0 20px 0;
+}
+.header-title-Ukraine{
+    font-size: 36px;
+    line-height: 41.36px;
+    font-weight: 700;
 }
 
 #modal-window .header-sub-title{
@@ -1662,6 +1674,7 @@ h1,h2,h3,h4,h5,h6{
     transition: 0.2s;
     z-index: 100;
     margin: 5px;
+    cursor: pointer;
 }
 
 #footer .default-img{
@@ -2071,20 +2084,21 @@ h1,h2,h3,h4,h5,h6{
     /* "form window start" */
 
     /*AllPopUpForms start */
-    #modal-window .modal-body{
-        margin-top: 133px;
-    }
 
     #modal-window .modal-footer{
         margin-top: 20px;
         margin-left: 4px;
         padding-bottom: 21px;
     }
-    
+
     #modal-window .header-title{
         font-size: 24px;
-        top: 15px;
-        right: 244px;
+        line-height: 27.58px;
+        margin: 39px 0 11px 0;
+    }
+    .header-title-Ukraine{
+        font-size: 48px;
+        line-height: 55.15px;
     }
 
     #modal-window .header-sub-title{
@@ -2334,6 +2348,10 @@ h1,h2,h3,h4,h5,h6{
     /* "header start" */
     #header  .page-links{
         display: block;
+    }
+
+    #header .header-container{
+        width: 86.6%;
     }
 
     #header .burger-menu{

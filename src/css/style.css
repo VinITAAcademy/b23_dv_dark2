@@ -1022,21 +1022,23 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     width: 71px;
     height: 31px;
+    margin: 5px;
+    cursor: pointer;
 }
-.language-chang-header-img{
+#modal-window .language-chang-header-img{
     width: 100%;
     height: 100%;
 }
 
 #modal-window .header-title{
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18.38px;
     font-weight: 400;
     font-family: "Ubuntu Regular";
     margin: 18px 0 20px 0;
 }
-.header-title-Ukraine{
+#modal-window .header-title-Ukraine{
     font-size: 36px;
     line-height: 41.36px;
     font-weight: 700;
@@ -1155,11 +1157,22 @@ h1,h2,h3,h4,h5,h6{
 #burger-window a{
     text-decoration: none;
 }
-
 #burger-window .modal-header{
     border-bottom: 0;
-    padding: 3px 0;
-    margin-bottom: 17px;
+    position: relative;
+    display: block;
+}
+
+#burger-window .language-chang-header{
+    position: absolute;
+    width: 71px;
+    height: 31px;
+    margin: 5px;
+    cursor: pointer;
+}
+#burger-window .language-chang-header-img{
+    width: 100%;
+    height: 100%;
 }
 
 #burger-window .modal-body{
@@ -1209,10 +1222,16 @@ h1,h2,h3,h4,h5,h6{
 
 #burger-window .header-title{
     text-align: center;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 15px;
+    line-height: 18.38px;
     font-weight: 400;
-    letter-spacing: -0.02em;
+    font-family: "Ubuntu Regular";
+    margin: 18px 0 20px 0;
+}
+#burger-window .header-title-Ukraine{
+    font-size: 36px;
+    line-height: 41.36px;
+    font-weight: 700;
 }
 
 #burger-window .header-sub-title{
@@ -1254,9 +1273,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #burger-window .cancel-button{
+    position: absolute;
     border: 0;
     background-color: var(--White);
-    margin: -37px 5px 2px -5px;
+    right: 5px;
+    top: 5px;
 }
 
 #burger-window .button{
@@ -2096,7 +2117,7 @@ h1,h2,h3,h4,h5,h6{
         line-height: 27.58px;
         margin: 39px 0 11px 0;
     }
-    .header-title-Ukraine{
+    #modal-window .header-title-Ukraine{
         font-size: 48px;
         line-height: 55.15px;
     }
@@ -2198,6 +2219,12 @@ h1,h2,h3,h4,h5,h6{
     
     #burger-window .header-title{
         font-size: 24px;
+        line-height: 27.58px;
+        margin: 39px 0 11px 0;
+    }
+    #burger-window .header-title-Ukraine{
+        font-size: 48px;
+        line-height: 55.15px;
     }
 
     #burger-window .header-sub-title{
@@ -2228,9 +2255,7 @@ h1,h2,h3,h4,h5,h6{
         margin-right: -1px;
     }
 
-    #burger-window .cancel-button{
-        margin: -71px 5px 0 0;
-    }
+
 
     #burger-window .image{
         margin-top: -34px;

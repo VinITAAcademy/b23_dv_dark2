@@ -1,3 +1,15 @@
+//loader start
+window.onload = function(){
+    const loader = document.getElementById('loader');
+    loader.classList.add('load');
+
+    function closeloader (){
+        loader.style.display = 'none';
+        document.querySelector('.block-page').classList.remove('block-page');
+    }
+    setTimeout(closeloader,2500);
+}
+//loader end
 
 //we provide video start
 const imgclose = document.querySelector('.vidio-block-picture');

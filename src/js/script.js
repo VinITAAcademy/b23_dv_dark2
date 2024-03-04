@@ -107,6 +107,11 @@ function checkInput(input){
     }
 };
 
+function mobileInput(input){
+    input.previousElementSibling.style.display = "none";
+    input.value = "+380";
+}
+
 //placeholder english resize start
 updatePlaceholderTextEnglish();
 window.addEventListener('resize',updatePlaceholderTextEnglish);
@@ -195,11 +200,16 @@ function updatePlaceholderMentorPopUp(){
     }
 };
 //placeholder userCompetence in mentorPopUp resize end
-let userModal;
-let formValid =false;
 
+//
+    
+//
+var userModal=null;
+var formValid =false;
+
+//function to define a modal window to work with form start
 function checkMentorForm(Button){
-    const form = Button.parentNode.parentNode;
+    const form = Button.closest('form');
     userModal = form.parentNode.parentNode.parentNode;
     const userNameForm = form.querySelector('.input-name');
     const userEmailForm =form.querySelector('.input-email');
@@ -208,6 +218,7 @@ function checkMentorForm(Button){
 
     checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhoneForm);
 }
+//function to define a modal window to work with form end
 
 function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhoneForm){
     function UserName(){
@@ -234,7 +245,7 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
     
     function UserEmail(){
         const inputEmail = userEmailForm;
-        const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com)$/;
 
         if (inputEmail.value.trim() == "") {
             inputEmail.classList.remove("successful-validation");
@@ -243,7 +254,7 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
         }
         else if (!regexEmail.test(inputEmail.value)) {
             inputEmail.classList.remove("successful-validation");
-            inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent ="Поле заповнено не коректно";
+            inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent ="Email введено некоректно";
             inputEmail.classList.add("eror");
         }
         else{
@@ -286,9 +297,34 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
             inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Поле не заповнене";
         }
         else if (!regexUserMobilePhone.test(inputUserMobilePhone.value)) {
+
+            // checking whether the phone number has a digit start
+            let userNumber = inputUserMobilePhone.value;
+            const userNumberArr = []; // an array to fit each character with the data type
+            let userHaveOnlyNumbersInMobile = true;
+
+            for (i=4; i<13; i++ ){
+                let char = userNumber.charAt(i);
+                if(!isNaN(char)){
+                    userNumberArr.push(parseInt(char));
+                }
+                else{
+                    userNumberArr.push(char);
+                    userHaveOnlyNumbersInMobile=false;
+                    break;
+                }
+            }
+            // checking whether the phone number has a digit end
+
             inputUserMobilePhone.classList.remove("successful-validation");
-            inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Поле заповнено не коректно";
             inputUserMobilePhone.classList.add("eror");
+
+            if(userHaveOnlyNumbersInMobile){
+                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Номер телефону має містити 13 символів";
+            }
+            else{
+                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Некоректний формат телефонного номеру";
+            }
         }
         else{
             inputUserMobilePhone.classList.remove("eror");
@@ -298,14 +334,13 @@ function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhon
         return regexUserMobilePhone.test(inputUserMobilePhone.value);
     };
 
-    UserName();
-    UserEmail();
-    UserSurname();
-    UserMobilePhone();
-    if( UserName(),UserEmail(),UserSurname(),UserMobilePhone()){
+    const isUserNameValid = UserName();
+    const isUserEmailValid = UserEmail();
+    const isUserSurnameValid = UserSurname();
+    const isUserMobilePhoneValid = UserMobilePhone();
+    if( isUserNameValid && isUserEmailValid && isUserSurnameValid && isUserMobilePhoneValid){
         formValid=true;
-            userModal.querySelector('.close-modal-btn').click();
-        
+        userModal.querySelector('.close-modal-btn').click();
     }
     else{
         formValid=false;

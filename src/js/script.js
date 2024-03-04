@@ -168,11 +168,35 @@ function updatePlaceholderText(){
         });
     }
 };
-
 //placeholder resize end
+
+//placeholder english userCompetence in mentorPopUp  resize start
+updatePlaceholderMentorPopUpEnglish();
+window.addEventListener('resize',updatePlaceholderMentorPopUpEnglish);
+function updatePlaceholderMentorPopUpEnglish(){
+    const placeholderCompetence = document.querySelector('.input-user-Competence-en');
+    if(innerWidth>768){
+        placeholderCompetence.placeholder="Where are you an expert?";
+    }else{
+        placeholderCompetence.placeholder="";
+    }
+};
+//placeholder english userCompetence in mentorPopUp resize end
+
+//placeholder userCompetence in mentorPopUp- resize start
+updatePlaceholderMentorPopUp();
+window.addEventListener('resize',updatePlaceholderMentorPopUp);
+function updatePlaceholderMentorPopUp(){
+    const placeholderCompetence = document.querySelector('.input-user-Competence');
+    if(innerWidth>768){
+        placeholderCompetence.placeholder="В чому маєте експертизу?";
+    }else{
+        placeholderCompetence.placeholder="";
+    }
+};
+//placeholder userCompetence in mentorPopUp resize end
 let userModal;
 let formValid =false;
-
 
 function checkMentorForm(Button){
     const form = Button.parentNode.parentNode;

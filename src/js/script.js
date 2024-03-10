@@ -1,55 +1,55 @@
 //loader start
-window.onload = function(){
+window.onload = function () {
     const loader = document.getElementById('loader');
     loader.classList.add('load');
 
-    function closeloader (){
+    function closeloader() {
         loader.style.display = 'none';
         document.querySelector('.block-page').classList.remove('block-page');
     }
-    setTimeout(closeloader,2500);
+    setTimeout(closeloader, 2500);
 }
 //loader end
 
 //we provide video start
 const imgclose = document.querySelector('.vidio-block-picture');
 
-imgclose.onclick = function(){
-    imgclose.style.display='none';
+imgclose.onclick = function () {
+    imgclose.style.display = 'none';
 
     const youtubeOpen = document.querySelector('.block2_youtube');
-    youtubeOpen.style.display='block';
+    youtubeOpen.style.display = 'block';
     let iframe = document.querySelector('.iframe-video');
-    iframe.src ="https://www.youtube.com/embed/pmrIlYBWP20?autoplay=1";
+    iframe.src = "https://www.youtube.com/embed/pmrIlYBWP20?autoplay=1";
 }
 //"we provide video end"
 
 let swiper2 = new Swiper("#logo-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination-2",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next-logo",
-    prevEl: ".swiper-button-prev-logo",
-  },
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination-2",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next-logo",
+        prevEl: ".swiper-button-prev-logo",
+    },
 });
 
 //specialities swiper initializing swiper start
 const swiper = new Swiper('#swiper-specialities', {
-  // Optional parameters
-  loop: true,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Optional parameters
+    loop: true,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 //specialities swiper initializing swiper end
 const scrollUp = $(".scroll-up");
@@ -98,257 +98,223 @@ function orderFunction() {
 }
 //checbox end
 
-function checkInput(input){
-    if(input.value.trim() == ""){
+function checkInput(input) {
+    if (input.value.trim() == "") {
         input.previousElementSibling.style.display = "block";
     }
-    else{
+    else {
         input.previousElementSibling.style.display = "none";
     }
 };
 
-function mobileInput(input){
+function mobileInput(input) {
     input.previousElementSibling.style.display = "none";
     input.value = "+380";
 }
 
 //placeholder english resize start
 updatePlaceholderTextEnglish();
-window.addEventListener('resize',updatePlaceholderTextEnglish);
-function updatePlaceholderTextEnglish(){
+window.addEventListener('resize', updatePlaceholderTextEnglish);
+function updatePlaceholderTextEnglish() {
     const placeholderContry = document.querySelectorAll('.input-country-en');
     const placeholderFound = document.querySelectorAll('.input-user-found-out-en');
     const placeholderFooperation = document.querySelectorAll('.input-user-cooperation-en');
-    if(innerWidth>768){
-        placeholderContry.forEach(el=>{
-            el.placeholder="Which city or country do you want to represent the interests of the project?";
+    if (innerWidth > 768) {
+        placeholderContry.forEach(el => {
+            el.placeholder = "Which city or country do you want to represent the interests of the project?";
         });
-        placeholderFound.forEach(el=>{
-            el.placeholder="Where did you get information about us?";
+        placeholderFound.forEach(el => {
+            el.placeholder = "Where did you get information about us?";
         });
-        placeholderFooperation.forEach(el=>{
-            el.placeholder="What cooperation interests you?";
+        placeholderFooperation.forEach(el => {
+            el.placeholder = "What cooperation interests you?";
         });
-    }else{
-        placeholderContry.forEach(el=>{
-            el.placeholder="";
+    } else {
+        placeholderContry.forEach(el => {
+            el.placeholder = "";
         });
-        placeholderFound.forEach(el=>{
-            el.placeholder="";
+        placeholderFound.forEach(el => {
+            el.placeholder = "";
         });
-        placeholderFooperation.forEach(el=>{
-            el.placeholder="";
+        placeholderFooperation.forEach(el => {
+            el.placeholder = "";
         });
     }
 };
-
 //placeholder english resize end
 
 //placeholder resize start
 updatePlaceholderText();
-window.addEventListener('resize',updatePlaceholderText);
-function updatePlaceholderText(){
+window.addEventListener('resize', updatePlaceholderText);
+function updatePlaceholderText() {
     const placeholderContry = document.querySelectorAll('.input-country');
     const placeholderFound = document.querySelectorAll('.input-user-found-out');
     const placeholderFooperation = document.querySelectorAll('.input-user-cooperation');
-    if(innerWidth>768){
-        placeholderContry.forEach(el=>{
-            el.placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?";
+    if (innerWidth > 768) {
+        placeholderContry.forEach(el => {
+            el.placeholder = "В якому місті чи країні бажаєте представляти інтереси проєкту?";
         });
-        placeholderFound.forEach(el=>{
-            el.placeholder="Звідки отримали інформацію про нас?";
+        placeholderFound.forEach(el => {
+            el.placeholder = "Звідки отримали інформацію про нас?";
         });
-        placeholderFooperation.forEach(el=>{
-            el.placeholder="Яка співпраця цікавить Вас?";
+        placeholderFooperation.forEach(el => {
+            el.placeholder = "Яка співпраця цікавить Вас?";
         });
-    }else{
-        placeholderContry.forEach(el=>{
-            el.placeholder="";
+    } else {
+        placeholderContry.forEach(el => {
+            el.placeholder = "";
         });
-        placeholderFound.forEach(el=>{
-            el.placeholder="";
+        placeholderFound.forEach(el => {
+            el.placeholder = "";
         });
-        placeholderFooperation.forEach(el=>{
-            el.placeholder="";
+        placeholderFooperation.forEach(el => {
+            el.placeholder = "";
         });
     }
 };
 //placeholder resize end
 
-//placeholder english userCompetence in mentorPopUp  resize start
-updatePlaceholderMentorPopUpEnglish();
-window.addEventListener('resize',updatePlaceholderMentorPopUpEnglish);
-function updatePlaceholderMentorPopUpEnglish(){
-    const placeholderCompetence = document.querySelector('.input-user-Competence-en');
-    if(innerWidth>768){
-        placeholderCompetence.placeholder="Where are you an expert?";
-    }else{
-        placeholderCompetence.placeholder="";
-    }
-};
-//placeholder english userCompetence in mentorPopUp resize end
-
-//placeholder userCompetence in mentorPopUp- resize start
+//placeholder userCompetence in mentorPopUp resize start
 updatePlaceholderMentorPopUp();
-window.addEventListener('resize',updatePlaceholderMentorPopUp);
-function updatePlaceholderMentorPopUp(){
+window.addEventListener('resize', updatePlaceholderMentorPopUp);
+function updatePlaceholderMentorPopUp() {
     const placeholderCompetence = document.querySelector('.input-user-Competence');
-    if(innerWidth>768){
-        placeholderCompetence.placeholder="В чому маєте експертизу?";
-    }else{
-        placeholderCompetence.placeholder="";
+    if (innerWidth > 768) {
+        placeholderCompetence.placeholder = "В чому маєте експертизу?";
+    } else {
+        placeholderCompetence.placeholder = "";
     }
 };
 //placeholder userCompetence in mentorPopUp resize end
+var formValid = false;
 
-//
-    
-//
-var userModal=null;
-var formValid =false;
-
-//function to define a modal window to work with form start
-function checkMentorForm(Button){
-    const form = Button.closest('form');
-    userModal = form.parentNode.parentNode.parentNode;
-    const userNameForm = form.querySelector('.input-name');
-    const userEmailForm =form.querySelector('.input-email');
-    const userSurnameForm =form.querySelector('.input-surname');
-    const userMobilePhoneForm =form.querySelector('.input-MobilePhone');
-
-    checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhoneForm);
-}
-//function to define a modal window to work with form end
-
-function checkYourForm(userNameForm,userEmailForm,userSurnameForm,userMobilePhoneForm){
-    function UserName(){
-        const inputName = userNameForm;
-        const regexName = /^[a-zA-Zа-яА-ЯїЇєЄіІґҐ'`'']{2}[a-zA-Zа-яА-ЯїЇєЄіІґҐ\s'`''-]*$/;
+document.querySelectorAll('.check-form').forEach((element) =>
+    element.addEventListener('click', function () {
+        userForm = element.closest('form');
+        function UserName() {
+            const inputName = userForm.querySelector('.input-name');
+            const regexName = /^[a-zA-Zа-яА-ЯїЇєЄіІґҐ'`'']{2}[a-zA-Zа-яА-ЯїЇєЄіІґҐ\s'`''-]*$/;
+            
             if (inputName.value.trim() == "") {
                 inputName.classList.remove("successful-validation");
                 inputName.classList.add("eror");
-                inputName.closest(".userNameBlock").querySelector(".input-name-text").textContent ="Поле не заповнене";
+                inputName.closest(".userNameBlock").querySelector(".input-name-text").textContent = "Поле не заповнене";
             }
             else if (!regexName.test(inputName.value)) {
                 inputName.classList.remove("successful-validation");
-                inputName.closest(".userNameBlock").querySelector(".input-name-text").innerHTML ="Поле має містити не менше двох символів";
+                inputName.closest(".userNameBlock").querySelector(".input-name-text").innerHTML = "Поле має містити не менше двох символів";
                 inputName.classList.add("eror");
-
             }
-            else{
+            else {
                 inputName.classList.remove("eror")
                 inputName.classList.add("successful-validation");
-                inputName.closest(".userNameBlock").querySelector(".input-name-text").innerHTML="";
-            } 
-            return regexName.test(inputName.value); 
-    };
-    
-    function UserEmail(){
-        const inputEmail = userEmailForm;
-        const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com)$/;
+                inputName.closest(".userNameBlock").querySelector(".input-name-text").innerHTML = "";
+            }
+            return regexName.test(inputName.value);
+        };
 
-        if (inputEmail.value.trim() == "") {
-            inputEmail.classList.remove("successful-validation");
-            inputEmail.classList.add("eror");
-            inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent ="Поле не заповнене";
-        }
-        else if (!regexEmail.test(inputEmail.value)) {
-            inputEmail.classList.remove("successful-validation");
-            inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent ="Email введено некоректно";
-            inputEmail.classList.add("eror");
-        }
-        else{
-            inputEmail.classList.remove("eror");
-            inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").innerHTML="";
-            inputEmail.classList.add("successful-validation");
-        }
-        return regexEmail.test(inputEmail.value);
-    };
+        function UserEmail() {
+            const inputEmail = userForm.querySelector('.input-email');
+            const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com)$/;
 
-    function UserSurname(){
-        const inputUserSurname = userSurnameForm;
-        const regexUserSurname = /^[a-zA-Zа-яА-ЯїЇєЄіІґҐ'`'']{2}[a-zA-Zа-яА-ЯїЇєЄіІґҐ\s'`''-]*$/;
+            if (inputEmail.value.trim() == "") {
+                inputEmail.classList.remove("successful-validation");
+                inputEmail.classList.add("eror");
+                inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent = "Поле не заповнене";
+            }
+            else if (!regexEmail.test(inputEmail.value)) {
+                inputEmail.classList.remove("successful-validation");
+                inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").textContent = "Email введено некоректно";
+                inputEmail.classList.add("eror");
+            }
+            else {
+                inputEmail.classList.remove("eror");
+                inputEmail.closest(".userEmailBlock").querySelector(".input-email-text").innerHTML = "";
+                inputEmail.classList.add("successful-validation");
+            }
+            return regexEmail.test(inputEmail.value);
+        };
 
-        if (inputUserSurname.value.trim() == "") {
-            inputUserSurname.classList.remove("successful-validation");
-            inputUserSurname.classList.add("eror");
-            inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").textContent ="Поле не заповнене";
-        }
-        else if (!regexUserSurname.test(inputUserSurname.value)) {
-            inputUserSurname.classList.remove("successful-validation");
-            inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").textContent ="Поле має містити не менше двох символів";
-            inputUserSurname.classList.add("eror");
-        }
-        else{
-            inputUserSurname.classList.remove("eror")
-            inputUserSurname.classList.add("successful-validation");
-            inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").innerHTML="";
-        }
-        return regexUserSurname.test(inputUserSurname.value); 
-    };
+        function UserSurname() {
+            const inputUserSurname = userForm.querySelector('.input-surname');;
+            const regexUserSurname = /^[a-zA-Zа-яА-ЯїЇєЄіІґҐ'`'']{2}[a-zA-Zа-яА-ЯїЇєЄіІґҐ\s'`''-]*$/;
 
-    function UserMobilePhone(){
-        const inputUserMobilePhone = userMobilePhoneForm;
-        const regexUserMobilePhone = /^\+380\d{9}$/;
+            if (inputUserSurname.value.trim() == "") {
+                inputUserSurname.classList.remove("successful-validation");
+                inputUserSurname.classList.add("eror");
+                inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").textContent = "Поле не заповнене";
+            }
+            else if (!regexUserSurname.test(inputUserSurname.value)) {
+                inputUserSurname.classList.remove("successful-validation");
+                inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").textContent = "Поле має містити не менше двох символів";
+                inputUserSurname.classList.add("eror");
+            }
+            else {
+                inputUserSurname.classList.remove("eror")
+                inputUserSurname.classList.add("successful-validation");
+                inputUserSurname.closest(".userSurnameBlock").querySelector(".input-surname-text").innerHTML = "";
+            }
+            return regexUserSurname.test(inputUserSurname.value);
+        };
 
-        if (inputUserMobilePhone.value.trim() == "") {
-            inputUserMobilePhone.classList.remove("successful-validation");
-            inputUserMobilePhone.classList.add("eror");
-            inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Поле не заповнене";
-        }
-        else if (!regexUserMobilePhone.test(inputUserMobilePhone.value)) {
+        function UserMobilePhone() {
+            const inputUserMobilePhone = userForm.querySelector('.input-MobilePhone');
+            const regexUserMobilePhone = /^\+380\d{9}$/;
 
-            // checking whether the phone number has a digit start
-            let userNumber = inputUserMobilePhone.value;
-            const userNumberArr = []; // an array to fit each character with the data type
-            let userHaveOnlyNumbersInMobile = true;
-
-            for (i=4; i<13; i++ ){
-                let char = userNumber.charAt(i);
-                if(!isNaN(char)){
-                    userNumberArr.push(parseInt(char));
+            if (inputUserMobilePhone.value.trim() == "") {
+                inputUserMobilePhone.classList.remove("successful-validation");
+                inputUserMobilePhone.classList.add("eror");
+                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent = "Поле не заповнене";
+            }
+            else if (!regexUserMobilePhone.test(inputUserMobilePhone.value)) {
+                // checking whether the phone number has a digit start
+                let userNumber = inputUserMobilePhone.value;
+                const userNumberArr = []; // an array to fit each character with the data type
+                let userHaveOnlyNumbersInMobile = true;
+                for (i = 4; i < 13; i++) {
+                    let char = userNumber.charAt(i);
+                    if (!isNaN(char)) {
+                        userNumberArr.push(parseInt(char));
+                    }
+                    else {
+                        userNumberArr.push(char);
+                        userHaveOnlyNumbersInMobile = false;
+                        break;
+                    }
                 }
-                else{
-                    userNumberArr.push(char);
-                    userHaveOnlyNumbersInMobile=false;
-                    break;
+                // checking whether the phone number has a digit end
+                inputUserMobilePhone.classList.remove("successful-validation");
+                inputUserMobilePhone.classList.add("eror");
+                if (userHaveOnlyNumbersInMobile) {
+                    inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent = "Номер телефону має містити 13 символів";
+                }
+                else {
+                    inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent = "Некоректний формат телефонного номеру";
                 }
             }
-            // checking whether the phone number has a digit end
-
-            inputUserMobilePhone.classList.remove("successful-validation");
-            inputUserMobilePhone.classList.add("eror");
-
-            if(userHaveOnlyNumbersInMobile){
-                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Номер телефону має містити 13 символів";
+            else {
+                inputUserMobilePhone.classList.remove("eror");
+                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent = '';
+                inputUserMobilePhone.classList.add("successful-validation");
             }
-            else{
-                inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent ="Некоректний формат телефонного номеру";
-            }
+            return regexUserMobilePhone.test(inputUserMobilePhone.value);
+        };
+        const isUserNameValid = UserName();
+        const isUserEmailValid = UserEmail();
+        const isUserSurnameValid = UserSurname();
+        const isUserMobilePhoneValid = UserMobilePhone();
+        if (isUserNameValid && isUserEmailValid && isUserSurnameValid && isUserMobilePhoneValid) {
+            formValid = true;
         }
-        else{
-            inputUserMobilePhone.classList.remove("eror");
-            inputUserMobilePhone.closest(".userMobilePhoneBlock").querySelector(".input-MobilePhone-text").textContent='';
-            inputUserMobilePhone.classList.add("successful-validation");
-        } 
-        return regexUserMobilePhone.test(inputUserMobilePhone.value);
-    };
-
-    const isUserNameValid = UserName();
-    const isUserEmailValid = UserEmail();
-    const isUserSurnameValid = UserSurname();
-    const isUserMobilePhoneValid = UserMobilePhone();
-    if( isUserNameValid && isUserEmailValid && isUserSurnameValid && isUserMobilePhoneValid){
-        formValid=true;
-        userModal.querySelector('.close-modal-btn').click();
-    }
-    else{
-        formValid=false;
-    }
-}
+        else {
+            formValid = false;
+        }
+    }));
 //AllForm valid check end
+let chooseForm;
 
-const forms = document.querySelector(".forms");
+const forms = Array.from(document.querySelectorAll(".forms"));
+
 const lang = document.documentElement.lang;
 listenSubmit();
 function listenSubmit() {
@@ -358,20 +324,23 @@ function listenSubmit() {
             // submit to the server if the form is valid
             if (formValid) {
                 grecaptcha.ready(function () {
-                grecaptcha.execute(
-                    "6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP",
-                    { action: "submit" }
+                    grecaptcha.execute(
+                        "6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP",
+                        { action: "submit" }
                     ).then(function (token) {
                         if (formValid) {
                             const actionUrl =
                                 "https://intita.com/api/v1/entrant";
                             const entrantFormData = new FormData(
-                                forms
+                                forms[chooseForm]
                             );
                             entrantFormData.append(
                                 "g-recaptcha-response",
                                 token
                             );
+                            entrantFormData.forEach((value, name) => {
+                                console.log(`${name}: ${value}`);
+                            });
                             const http = new XMLHttpRequest();
                             http.open("POST", actionUrl, true);
                             http.send(entrantFormData);
@@ -433,7 +402,7 @@ function entrantSubmitResponse(errorStr) {
             document.querySelector("#successfulTitle");
         if (errorStr) {
             elementAnketeText.innerText = errorStr;
-            elementAnketeText.nextElementSibling.style.display="none";
+            elementAnketeText.nextElementSibling.style.display = "none";
             // document.getElementById("registerModalToggle").style.display ="block";
             document.getElementById("successfulPopUp").style.display =
                 "block";
@@ -445,37 +414,36 @@ function entrantSubmitResponse(errorStr) {
                     break;
                 case "en":
                     elementAnketeText.innerHTML =
-                      "Thank you!<br> I will call you soon!";
+                        "Thank you!<br> I will call you soon!";
                     break;
                 default:
                     break;
             }
-            document.getElementById("successfulPopUp").style.display = "flex";
+            document.getElementById("successfulPopUp").style.display = "block";
         }
         secondWindow.style.display = "block";
     }
 }
 //close and clean form After Sending Form start
-function closeModalsAfterSendingForm(){
+function closeModalsAfterSendingForm() {
     document.getElementById('successfulPopUp').style.display = 'none';
-    userModal.querySelectorAll('.input-placeholder').forEach(el =>{
-        el.value="";
+    document.querySelectorAll('.input-placeholder').forEach(el => {
+        el.value = "";
         el.classList.remove("successful-validation");
-        el.previousElementSibling.style.display='block';
+        el.previousElementSibling.style.display = 'block';
     })
 }
 //close and clean form After Sending Form end
 
-
 //form cleaning After click on close button start
-function cleanForm(button){
-    let parent=button.parentNode;
-    parent.querySelectorAll('.input-placeholder').forEach(el =>{
-        el.value='';
+function cleanForm(button) {
+    let parent = button.parentNode;
+    parent.querySelectorAll('.input-placeholder').forEach(el => {
+        el.value = '';
         el.classList.remove("successful-validation");
         el.classList.remove("eror");
-        el.previousElementSibling.style.display='block';
-        el.nextElementSibling.innerHTML='';
+        el.previousElementSibling.style.display = 'block';
+        el.nextElementSibling.innerHTML = '';
     })
 }
 //form cleaning After click on close button end

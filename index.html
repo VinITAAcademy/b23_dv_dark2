@@ -734,22 +734,22 @@
                             <div class="mandatory-input">
                                 <div class="userNameBlock input-block">
                                     <label class="placeholder-text" for="first_name">Ім’я</label>
-                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" maxlength="20" oninput="checkInput(this)">
                                     <p class="input-name-text error-text"></p>
                                 </div>
                                 <div class="userEmailBlock input-block">
                                     <label class="placeholder-text" for="email">Email</label>
-                                    <input class="input-placeholder input-email" type="texst" name="email" id="email"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-email" type="email" name="email" id="email"  oninput="checkInput(this)">
                                     <p class="input-email-text error-text"></p>
                                 </div>
                                 <div class="userSurnameBlock input-block">
                                     <label class="placeholder-text" for="last_name">Прізвище</label>
-                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" maxlength="30" oninput="checkInput(this)">
                                     <p class="input-surname-text error-text"></p>
                                 </div>
                                 <div class="userMobilePhoneBlock input-block">
                                     <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone"  oninput="checkInput(this)" onfocus="mobileInput(this)">
+                                    <input class="input-placeholder input-MobilePhone" type="tel" name="phone" id="phone"  oninput="checkInput(this)" onfocus="mobileInput(this)">
                                     <p class="input-MobilePhone-text error-text"></p>
                                 </div>
                             </div>
@@ -771,8 +771,9 @@
                             </div>
     
                             <div class="modal-button">
-                                <button class="modal-send-button check-form" onclick="chooseForm = 0" type="button" >Надіслати</button>
+                                <button class="modal-send-button check-form" onclick="chooseForm = 0" type="submit" >Надіслати</button>
                             </div>
+                            <input type="hidden" value="1" name="organization_id">
                         </form>
                     </div>
                 </div>
@@ -790,22 +791,22 @@
                             <div class="mandatory-input">
                                 <div class="userNameBlock input-block">
                                     <label class="placeholder-text" for="first_name">Ім’я</label>
-                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" maxlength="20" oninput="checkInput(this)">
                                     <p class="input-name-text error-text"></p>
                                 </div>
                                 <div class="userEmailBlock input-block">
                                     <label class="placeholder-text" for="email">Email</label>
-                                    <input class="input-placeholder input-email" type="texst" name="email" id="email"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-email" type="email" name="email" id="email"  oninput="checkInput(this)">
                                     <p class="input-email-text error-text"></p>
                                 </div>
                                 <div class="userSurnameBlock input-block">
                                     <label class="placeholder-text" for="last_name">Прізвище</label>
-                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name"  oninput="checkInput(this)">
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" maxlength="30" oninput="checkInput(this)">
                                     <p class="input-surname-text error-text"></p>
                                 </div>
                                 <div class="userMobilePhoneBlock input-block">
                                     <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone"  oninput="checkInput(this)" onfocus="mobileInput(this)">
+                                    <input class="input-placeholder input-MobilePhone" type="tel" name="phone" id="phone"  oninput="checkInput(this)" onfocus="mobileInput(this)">
                                     <p class="input-MobilePhone-text error-text"></p>
                                 </div>
                             </div>
@@ -875,8 +876,9 @@
                             </div>
     
                             <div class="modal-button">
-                                <button class="modal-send-button check-form" onclick="chooseForm = 1" type="button">Надіслати</button>
+                                <button class="modal-send-button check-form" onclick="chooseForm = 1" type="submit">Надіслати</button>
                             </div>
+                            <input type="hidden" value="1" name="organization_id">
                         </form>            
                     </div>
                 </div>
@@ -894,22 +896,22 @@
                             <div class="mandatory-input">
                                 <div class="userNameBlock input-block">
                                     <label class="placeholder-text" for="first_name">Ім’я</label>
-                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" oninput="checkInput(this)">
+                                    <input class="input-placeholder input-name" type="text" name="first_name" id="first_name" maxlength="20" oninput="checkInput(this)">
                                     <p class="input-name-text error-text"></p>
                                 </div>
                                 <div class="userEmailBlock input-block">
                                     <label class="placeholder-text" for="email">Email</label>
-                                    <input class="input-placeholder input-email" type="texst" name="email" id="email" oninput="checkInput(this)">
-                                <p class="input-email-text error-text"></p>
+                                    <input class="input-placeholder input-email" type="email" name="email" id="email"  oninput="checkInput(this)">
+                                    <p class="input-email-text error-text"></p>
                                 </div>
                                 <div class="userSurnameBlock input-block">
                                     <label class="placeholder-text" for="last_name">Прізвище</label>
-                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" oninput="checkInput(this)">
+                                    <input class="input-placeholder input-surname" type="text" name="last_name" id="last_name" maxlength="30" oninput="checkInput(this)">
                                     <p class="input-surname-text error-text"></p>
                                 </div>
                                 <div class="userMobilePhoneBlock input-block">
                                     <label class="placeholder-text" for="phone">Мобільний телефон</label>
-                                    <input class="input-placeholder input-MobilePhone" type="text" name="phone" id="phone" oninput="checkInput(this)" onfocus="mobileInput(this)">
+                                    <input class="input-placeholder input-MobilePhone" type="tel" name="phone" id="phone"  oninput="checkInput(this)" onfocus="mobileInput(this)">
                                     <p class="input-MobilePhone-text error-text"></p>
                                 </div>
                             </div>
@@ -930,8 +932,9 @@
                                 </div>
                             </div>
                             <div class="modal-button">
-                                <button class="modal-send-button check-form" onclick="chooseForm = 2" type="button">Надіслати</button>
+                                <button class="modal-send-button check-form" onclick="chooseForm = 2" type="submit">Надіслати</button>
                             </div>
+                            <input type="hidden" value="1" name="organization_id">
                         </form>
                     </div>
                 </div>

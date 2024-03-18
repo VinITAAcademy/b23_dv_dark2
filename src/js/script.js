@@ -338,9 +338,6 @@ function listenSubmit() {
                                 "g-recaptcha-response",
                                 token
                             );
-                            entrantFormData.forEach((value, name) => {
-                                console.log(`${name}: ${value}`);
-                            });
                             const http = new XMLHttpRequest();
                             http.open("POST", actionUrl, true);
                             http.send(entrantFormData);

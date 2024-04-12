@@ -37,6 +37,44 @@ let swiper2 = new Swiper("#logo-swiper", {
     },
 });
 
+//"scroll page up start"
+const mybutton = document.getElementById("scroll-to-top");
+
+window.onscroll = function() {ScrollToTop()};
+
+function ScrollToTop() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function ToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const buttonRect = mybutton.getBoundingClientRect();
+const whiteBlocks = document.querySelectorAll(".white-background");
+
+const areIntersecting = (bounds1, bounds2)=> bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
+
+document.addEventListener('scroll', ()=> {
+
+    for (let item of whiteBlocks) {
+        const itemRect = item.getBoundingClientRect();
+
+        if (areIntersecting(itemRect, buttonRect)) {
+            mybutton.src = "./src/Img/Anchor-black.png";
+            return;
+        }
+
+        mybutton.src = "./src/Img/Anchor.png";
+    }
+});
+//"scroll page up end"
+
 //specialities swiper initializing swiper start
 const swiper = new Swiper('#swiper-specialities', {
     // Optional parameters
@@ -52,29 +90,6 @@ const swiper = new Swiper('#swiper-specialities', {
     },
 });
 //specialities swiper initializing swiper end
-const scrollUp = $(".scroll-up");
-const offset = 100;
-const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
-
-if (scrollUp.length) {
-
-    scrollUp.removeClass("scroll-up-active");
-
-    window.addEventListener("scroll", () => {
-        if (getTop() > offset) {
-            scrollUp.addClass("scroll-up-active");
-        } else {
-            scrollUp.removeClass("scroll-up-active");
-        }
-    });
-
-    scrollUp.on("click", (event) => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-}
 //AllForm valid check start
 
 //checbox start

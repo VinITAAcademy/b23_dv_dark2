@@ -545,8 +545,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div class="language-chang-header" href="index.html">
-                                <img class="language-chang-header-img" src="./src/Img/modal-selection-language.webp" alt="">
+                            <div class="language-chang-header">
+                                <a href="index.html">
+                                    <img class="language-chang-header-img" src="./src/Img/modal-selection-language.webp" alt="">
+                                </a>
                             </div>
 
                             <h3 class="header-title">
@@ -561,7 +563,7 @@
                         <div class="modal-body">
                             <div class="line-up-color line-position"></div>
                             <div class="line-down-color line-position"></div>
-                            <h4 class="default-text body-title-text text-color-1">What inventory are you interested?</h4>
+                            <h4 class="default-text body-title-text text-color-1">What questionnaire are you interested in?</h4>
                             <button class="default-text button-content margin-adjust-1 button text-color-2" data-bs-toggle="modal" data-bs-target="#partnersPopUp">Partners</button>
                             <button class="default-text button-content margin-adjust-2 button text-color-2" data-bs-toggle="modal" data-bs-target="#participantsPopUp">Participant</button>
                             <button class="default-text button-content margin-adjust-3 button text-color-2" data-bs-toggle="modal" data-bs-target="#mentorPopUp">Teacher/mentor</button>
@@ -687,7 +689,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-title">
-                            <h2 class="modal-title-text">Inventory for <span class="underlined"> partners </span> programs</h2>
+                            <h2 class="modal-title-text">Questionnaire for <span class="underlined"> partners </span> programs</h2>
                         </div>
                         <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
@@ -743,7 +745,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-title">
-                            <h2 class="modal-title-text">Inventory for <span class="underlined"> participants </span> programs</h2>
+                            <h2 class="modal-title-text">Questionnaire for <span class="underlined"> participants </span> programs</h2>
                         </div>
                         <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
@@ -847,7 +849,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-title">
-                            <h2 class="modal-title-text">Inventory for <span class="underlined">teachers/mentors</span> <br>programs</h2>
+                            <h2 class="modal-title-text">Questionnaire for <span class="underlined">teachers/mentors</span> <br>programs</h2>
                         </div>
                         <button class="btn-close close-modal-btn" data-bs-dismiss="modal" aria-bs-label="close" onclick="cleanForm(this)"></button>
 
@@ -916,9 +918,7 @@
         <section id="footer">
             <div class="footer-main-cont">
                 <div class="footer-top-button">
-                    <div class="scroll-up">
-                        <img class="default-img" src="./src/Img/Anchor.png" alt="Default Image">
-                    </div>
+                    <img onclick="ToTop()" id="scroll-to-top" class="default-img" src="./src/Img/Anchor.png" alt="Default Image">
                 </div>
                 <div class="footer-main">
                     <div class="footer-logo">

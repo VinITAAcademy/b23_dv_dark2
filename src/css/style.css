@@ -1765,11 +1765,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #footer .footer-top-button{
-    position: absolute;
-    bottom: auto;
+    position: fixed;
+    bottom: 60px;
     right: 18px;
     transition: 0.2s;
-    z-index: 100;
+    z-index: 99;
     margin: 5px;
     cursor: pointer;
 }
@@ -2443,8 +2443,7 @@ h1,h2,h3,h4,h5,h6{
         bottom: 25px;
     }
     #footer .footer-top-button{
-        position: absolute;
-        bottom: auto;
+        bottom: 110px;
         right: 48px;
         margin: 5px;
     }

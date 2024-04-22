@@ -43,7 +43,7 @@ const mybutton = document.getElementById("scroll-to-top");
 window.onscroll = function() {ScrollToTop()};
 
 function ScrollToTop() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -57,22 +57,6 @@ function ToTop() {
 
 const buttonRect = mybutton.getBoundingClientRect();
 const whiteBlocks = document.querySelectorAll(".white-background");
-
-const areIntersecting = (bounds1, bounds2)=> bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
-
-document.addEventListener('scroll', ()=> {
-
-    for (let item of whiteBlocks) {
-        const itemRect = item.getBoundingClientRect();
-
-        if (areIntersecting(itemRect, buttonRect)) {
-            mybutton.src = "./src/Img/Anchor-black.png";
-            return;
-        }
-
-        mybutton.src = "./src/Img/Anchor.png";
-    }
-});
 //"scroll page up end"
 
 //specialities swiper initializing swiper start
